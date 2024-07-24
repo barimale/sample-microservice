@@ -7,20 +7,21 @@ namespace Ordering.Domain.AggregatesModel.BuyerAggregate;
 public class Buyer
     : Entity, IAggregateRoot
 {
-    [Required]
-    public string IdentityGuid { get; private set; }
-
-    public string Name { get; private set; }
-
-    private List<PaymentMethod> _paymentMethods;
-
-    public IEnumerable<PaymentMethod> PaymentMethods => _paymentMethods.AsReadOnly();
+    private readonly List<PaymentMethod> _paymentMethods;
 
     protected Buyer()
     {
 
         _paymentMethods = new List<PaymentMethod>();
     }
+
+    [Required]
+    public string IdentityGuid { get; private set; }
+
+    public string Name { get; private set; }
+
+
+    public IEnumerable<PaymentMethod> PaymentMethods => _paymentMethods.AsReadOnly();
 
     public Buyer(string identity, string name)
         : this()
