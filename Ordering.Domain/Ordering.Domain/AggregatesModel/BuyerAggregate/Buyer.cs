@@ -1,6 +1,4 @@
-﻿using eShop.Ordering.Domain.Events;
-using eShop.Ordering.Domain.Seedwork;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace eShop.Ordering.Domain.AggregatesModel.BuyerAggregate;
 
@@ -22,7 +20,8 @@ public class Buyer
         _paymentMethods = new List<PaymentMethod>();
     }
 
-    public Buyer(string identity, string name) : this()
+    public Buyer(string identity, string name)
+        : this()
     {
         IdentityGuid = !string.IsNullOrWhiteSpace(identity) ? identity : throw new ArgumentNullException(nameof(identity));
         Name = !string.IsNullOrWhiteSpace(name) ? name : throw new ArgumentNullException(nameof(name));

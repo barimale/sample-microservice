@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.Domain.SeedWork;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace eShop.Ordering.Domain.SeedWork;
 
 public abstract class ValueObject
 {
