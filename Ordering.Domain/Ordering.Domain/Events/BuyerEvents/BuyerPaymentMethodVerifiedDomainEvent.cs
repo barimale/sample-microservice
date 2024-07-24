@@ -1,7 +1,7 @@
-﻿using eShop.Ordering.Domain.AggregatesModel.BuyerAggregate;
-using MediatR;
+﻿using MediatR;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 
-namespace eShop.Ordering.Domain.Events;
+namespace Ordering.Domain.Events.BuyerEvents;
 
 public class BuyerAndPaymentMethodVerifiedDomainEvent
     : INotification
@@ -11,8 +11,8 @@ public class BuyerAndPaymentMethodVerifiedDomainEvent
     public int OrderId { get; private set; }
 
     public BuyerAndPaymentMethodVerifiedDomainEvent(
-        Buyer buyer, 
-        PaymentMethod payment, 
+        Buyer buyer,
+        PaymentMethod payment,
         int orderId)
     {
         Buyer = buyer;

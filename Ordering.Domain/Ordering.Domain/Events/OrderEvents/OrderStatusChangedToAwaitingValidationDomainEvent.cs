@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.Domain.Events;
+﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
+
+namespace Ordering.Domain.Events.OrderEvents;
 
 /// <summary>
 /// Event used when the grace period order is confirmed

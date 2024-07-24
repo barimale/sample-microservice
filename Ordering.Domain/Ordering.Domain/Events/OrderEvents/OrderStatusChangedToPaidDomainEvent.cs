@@ -1,7 +1,7 @@
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
 using MediatR;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.Domain.Events;
+namespace Ordering.Domain.Events.OrderEvents;
 
 /// <summary>
 /// Event used when the order is paid

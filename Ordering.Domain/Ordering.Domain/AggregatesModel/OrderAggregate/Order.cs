@@ -1,6 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
+using Ordering.Domain.Events.OrderEvents;
+using Ordering.Domain.Exceptions;
+using Ordering.Domain.SeedWork;
+using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+namespace Ordering.Domain.AggregatesModel.OrderAggregate;
 
 public class Order
     : Entity, IAggregateRoot
@@ -16,7 +20,7 @@ public class Order
     public Buyer Buyer { get; }
 
     public OrderStatus OrderStatus { get; private set; }
-    
+
     public string Description { get; private set; }
 
     // Draft orders have this set to true. Currently we don't check anywhere the draft status of an Order, but we could do it if needed
@@ -29,7 +33,7 @@ public class Order
     // so OrderItems cannot be added from "outside the AggregateRoot" directly to the collection,
     // but only through the method OrderAggregateRoot.AddOrderItem() which includes behavior.
     private readonly List<OrderItem> _orderItems;
-   
+
     public IReadOnlyCollection<OrderItem> OrderItems => _orderItems.AsReadOnly();
 
     public int? PaymentId { get; private set; }
@@ -95,7 +99,7 @@ public class Order
         BuyerId = buyerId;
         PaymentId = paymentId;
     }
-    
+
     public void SetAwaitingValidationStatus()
     {
         if (OrderStatus == OrderStatus.Submitted)

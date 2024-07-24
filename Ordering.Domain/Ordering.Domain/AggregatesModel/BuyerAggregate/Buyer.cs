@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Ordering.Domain.Events.BuyerEvents;
+using Ordering.Domain.SeedWork;
+using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Domain.AggregatesModel.BuyerAggregate;
+namespace Ordering.Domain.AggregatesModel.BuyerAggregate;
 
 public class Buyer
     : Entity, IAggregateRoot

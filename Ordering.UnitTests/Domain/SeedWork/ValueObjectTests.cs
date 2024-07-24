@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Ordering.Domain.SeedWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace eShop.Ordering.UnitTests.Domain.SeedWork;
+namespace Ordering.UnitTests.Domain.SeedWork;
 
 public class ValueObjectTests
 {
@@ -11,7 +12,10 @@ public class ValueObjectTests
 
     [TestMethod]
     [DynamicData(nameof(EqualValueObjects))]
-    public void Equals_EqualValueObjects_ReturnsTrue(ValueObject instanceA, ValueObject instanceB, string reason)
+    public void Equals_EqualValueObjects_ReturnsTrue(
+        ValueObject instanceA,
+        ValueObject instanceB,
+        string reason)
     {
         // Act
         var result = EqualityComparer<ValueObject>.Default.Equals(instanceA, instanceB);
@@ -115,7 +119,8 @@ public class ValueObjectTests
                     new ValueObjectB(1, "2",  1, 2, 3, 4 ),
                     "they should be not be equal because the 'C' lists are not equal"
                 }
-            };        }
+            };
+        }
 
     }
 

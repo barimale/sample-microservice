@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Domain.SeedWork;
+namespace Ordering.Domain.SeedWork;
 
 public abstract class Enumeration : IComparable
 {

@@ -1,14 +1,13 @@
-﻿
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
-using MediatR;
+﻿using MediatR;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.Domain.Events;
+namespace Ordering.Domain.Events.OrderEvents;
 
 /// <summary>
 /// Event used when an order is created
 /// </summary>
 public record class OrderStartedDomainEvent(
-    Order Order, 
+    Order Order,
     string UserId,
     string UserName,
     int CardTypeId,

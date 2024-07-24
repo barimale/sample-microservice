@@ -1,19 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Ordering.Domain.Exceptions;
+using Ordering.Domain.SeedWork;
+using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+namespace Ordering.Domain.AggregatesModel.OrderAggregate;
 
 public class OrderItem
     : Entity
 {
     [Required]
     public string ProductName { get; private set; }
-    
-    public string PictureUrl { get; private set;}
-    
-    public decimal UnitPrice { get; private set;}
-    
+
+    public string PictureUrl { get; private set; }
+
+    public decimal UnitPrice { get; private set; }
+
     public decimal Discount { get; private set; }
-    
+
     public int Units { get; private set; }
 
     public int ProductId { get; private set; }
@@ -27,7 +29,7 @@ public class OrderItem
             throw new OrderingDomainException("Invalid number of units");
         }
 
-        if ((unitPrice * units) < discount)
+        if (unitPrice * units < discount)
         {
             throw new OrderingDomainException("The total of order item is lower than applied discount");
         }
@@ -40,7 +42,7 @@ public class OrderItem
         Units = units;
         PictureUrl = pictureUrl;
     }
-    
+
     public void SetNewDiscount(decimal discount)
     {
         if (discount < 0)

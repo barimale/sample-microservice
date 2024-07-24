@@ -1,4 +1,4 @@
-﻿namespace eShop.Ordering.Domain.Seedwork;
+﻿namespace Ordering.Domain.SeedWork;
 
 public interface IAggregateRoot { }
 

@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.Domain.Events;
+﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
+
+namespace Ordering.Domain.Events.OrderEvents;
 
 public class OrderCancelledDomainEvent : INotification
 {

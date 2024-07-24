@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.Domain.AggregatesModel.BuyerAggregate;
+﻿using Ordering.Domain.SeedWork;
+
+namespace Ordering.Domain.AggregatesModel.BuyerAggregate;
 
 //This is just the RepositoryContracts or Interface defined at the Domain Layer
 //as requisite for the Buyer Aggregate

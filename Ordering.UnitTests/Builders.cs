@@ -1,7 +1,7 @@
-﻿using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
+﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System;
 
-namespace eShop.Ordering.UnitTests.Domain;
+namespace Ordering.UnitTests;
 
 public class AddressDemoData
 {

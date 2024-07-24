@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
+using Ordering.Domain.Exceptions;
+using System;
 
-namespace eShop.Ordering.UnitTests.Domain;
+namespace Ordering.UnitTests.Domain;
 
 [TestClass]
 public class BuyerAggregateTest

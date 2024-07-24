@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace eShop.Ordering.Domain.Events;
+namespace Ordering.Domain.Events.OrderEvents;
 
 /// <summary>
 /// Event used when the order stock items are confirmed

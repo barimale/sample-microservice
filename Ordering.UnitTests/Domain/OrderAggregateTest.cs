@@ -1,9 +1,9 @@
-﻿namespace eShop.Ordering.UnitTests.Domain;
-
-using eShop.Ordering.Domain.AggregatesModel.OrderAggregate;
-using eShop.Ordering.UnitTests.Domain;
+﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
+using Ordering.Domain.Events.OrderEvents;
+using Ordering.Domain.Exceptions;
 using System;
 
+namespace Ordering.UnitTests.Domain;
 [TestClass]
 public class OrderAggregateTest
 {
@@ -53,9 +53,9 @@ public class OrderAggregateTest
         var discount = 15;
         var pictureUrl = "FakeUrl";
         var units = 1;
-        
+
         //Act - Assert
-        Assert.ThrowsException<OrderingDomainException>(() => new OrderItem(productId, productName, unitPrice, discount, pictureUrl, units));       
+        Assert.ThrowsException<OrderingDomainException>(() => new OrderItem(productId, productName, unitPrice, discount, pictureUrl, units));
     }
 
     [TestMethod]

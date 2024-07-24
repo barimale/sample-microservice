@@ -1,6 +1,6 @@
-﻿using eShop.Ordering.Domain.SeedWork;
+﻿using Ordering.Domain.SeedWork;
 
-namespace eShop.Ordering.Domain.AggregatesModel.BuyerAggregate;
+namespace Ordering.Domain.AggregatesModel.BuyerAggregate;
 
 /// <remarks> 
 /// Card type class should be marked as abstract with protected constructor to encapsulate known enum types
