@@ -274,7 +274,6 @@ G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\MediatR.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\MediatR.Contracts.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.ApplicationInsights.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.Testing.Extensions.Telemetry.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.Testing.Extensions.VSTestBridge.dll
@@ -290,7 +289,6 @@ G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudi
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Newtonsoft.Json.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\NSubstitute.dll
-G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\cs\Microsoft.Testing.Extensions.Telemetry.resources.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\de\Microsoft.Testing.Extensions.Telemetry.resources.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\es\Microsoft.Testing.Extensions.Telemetry.resources.dll
@@ -421,8 +419,6 @@ G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\ru\Microsoft.VisualSt
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
-G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
-G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.Domain.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.Domain.pdb
@@ -431,3 +427,14 @@ G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.3F6D2F5F.Up2
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.pdb
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.genruntimeconfig.cache
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\ref\Ordering.UnitTests.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.API.deps.json
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.API.runtimeconfig.json
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\appsettings.Development.json
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\appsettings.json
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.API.exe
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.API.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.API.pdb
