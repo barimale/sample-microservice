@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Ordering.Domain\Ordering.Domain.csproj", "{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Ordering.Domain\Ordering.Domain.csproj", "{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.UnitTests", "..\Ordering.UnitTests\Ordering.UnitTests.csproj", "{EF1D38ED-7DBC-430D-901C-77634EA4FC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "..\Ordering.API\Ordering.API\Ordering.API.csproj", "{6DF02DAC-BFF3-4F20-B2FE-A2BB108A7BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "..\Ordering.API\Ordering.API\Ordering.API.csproj", "{6DF02DAC-BFF3-4F20-B2FE-A2BB108A7BB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "..\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{D110FF99-E0F3-4E3A-A86B-EB0CD5C033F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6DF02DAC-BFF3-4F20-B2FE-A2BB108A7BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF02DAC-BFF3-4F20-B2FE-A2BB108A7BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF02DAC-BFF3-4F20-B2FE-A2BB108A7BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D110FF99-E0F3-4E3A-A86B-EB0CD5C033F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D110FF99-E0F3-4E3A-A86B-EB0CD5C033F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D110FF99-E0F3-4E3A-A86B-EB0CD5C033F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D110FF99-E0F3-4E3A-A86B-EB0CD5C033F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
