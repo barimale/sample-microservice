@@ -1,0 +1,429 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\_references.js",
+      "PackagePath": "staticwebassets\\_references.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Bold.svg",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Montserrat-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Bold.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Bold.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Bold.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Bold.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Bold.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Bold.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-ExtraLight.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-ExtraLight.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-ExtraLight.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-ExtraLight.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-ExtraLight.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-ExtraLight.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-ExtraLight.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Light.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Light.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Light.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Light.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Light.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Light.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Medium.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Medium.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Medium.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Medium.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Medium.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Medium.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Medium.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Medium.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Regular.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Regular.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Regular.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Regular.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-Regular.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-SemiBold.eot",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-SemiBold.eot"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-SemiBold.svg",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-SemiBold.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-SemiBold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-SemiBold.woff"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\Oswald-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Oswald-SemiBold.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-200.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-200.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-200italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-200italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-300.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-300.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-300italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-300italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-500.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-500.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-500italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-500italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-600.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-600.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-600italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-600italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-700.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-700.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-700italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-700italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-800.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-800.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-800italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-800italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-italic.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-italic.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\fonts\\plus-jakarta-sans-v8-latin-regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\plus-jakarta-sans-v8-latin-regular.woff2"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\icon.jpg",
+      "PackagePath": "staticwebassets\\icon.jpg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\icon.png",
+      "PackagePath": "staticwebassets\\icon.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\arrow-down.png",
+      "PackagePath": "staticwebassets\\images\\arrow-down.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\images\\arrow-right.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\banner1.svg",
+      "PackagePath": "staticwebassets\\images\\banner1.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\banner2.svg",
+      "PackagePath": "staticwebassets\\images\\banner2.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\banner3.svg",
+      "PackagePath": "staticwebassets\\images\\banner3.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\banner4.svg",
+      "PackagePath": "staticwebassets\\images\\banner4.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\brand.PNG",
+      "PackagePath": "staticwebassets\\images\\brand.PNG"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\brand_dark.PNG",
+      "PackagePath": "staticwebassets\\images\\brand_dark.PNG"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\cart.png",
+      "PackagePath": "staticwebassets\\images\\cart.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\check.svg",
+      "PackagePath": "staticwebassets\\images\\check.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\header.jpg",
+      "PackagePath": "staticwebassets\\images\\header.jpg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\logo-footer.svg",
+      "PackagePath": "staticwebassets\\images\\logo-footer.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\logo-header.svg",
+      "PackagePath": "staticwebassets\\images\\logo-header.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\logo_color.svg",
+      "PackagePath": "staticwebassets\\images\\logo_color.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\logout.PNG",
+      "PackagePath": "staticwebassets\\images\\logout.PNG"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\main_banner.png",
+      "PackagePath": "staticwebassets\\images\\main_banner.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\main_banner_text.png",
+      "PackagePath": "staticwebassets\\images\\main_banner_text.png"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\main_banner_text.svg",
+      "PackagePath": "staticwebassets\\images\\main_banner_text.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\main_footer_text.PNG",
+      "PackagePath": "staticwebassets\\images\\main_footer_text.PNG"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\my_orders.PNG",
+      "PackagePath": "staticwebassets\\images\\my_orders.PNG"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\images\\refresh.svg",
+      "PackagePath": "staticwebassets\\images\\refresh.svg"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\js\\signin-redirect.js",
+      "PackagePath": "staticwebassets\\js\\signin-redirect.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\js\\signout-redirect.js",
+      "PackagePath": "staticwebassets\\js\\signout-redirect.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery-validate\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery-validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "E:\\eShop\\src\\Identity.API\\wwwroot\\lib\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Identity.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Identity.API.props",
+      "PackagePath": "build\\Identity.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Identity.API.props",
+      "PackagePath": "buildMultiTargeting\\Identity.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Identity.API.props",
+      "PackagePath": "buildTransitive\\Identity.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
