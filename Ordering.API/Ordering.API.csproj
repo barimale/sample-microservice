@@ -13,12 +13,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
+    <Folder Include="Application\Commands\" />
+    <Folder Include="Application\CommandHandlers\" />
+    <Folder Include="Application\QueryHandlers\" />
+    <Folder Include="Application\Queries\" />
+    <Folder Include="Infrastructure\Seeder\" />
+    <Folder Include="Services\IAM\" />
   </ItemGroup>
 
 </Project>
