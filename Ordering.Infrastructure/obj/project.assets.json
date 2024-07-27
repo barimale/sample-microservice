@@ -911,9 +911,6 @@
           "projectReferences": {
             "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj": {
               "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj"
-            },
-            "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain\\Ordering.Domain.csproj": {
-              "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain\\Ordering.Domain.csproj"
             }
           }
         }
