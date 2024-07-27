@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ordering.API\Ordering.API\Ordering.API.csproj" />
+    <Compile Remove="Application\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <None Remove="Application\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain\Ordering.Domain.csproj" />
   </ItemGroup>
 
@@ -21,10 +27,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Application\" />
   </ItemGroup>
 
 </Project>

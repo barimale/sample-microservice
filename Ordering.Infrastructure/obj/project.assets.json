@@ -867,8 +867,8 @@
     },
     "Ordering.Domain/1.0.0": {
       "type": "project",
-      "path": "../Ordering.Domain/Ordering.Domain/Ordering.Domain.csproj",
-      "msbuildProject": "../Ordering.Domain/Ordering.Domain/Ordering.Domain.csproj"
+      "path": "../Ordering.Domain/Ordering.Domain.csproj",
+      "msbuildProject": "../Ordering.Domain/Ordering.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -909,6 +909,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj": {
+              "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj"
+            },
             "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain\\Ordering.Domain.csproj": {
               "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain\\Ordering.Domain.csproj"
             }
