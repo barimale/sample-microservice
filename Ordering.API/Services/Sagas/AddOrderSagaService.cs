@@ -4,6 +4,7 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Services.Sagas
 {
+    // compensation saga
     public class AddOrderSagaService
     {
         // services
