@@ -1,5 +1,6 @@
 ﻿using BuildingBlocks.Pagination;
-using Ordering.Application.Orders.Queries.GetOrders;
+using Carter;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
 
@@ -8,7 +9,7 @@ namespace Ordering.API.Endpoints;
 //- Retrieves the data and returns it in a paginated format.
 
 //public record GetOrdersRequest(PaginationRequest PaginationRequest);
-public record GetOrdersResponse(PaginatedResult<OrderDto> Orders);
+public record GetOrdersResponse(PaginatedResult<Order> Orders);
 
 public class GetOrders : ICarterModule
 {

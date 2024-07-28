@@ -14,11 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="APIs\buyer\" />
+    <Folder Include="APIs\v1.0\buyer\" />
     <Folder Include="Infrastructure\Seeder\" />
   </ItemGroup>
 
