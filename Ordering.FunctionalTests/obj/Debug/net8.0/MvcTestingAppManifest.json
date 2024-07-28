@@ -1,0 +1,9 @@
+{
+  "eShop.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\eShop.ServiceDefaults",
+  "EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\EventBus",
+  "EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\EventBusRabbitMQ",
+  "IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\IntegrationEventLogEF",
+  "Ordering.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\Ordering.API",
+  "Ordering.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\Ordering.Domain",
+  "Ordering.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "E:\\eShop\\src\\Ordering.Infrastructure"
+}
