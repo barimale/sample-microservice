@@ -10,4 +10,4 @@ https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/fundamentals/http
 
 https://github.com/aspnetrun/run-aspnetcore-microservices/tree/master
 
-https://github.com/saideldah/api-versioining-dot-net-6
+https://medium.com/@seldah/managing-multiple-versions-of-your-api-with-net-and-swagger-47b4143e8bf5
