@@ -1,4 +1,4 @@
-﻿namespace Ordering.API.Exceptions
+﻿namespace Ordering.Application.Exceptions
 {
     [Serializable]
     internal class AddOrderException : Exception

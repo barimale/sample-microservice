@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.Infrastructure.EntityConfigurations;
+﻿using Ordering.Infrastructure.Idempotency;
+
+namespace Ordering.Infrastructure.EntityConfigurations;
 
 class ClientRequestEntityTypeConfiguration
     : IEntityTypeConfiguration<ClientRequest>

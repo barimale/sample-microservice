@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.Testing;
+﻿using Aspire.Hosting;
+using Aspire.Hosting.ApplicationModel;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace eShop.Ordering.FunctionalTests;
+namespace Ordering.FunctionalTests;
 
 public sealed class OrderingApiFixture : WebApplicationFactory<Program>, IAsyncLifetime
 {

@@ -1,8 +1,8 @@
-﻿using Ordering.API.Exceptions;
+﻿using Ordering.Application.Exceptions;
 using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace Ordering.API.Services.Sagas
+namespace Ordering.Application.Services.Sagas
 {
     // compensation saga Use transaction classic here
     // saga for restapiclients
@@ -21,7 +21,7 @@ namespace Ordering.API.Services.Sagas
             _buyerService = buyerService;
             _orderService = orderService;
             _logger = logger;
-        }   
+        }
 
         public async Task<bool> Execute(Order order, Buyer buyer)
         {

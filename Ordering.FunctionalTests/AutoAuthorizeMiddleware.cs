@@ -1,4 +1,6 @@
-﻿namespace eShop.Ordering.FunctionalTests;
+﻿using System.Threading.Tasks;
+
+namespace Ordering.FunctionalTests;
 
 class AutoAuthorizeMiddleware
 {

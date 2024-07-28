@@ -1,8 +1,8 @@
 ﻿using Carter;
 using Mapster;
 using MediatR;
+using Ordering.Application.Commands;
 using Ordering.Application.Dtos;
-using Ordering.Application.Orders.Commands.CreateOrder;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;

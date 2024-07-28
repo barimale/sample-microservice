@@ -5,27 +5,25 @@
     <IsPublishable>false</IsPublishable>
     <IsPackable>false</IsPackable>
     <IsAspireHost>true</IsAspireHost>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Asp.Versioning.Http.Client" />
-    <PackageReference Include="Aspire.Hosting.AppHost" />
-    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="Microsoft.AspNetCore.TestHost" />
-    <PackageReference Include="xunit.runner.visualstudio">
+    <PackageReference Include="Asp.Versioning.Http.Client" Version="8.1.0" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.7" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="8.0.7" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit" Version="2.9.0" />
   </ItemGroup>
- 
+  
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Ordering.API\Ordering.API.csproj" IsAspireProjectResource="false" />
-    <ProjectReference Include="..\..\src\Identity.API\Identity.API.csproj" />
-    <ProjectReference Include="..\..\src\Ordering.Domain\Ordering.Domain.csproj" IsAspireProjectResource="false" />
-    <ProjectReference Include="..\..\src\Ordering.Infrastructure\Ordering.Infrastructure.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\Ordering.API\Ordering.API.csproj" />
   </ItemGroup>
 
 </Project>

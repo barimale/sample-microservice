@@ -1,7 +1,7 @@
 ﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.Infrastructure.EntityConfigurations;
+namespace Ordering.Infrastructure.EntityConfigurations;
 
 class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 {

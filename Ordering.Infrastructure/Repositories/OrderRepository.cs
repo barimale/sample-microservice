@@ -3,7 +3,7 @@ using Ordering.Domain.SeedWork;
 using System;
 using System.Threading.Tasks;
 
-namespace eShop.Ordering.Infrastructure.Repositories;
+namespace Ordering.Infrastructure.Repositories;
 
 public class OrderRepository
     : IOrderRepository

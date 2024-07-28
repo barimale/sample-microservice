@@ -2,7 +2,7 @@
 using FluentValidation;
 using Ordering.Application.Dtos;
 
-namespace Ordering.Application.Orders.Commands.CreateOrder;
+namespace Ordering.Application.Commands;
 
 public record CreateOrderCommand(OrderDto Order)
     : ICommand<CreateOrderResult>;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace eShop.Ordering.Infrastructure.Idempotency;
+namespace Ordering.Infrastructure.Idempotency;
 
 public class ClientRequest
 {

@@ -1,6 +1,6 @@
 ﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
 
-namespace eShop.Ordering.Infrastructure.EntityConfigurations;
+namespace Ordering.Infrastructure.EntityConfigurations;
 
 class CardTypeEntityTypeConfiguration
     : IEntityTypeConfiguration<CardType>

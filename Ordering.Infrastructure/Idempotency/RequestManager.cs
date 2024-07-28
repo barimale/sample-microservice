@@ -1,8 +1,9 @@
 ﻿using Ordering.Domain.Exceptions;
+using Ordering.Infrastructure;
 using System;
 using System.Threading.Tasks;
 
-namespace eShop.Ordering.Infrastructure.Idempotency;
+namespace Ordering.Infrastructure.Idempotency;
 
 public class RequestManager : IRequestManager
 {

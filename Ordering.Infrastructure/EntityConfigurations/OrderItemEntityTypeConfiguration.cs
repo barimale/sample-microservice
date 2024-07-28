@@ -1,6 +1,6 @@
 ﻿using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace eShop.Ordering.Infrastructure.EntityConfigurations;
+namespace Ordering.Infrastructure.EntityConfigurations;
 
 class OrderItemEntityTypeConfiguration
     : IEntityTypeConfiguration<OrderItem>

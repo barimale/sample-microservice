@@ -511,5 +511,3 @@ E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTest
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\refint\Ordering.FunctionalTests.dll
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.genruntimeconfig.cache
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\ref\Ordering.FunctionalTests.dll
-G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.dll
-G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\refint\Ordering.FunctionalTests.dll

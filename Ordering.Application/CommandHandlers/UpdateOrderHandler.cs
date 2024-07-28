@@ -1,4 +1,6 @@
-﻿namespace Ordering.Application.Orders.Commands.UpdateOrder;
+﻿using Ordering.Application.Commands;
+
+namespace Ordering.Application.CommandHandlers;
 public class UpdateOrderHandler(IApplicationDbContext dbContext)
     : ICommandHandler<UpdateOrderCommand, UpdateOrderResult>
 {
@@ -22,7 +24,7 @@ public class UpdateOrderHandler(IApplicationDbContext dbContext)
         dbContext.Orders.Update(order);
         await dbContext.SaveChangesAsync(cancellationToken);
 
-        return new UpdateOrderResult(true);        
+        return new UpdateOrderResult(true);
     }
 
     public void UpdateOrderWithNewValues(Order order, OrderDto orderDto)

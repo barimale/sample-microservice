@@ -1,4 +1,6 @@
-﻿namespace Ordering.Application.Orders.Commands.DeleteOrder;
+﻿using Ordering.Application.Commands;
+
+namespace Ordering.Application.CommandHandlers;
 public class DeleteOrderHandler(IApplicationDbContext dbContext)
     : ICommandHandler<DeleteOrderCommand, DeleteOrderResult>
 {
@@ -20,6 +22,6 @@ public class DeleteOrderHandler(IApplicationDbContext dbContext)
         dbContext.Orders.Remove(order);
         await dbContext.SaveChangesAsync(cancellationToken);
 
-        return new DeleteOrderResult(true);        
+        return new DeleteOrderResult(true);
     }
 }

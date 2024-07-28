@@ -1,6 +1,0 @@
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.AssemblyReference.cache
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfoInputs.cache
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfo.cs
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.CoreCompileInputs.cache
-G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.sourcelink.json

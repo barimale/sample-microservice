@@ -1,4 +1,4 @@
-﻿namespace Ordering.API.Services.Sagas
+﻿namespace Ordering.Application.Services.Sagas
 {
     public class AddOrderChoreographySagaService
     {

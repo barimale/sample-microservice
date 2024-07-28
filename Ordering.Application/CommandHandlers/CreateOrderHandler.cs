@@ -1,6 +1,7 @@
 ﻿using BuildingBlocks.CQRS;
+using Ordering.Application.Commands;
 
-namespace Ordering.Application.Orders.Commands.CreateOrder;
+namespace Ordering.Application.CommandHandlers;
 public class CreateOrderHandler(IApplicationDbContext dbContext)
     : ICommandHandler<CreateOrderCommand, CreateOrderResult>
 {
