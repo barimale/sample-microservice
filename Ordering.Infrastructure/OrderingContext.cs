@@ -1,6 +1,7 @@
 ﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Domain.SeedWork;
+using Ordering.Infrastructure.EntityConfigurations;
 using System;
 using System.Threading;
 using System.Threading.Tasks;

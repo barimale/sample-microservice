@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ordering.FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5faeb4ba58389815e409277cc6d9612978437bbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b362aed79a917c0b9bade1e01dd7c820d199bccf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ordering.FunctionalTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ordering.FunctionalTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

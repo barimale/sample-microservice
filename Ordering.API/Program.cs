@@ -16,27 +16,21 @@ namespace Ordering.API
             // AddSecondWebApiClient
             // AddRabbitMqClient for choreography
 
+            // WIP
+            var assembly = typeof(Program).Assembly;
+
             builder.Services
                 .AddApplicationServices(builder.Configuration)
                 .AddInfrastructureServices(builder.Configuration)
                 .AddApiServices(builder.Configuration);
 
-            // WIP
-            var assembly = typeof(Program).Assembly;
-            builder.Services.AddCarter();
-            builder.Services.AddMediatR(config =>
-            {
-                config.RegisterServicesFromAssembly(assembly);
-                config.AddOpenBehavior(typeof(ValidationBehavior<,>));
-                config.AddOpenBehavior(typeof(LoggingBehavior<,>));
-            });
-
-            builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+            app.UseApiServices();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -46,9 +40,6 @@ namespace Ordering.API
             }
 
             app.UseHttpsRedirection();
-            app.UseAuthorization();
-
-            app.MapControllers();
 
             app.Run();
         }
