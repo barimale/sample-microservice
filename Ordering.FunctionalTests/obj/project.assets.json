@@ -6681,9 +6681,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\sample-microservice\\Ordering.FunctionalTests\\Ordering.FunctionalTests.csproj",
-      "projectName": "Ordering.FunctionalTests",
-      "projectPath": "G:\\sample-microservice\\Ordering.FunctionalTests\\Ordering.FunctionalTests.csproj",
+      "projectUniqueName": "G:\\sample-microservice\\Ordering.FunctionalTests\\Order.FunctionalTests.csproj",
+      "projectName": "Order.FunctionalTests",
+      "projectPath": "G:\\sample-microservice\\Ordering.FunctionalTests\\Order.FunctionalTests.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
       "outputPath": "G:\\sample-microservice\\Ordering.FunctionalTests\\obj\\",
       "projectStyle": "PackageReference",

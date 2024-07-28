@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OuNgyQvznek=",
+  "dgSpecHash": "0NGuPVCqV8Q=",
   "success": true,
-  "projectFilePath": "G:\\sample-microservice\\Ordering.FunctionalTests\\Ordering.FunctionalTests.csproj",
+  "projectFilePath": "G:\\sample-microservice\\Ordering.FunctionalTests\\Order.FunctionalTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mateu\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\asp.versioning.http.client\\8.1.0\\asp.versioning.http.client.8.1.0.nupkg.sha512",

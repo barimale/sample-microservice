@@ -5,8 +5,7 @@ namespace Projects;
 [global::System.CodeDom.Compiler.GeneratedCode("Aspire.Hosting", null)]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage(Justification = "Generated code.")]
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
-public class Order_FunctionalTests
+public class Ordering_Infrastructure : global::Aspire.Hosting.IProjectMetadata
 {
-    private Order_FunctionalTests() { }
-    public static string ProjectPath => """G:\sample-microservice\Ordering.FunctionalTests""";
+    public string ProjectPath => """G:\sample-microservice\Ordering.Infrastructure\Ordering.Infrastructure.csproj""";
 }

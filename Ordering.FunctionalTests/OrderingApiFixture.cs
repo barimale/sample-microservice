@@ -1,14 +1,9 @@
-﻿using Aspire.Hosting;
-using Aspire.Hosting.ApplicationModel;
-using Microsoft.AspNetCore.Mvc.Testing;
+﻿using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace Ordering.FunctionalTests;
+namespace Order.FunctionalTests;
 
-public sealed class OrderingApiFixture : WebApplicationFactory<Program>, IAsyncLifetime
+public sealed class OrderingApiFixture : WebApplicationFactory<Ordering.API.Program>, IAsyncLifetime
 {
     private readonly IHost _app;
 
@@ -24,7 +19,7 @@ public sealed class OrderingApiFixture : WebApplicationFactory<Program>, IAsyncL
         var appBuilder = DistributedApplication.CreateBuilder(options);
         Postgres = appBuilder.AddPostgres("OrderingDB");
         IdentityDB = appBuilder.AddPostgres("IdentityDB");
-        IdentityApi = appBuilder.AddProject<Projects.Identity_API>("identity-api").WithReference(IdentityDB);
+        //IdentityApi = appBuilder.AddProject<Projects.Identity_API>("identity-api").WithReference(IdentityDB);
         _app = appBuilder.Build();
     }
 

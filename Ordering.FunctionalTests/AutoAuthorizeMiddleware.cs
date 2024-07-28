@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Ordering.FunctionalTests;
+namespace Order.FunctionalTests;
 
 class AutoAuthorizeMiddleware
 {

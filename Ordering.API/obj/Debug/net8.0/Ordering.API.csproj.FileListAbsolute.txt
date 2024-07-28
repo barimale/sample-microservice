@@ -94,3 +94,4 @@ G:\sample-microservice\Ordering.API\obj\Debug\net8.0\refint\Ordering.API.dll
 G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.pdb
 G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.genruntimeconfig.cache
 G:\sample-microservice\Ordering.API\obj\Debug\net8.0\ref\Ordering.API.dll
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.MvcApplicationPartsAssemblyInfo.cs

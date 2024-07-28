@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DFBBA21F-A51
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A0E387D8-C835-4E4B-9D97-83D02DD1DE13}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.FunctionalTests", "Ordering.FunctionalTests\Ordering.FunctionalTests.csproj", "{8FB6069D-0FD2-4068-87AC-8AE476E6164B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.FunctionalTests", "Ordering.FunctionalTests\Order.FunctionalTests.csproj", "{8FB6069D-0FD2-4068-87AC-8AE476E6164B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common [nuget]", "common [nuget]", "{7CEF9039-AEB7-4EC9-921C-35A45E21E3B5}"
 EndProject
