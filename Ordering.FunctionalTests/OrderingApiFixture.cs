@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Hosting;
+using Ordering.API;
 
 namespace Order.FunctionalTests;
 
-public sealed class OrderingApiFixture : WebApplicationFactory<Ordering.API.Program>, IAsyncLifetime
+public sealed class OrderingApiFixture : WebApplicationFactory<Program>, IAsyncLifetime
 {
     private readonly IHost _app;
 
