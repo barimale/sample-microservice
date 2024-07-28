@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vMKVyZwcKMM=",
+  "dgSpecHash": "0buyJerTC90=",
   "success": true,
   "projectFilePath": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,8 @@
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.featuremanagement.aspnetcore\\3.2.0\\microsoft.featuremanagement.aspnetcore.3.2.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\mateu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    "C:\\Users\\mateu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\typegen\\2.5.0\\typegen.2.5.0.nupkg.sha512"
   ],
   "logs": []
 }

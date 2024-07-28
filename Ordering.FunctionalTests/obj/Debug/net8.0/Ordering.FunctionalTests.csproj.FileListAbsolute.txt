@@ -511,3 +511,12 @@ E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTest
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\refint\Ordering.FunctionalTests.dll
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.genruntimeconfig.cache
 E:\eShop\tests\Ordering.FunctionalTests\obj\Debug\net8.0\ref\Ordering.FunctionalTests.dll
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.csproj.AssemblyReference.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\MvcTestingAppManifest.json
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.AssemblyInfoInputs.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.AssemblyInfo.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.csproj.CoreCompileInputs.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\Ordering_API.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Ordering.FunctionalTests.sourcelink.json

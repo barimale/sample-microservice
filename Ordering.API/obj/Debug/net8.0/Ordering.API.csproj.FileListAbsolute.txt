@@ -6,3 +6,10 @@ G:\sample-microservice\Ordering.API\Ordering.API\obj\Debug\net8.0\Ordering.API.c
 G:\sample-microservice\Ordering.API\Ordering.API\obj\Debug\net8.0\Ordering.API.MvcApplicationPartsAssemblyInfo.cs
 G:\sample-microservice\Ordering.API\Ordering.API\obj\Debug\net8.0\Ordering.API.MvcApplicationPartsAssemblyInfo.cache
 G:\sample-microservice\Ordering.API\Ordering.API\obj\Debug\net8.0\Ordering.API.sourcelink.json
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.csproj.AssemblyReference.cache
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.AssemblyInfoInputs.cache
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.AssemblyInfo.cs
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.csproj.CoreCompileInputs.cache
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.MvcApplicationPartsAssemblyInfo.cache
+G:\sample-microservice\Ordering.API\obj\Debug\net8.0\Ordering.API.sourcelink.json

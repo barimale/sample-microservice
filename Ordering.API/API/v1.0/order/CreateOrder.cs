@@ -2,7 +2,6 @@
 using Mapster;
 using MediatR;
 using Ordering.Application.Commands;
-using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
@@ -13,7 +12,7 @@ namespace Ordering.API.Endpoints;
 //- Returns a response with the created order's ID.
 
 // double check OrderDto - do it as is in Gifter
-public record CreateOrderRequest(OrderRequest Order);
+public record CreateOrderRequest(Order Order);
 public record CreateOrderResponse(Guid Id);
 
 public class CreateOrder : ICarterModule

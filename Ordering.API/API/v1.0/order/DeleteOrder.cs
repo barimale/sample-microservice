@@ -1,8 +1,6 @@
-﻿using Ordering.Application.Orders.Commands.DeleteOrder;
-using Carter;
+﻿using Carter;
 using Mapster;
 using MediatR;
-using Ordering.Application.Commands;
 
 namespace Ordering.API.Endpoints;
 
@@ -20,11 +18,11 @@ public class DeleteOrder : ICarterModule
     {
         app.MapDelete("/orders/{id}", async (Guid Id, ISender sender) =>
         {
-            var result = await sender.Send(new DeleteOrderCommand(Id));
+            //var result = await sender.Send(new DeleteOrderCommand(Id));
 
-            var response = result.Adapt<DeleteOrderResponse>();
+            //var response = result.Adapt<DeleteOrderResponse>();
 
-            return Results.Ok(response);
+            return Results.Ok(null);
         })
         .WithName("DeleteOrder")
         .Produces<DeleteOrderResponse>(StatusCodes.Status200OK)

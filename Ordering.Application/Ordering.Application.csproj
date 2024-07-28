@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="CommandHandlers\" />
     <Folder Include="Queries\" />
     <Folder Include="QueryHandlers\" />
     <Folder Include="Services\IAM\" />
@@ -16,5 +17,13 @@
     <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
   </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="TypeGen" Version="2.5.0" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
+    <Exec Command="dotnet-typegen --project-folder  . generate&#xD;&#xA;" />
+  </Target>
 
 </Project>

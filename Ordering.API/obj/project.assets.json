@@ -957,6 +957,19 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "TypeGen/2.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/TypeGen.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/TypeGen.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "BuildingBlocks/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -980,7 +993,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BuildingBlocks": "1.0.0",
-          "Ordering.Domain": "1.0.0"
+          "Ordering.Domain": "1.0.0",
+          "TypeGen": "2.5.0"
         },
         "compile": {
           "bin/placeholder/Ordering.Application.dll": {}
@@ -3194,6 +3208,37 @@
         "system.text.json.8.0.0.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "TypeGen/2.5.0": {
+      "sha512": "NxqsS6yl742GpmHQi74yDNTXQv+ameHq1+y8Pj91FCsJQ9wwnpNx51l4ckk1mlCW8V3xB23U8/AsGwP002xtyg==",
+      "type": "package",
+      "path": "typegen/2.5.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net5.0/TypeGen.Core.dll",
+        "lib/net5.0/TypeGen.Core.xml",
+        "lib/netstandard2.0/TypeGen.Core.dll",
+        "lib/netstandard2.0/TypeGen.Core.xml",
+        "tools/Newtonsoft.Json.dll",
+        "tools/NuGet.Common.dll",
+        "tools/NuGet.Configuration.dll",
+        "tools/NuGet.Frameworks.dll",
+        "tools/TypeGen.Cli.deps.json",
+        "tools/TypeGen.Cli.dll",
+        "tools/TypeGen.Cli.pdb",
+        "tools/TypeGen.Cli.runtimeconfig.json",
+        "tools/TypeGen.Core.dll",
+        "tools/TypeGen.Core.pdb",
+        "tools/TypeGen.Core.xml",
+        "tools/TypeGen.exe",
+        "tools/runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "tools/runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "typegen.2.5.0.nupkg.sha512",
+        "typegen.nuspec"
       ]
     },
     "BuildingBlocks/1.0.0": {

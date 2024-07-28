@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UJRFRtFoG0o=",
+  "dgSpecHash": "61OmsglDL9o=",
   "success": true,
   "projectFilePath": "G:\\sample-microservice\\Ordering.API\\Ordering.API.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,8 @@
     "C:\\Users\\mateu\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\mateu\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\mateu\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\typegen\\2.5.0\\typegen.2.5.0.nupkg.sha512"
   ],
   "logs": []
 }
