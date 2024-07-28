@@ -10,7 +10,7 @@ public class CreateOrderHandler(IApplicationDbContext dbContext)
         //create Order entity from command object
         //save to database
         //return result 
-
+        // SERVICE here
         var order = CreateNewOrder(command.Order);
 
         dbContext.Orders.Add(order);
