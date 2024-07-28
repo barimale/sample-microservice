@@ -7,3 +7,5 @@ https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-contai
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-8.0
 
 https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/fundamentals/http-requests/samples/6.x/HttpRequestsSample/GitHub/GitHubService.cs
+
+https://github.com/aspnetrun/run-aspnetcore-microservices/tree/master
