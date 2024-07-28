@@ -11,3 +11,5 @@ https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/fundamentals/http
 https://github.com/aspnetrun/run-aspnetcore-microservices/tree/master
 
 https://medium.com/@seldah/managing-multiple-versions-of-your-api-with-net-and-swagger-47b4143e8bf5
+
+https://www.roundthecode.com/dotnet-tutorials/create-custom-database-logging-provider-asp-net-core-ilogger
