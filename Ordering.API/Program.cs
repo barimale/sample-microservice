@@ -1,6 +1,8 @@
 
 using BuildingBlocks.Behaviors;
 using Carter;
+using Ordering.Application;
+using Ordering.Infrastructure;
 
 namespace Ordering.API
 {
@@ -13,6 +15,11 @@ namespace Ordering.API
             // Add services to the container.
             // AddSecondWebApiClient
             // AddRabbitMqClient for choreography
+
+            builder.Services
+                .AddApplicationServices(builder.Configuration)
+                .AddInfrastructureServices(builder.Configuration)
+                .AddApiServices(builder.Configuration);
 
             // WIP
             var assembly = typeof(Program).Assembly;
