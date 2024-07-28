@@ -4,7 +4,8 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Services.Sagas
 {
-    // compensation saga
+    // compensation saga Use transaction classic here
+    // saga for restapiclients
     public class AddOrderSagaService
     {
         // services

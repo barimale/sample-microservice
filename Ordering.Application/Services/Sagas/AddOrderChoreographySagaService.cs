@@ -1,6 +1,6 @@
 ﻿namespace Ordering.API.Services.Sagas
 {
-    public class CancelOrderSagaService
+    public class AddOrderChoreographySagaService
     {
     }
 }

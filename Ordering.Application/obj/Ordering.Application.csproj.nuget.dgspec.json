@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\sample-microservice\\Ordering.API\\Ordering.API.csproj": {}
+    "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj": {}
   },
   "projects": {
-    "G:\\sample-microservice\\Ordering.API\\Ordering.API.csproj": {
+    "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\sample-microservice\\Ordering.API\\Ordering.API.csproj",
-        "projectName": "Ordering.API",
-        "projectPath": "G:\\sample-microservice\\Ordering.API\\Ordering.API.csproj",
+        "projectUniqueName": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
+        "projectName": "Ordering.Application",
+        "projectPath": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "G:\\sample-microservice\\Ordering.API\\obj\\",
+        "outputPath": "G:\\sample-microservice\\Ordering.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,16 +52,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Carter": {
-              "target": "Package",
-              "version": "[8.2.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,9 +64,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
