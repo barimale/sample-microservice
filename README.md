@@ -9,3 +9,5 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=as
 https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/fundamentals/http-requests/samples/6.x/HttpRequestsSample/GitHub/GitHubService.cs
 
 https://github.com/aspnetrun/run-aspnetcore-microservices/tree/master
+
+https://medium.com/@seldah/managing-multiple-versions-of-your-api-with-net-and-swagger-47b4143e8bf5
