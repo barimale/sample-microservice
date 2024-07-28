@@ -4,7 +4,7 @@ public abstract class Entity
 {
     int? _requestedHashCode;
     int _Id;
-    public virtual int Id
+    public virtual int Id // guid here? or uint
     {
         get
         {

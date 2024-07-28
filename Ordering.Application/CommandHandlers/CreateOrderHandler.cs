@@ -1,5 +1,7 @@
 ﻿using BuildingBlocks.CQRS;
 using Ordering.Application.Commands;
+using Ordering.Application.Dtos;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.CommandHandlers;
 public class CreateOrderHandler(IApplicationDbContext dbContext)
@@ -16,7 +18,7 @@ public class CreateOrderHandler(IApplicationDbContext dbContext)
         dbContext.Orders.Add(order);
         await dbContext.SaveChangesAsync(cancellationToken);
 
-        return new CreateOrderResult(order.Id.Value);
+        return new CreateOrderResult(order.Id);
     }
 
     private Order CreateNewOrder(OrderDto orderDto)
