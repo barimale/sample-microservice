@@ -2,7 +2,6 @@
 using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.Extensions.Configuration;
 
 namespace Ordering.API;
 
@@ -14,7 +13,7 @@ public static class DependencyInjection
 
         services.AddExceptionHandler<CustomExceptionHandler>();
         services.AddHealthChecks();
-           // .AddSqlServer(configuration.GetConnectionString("Database")!);
+            //.AddSqlServer(configuration.GetConnectionString("Database")!);
 
         return services;
     }
