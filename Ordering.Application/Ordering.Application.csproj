@@ -10,7 +10,6 @@
     <Folder Include="CQRS\CommandHandlers\" />
     <Folder Include="CQRS\Queries\" />
     <Folder Include="CQRS\QueryHandlers\" />
-    <Folder Include="Services\IAM\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -22,8 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\v1.0\buyer\" />
-    <Folder Include="Infrastructure\Seeder\" />
+    <Folder Include="API\v1.0\buyer-endpoint\" />
+    <Folder Include="Infrastructure\Seeder-DB\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Services\IAM\" />
   </ItemGroup>
 
 </Project>

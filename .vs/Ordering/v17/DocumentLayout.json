@@ -1,12 +1,173 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\sample-microservice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\entityconfigurations\\orderentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\entityconfigurations\\orderentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\entityconfigurations\\clientrequestentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\entityconfigurations\\clientrequestentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\entityconfigurations\\cardtypeentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\entityconfigurations\\cardtypeentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\entityconfigurations\\buyerentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\entityconfigurations\\buyerentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\idempotency\\requestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\idempotency\\requestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\idempotency\\irequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\idempotency\\irequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\pagination\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\pagination\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\pagination\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\pagination\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|g:\\sample-microservice\\ordering.domain\\aggregatesmodel\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|solutionrelative:ordering.domain\\aggregatesmodel\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\OrderEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\EntityConfigurations\\OrderEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\OrderEntityTypeConfiguration.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\EntityConfigurations\\OrderEntityTypeConfiguration.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:21:39.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientRequestEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\ClientRequestEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\EntityConfigurations\\ClientRequestEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\ClientRequestEntityTypeConfiguration.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\EntityConfigurations\\ClientRequestEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:21:07.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CardTypeEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\CardTypeEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\EntityConfigurations\\CardTypeEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\CardTypeEntityTypeConfiguration.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\EntityConfigurations\\CardTypeEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:20:59.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuyerEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:20:40.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRequestManager.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\Idempotency\\IRequestManager.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\Idempotency\\IRequestManager.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\Idempotency\\IRequestManager.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\Idempotency\\IRequestManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:19:50.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RequestManager.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\Idempotency\\RequestManager.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\Idempotency\\RequestManager.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\Idempotency\\RequestManager.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\Idempotency\\RequestManager.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:19:48.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaginatedResult.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Pagination\\PaginatedResult.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\Pagination\\PaginatedResult.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Pagination\\PaginatedResult.cs",
+              "RelativeToolTip": "BuildingBlocks\\Pagination\\PaginatedResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:17:33.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaginationRequest.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Pagination\\PaginationRequest.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\Pagination\\PaginationRequest.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Pagination\\PaginationRequest.cs",
+              "RelativeToolTip": "BuildingBlocks\\Pagination\\PaginationRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:17:30.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\OrderItem.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\OrderItem.cs",
+              "RelativeToolTip": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:07:40.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
