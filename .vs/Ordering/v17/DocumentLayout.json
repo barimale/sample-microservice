@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\sample-microservice\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\apis\\v1.0\\order\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\apis\\v1.0\\order\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\commands\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\commands\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\apis\\v1.0\\order\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\apis\\v1.0\\order\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\cqrs\\icommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\cqrs\\icommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateOrderCommand.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Commands\\CreateOrderCommand.cs",
+              "RelativeDocumentMoniker": "Ordering.Application\\Commands\\CreateOrderCommand.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Commands\\CreateOrderCommand.cs",
+              "RelativeToolTip": "Ordering.Application\\Commands\\CreateOrderCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:47:16.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateOrderHandler.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\CommandHandlers\\CreateOrderHandler.cs",
+              "RelativeDocumentMoniker": "Ordering.Application\\CommandHandlers\\CreateOrderHandler.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\CommandHandlers\\CreateOrderHandler.cs",
+              "RelativeToolTip": "Ordering.Application\\CommandHandlers\\CreateOrderHandler.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:46:38.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateOrder.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\APIs\\v1.0\\order\\CreateOrder.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\APIs\\v1.0\\order\\CreateOrder.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\APIs\\v1.0\\order\\CreateOrder.cs",
+              "RelativeToolTip": "Ordering.API\\APIs\\v1.0\\order\\CreateOrder.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:44:46.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteOrder.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\APIs\\v1.0\\order\\DeleteOrder.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\APIs\\v1.0\\order\\DeleteOrder.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\APIs\\v1.0\\order\\DeleteOrder.cs",
+              "RelativeToolTip": "Ordering.API\\APIs\\v1.0\\order\\DeleteOrder.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:45:48.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICommandHandler.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\CQRS\\ICommandHandler.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\CQRS\\ICommandHandler.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\CQRS\\ICommandHandler.cs",
+              "RelativeToolTip": "BuildingBlocks\\CQRS\\ICommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:44:08.683Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

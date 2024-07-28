@@ -1,4 +1,8 @@
 ﻿using Carter;
+using Mapster;
+using MediatR;
+using Ordering.Application.Dtos;
+using Ordering.Application.Orders.Commands.CreateOrder;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
@@ -8,7 +12,7 @@ namespace Ordering.API.Endpoints;
 //- Uses MediatR to send the command to the corresponding handler.
 //- Returns a response with the created order's ID.
 
-public record CreateOrderRequest(Order Order);
+public record CreateOrderRequest(OrderDto Order);
 public record CreateOrderResponse(Guid Id);
 
 public class CreateOrder : ICarterModule

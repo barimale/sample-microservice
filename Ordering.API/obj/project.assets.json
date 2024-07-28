@@ -700,6 +700,20 @@
           "bin/placeholder/BuildingBlocks.dll": {}
         }
       },
+      "Ordering.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BuildingBlocks": "1.0.0",
+          "Ordering.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ordering.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ordering.Application.dll": {}
+        }
+      },
       "Ordering.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2423,6 +2437,11 @@
       "path": "../BuildingBlocks/BuildingBlocks.csproj",
       "msbuildProject": "../BuildingBlocks/BuildingBlocks.csproj"
     },
+    "Ordering.Application/1.0.0": {
+      "type": "project",
+      "path": "../Ordering.Application/Ordering.Application.csproj",
+      "msbuildProject": "../Ordering.Application/Ordering.Application.csproj"
+    },
     "Ordering.Domain/1.0.0": {
       "type": "project",
       "path": "../Ordering.Domain/Ordering.Domain.csproj",
@@ -2433,6 +2452,7 @@
     "net8.0": [
       "BuildingBlocks >= 1.0.0",
       "Carter >= 8.2.1",
+      "Ordering.Application >= 1.0.0",
       "Ordering.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -2471,6 +2491,9 @@
           "projectReferences": {
             "G:\\sample-microservice\\BuildingBlocks\\BuildingBlocks.csproj": {
               "projectPath": "G:\\sample-microservice\\BuildingBlocks\\BuildingBlocks.csproj"
+            },
+            "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj": {
+              "projectPath": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj"
             },
             "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj": {
               "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj"
