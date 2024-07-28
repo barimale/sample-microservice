@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="APIs\v1.0\buyer\" />
+    <Folder Include="API\v1.0\buyer\" />
     <Folder Include="Infrastructure\Seeder\" />
   </ItemGroup>
 
