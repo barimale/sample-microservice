@@ -12,6 +12,7 @@ namespace Ordering.API.Endpoints;
 //- Uses MediatR to send the command to the corresponding handler.
 //- Returns a response with the created order's ID.
 
+// double check OrderDto - do it as is in Gifter
 public record CreateOrderRequest(OrderDto Order);
 public record CreateOrderResponse(Guid Id);
 
