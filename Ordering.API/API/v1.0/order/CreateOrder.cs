@@ -13,7 +13,7 @@ namespace Ordering.API.Endpoints;
 //- Returns a response with the created order's ID.
 
 // double check OrderDto - do it as is in Gifter
-public record CreateOrderRequest(OrderDto Order);
+public record CreateOrderRequest(OrderRequest Order);
 public record CreateOrderResponse(Guid Id);
 
 public class CreateOrder : ICarterModule

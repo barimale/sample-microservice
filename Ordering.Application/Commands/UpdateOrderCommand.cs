@@ -3,7 +3,7 @@ using FluentValidation;
 using Ordering.Application.Dtos;
 
 namespace Ordering.Application.Commands;
-public record UpdateOrderCommand(OrderDto Order)
+public record UpdateOrderCommand(OrderRequest Order)
     : ICommand<UpdateOrderResult>;
 
 public record UpdateOrderResult(bool IsSuccess);

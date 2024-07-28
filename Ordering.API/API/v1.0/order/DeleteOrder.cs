@@ -2,6 +2,7 @@
 using Carter;
 using Mapster;
 using MediatR;
+using Ordering.Application.Commands;
 
 namespace Ordering.API.Endpoints;
 

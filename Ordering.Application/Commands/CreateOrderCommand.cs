@@ -4,7 +4,7 @@ using Ordering.Application.Dtos;
 
 namespace Ordering.Application.Commands;
 
-public record CreateOrderCommand(OrderDto Order)
+public record CreateOrderCommand(OrderRequest Order)
     : ICommand<CreateOrderResult>;
 
 public record CreateOrderResult(Guid Id);
