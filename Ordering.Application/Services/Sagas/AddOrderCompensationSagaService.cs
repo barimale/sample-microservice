@@ -9,8 +9,8 @@ namespace Ordering.Application.Services.Sagas
     public class AddOrderSagaService
     {
         //// services
-        //private readonly IBuyerService _buyerService;
-        //private readonly IOrderService _orderService;
+        //private readonly IBuyerService _buyerService; httpclient
+        //private readonly IOrderService _orderService; httpclient
         //private readonly ILogger<AddOrderSagaService> _logger;
 
         //public AddOrderSagaService(

@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\sample-microservice\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\model\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\model\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\ordering.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\ordering.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\model\\createorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\model\\createorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ordering.Application",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
-              "RelativeDocumentMoniker": "Ordering.Application\\Ordering.Application.csproj",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
-              "RelativeToolTip": "Ordering.Application\\Ordering.Application.csproj",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-28T15:03:01.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateOrderRequest.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Model\\CreateOrderRequest.cs",
-              "RelativeDocumentMoniker": "Ordering.Application\\Model\\CreateOrderRequest.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Model\\CreateOrderRequest.cs",
-              "RelativeToolTip": "Ordering.Application\\Model\\CreateOrderRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:01:20.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateOrderResponse.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Model\\CreateOrderResponse.cs",
-              "RelativeDocumentMoniker": "Ordering.Application\\Model\\CreateOrderResponse.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Model\\CreateOrderResponse.cs",
-              "RelativeToolTip": "Ordering.Application\\Model\\CreateOrderResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:01:29.994Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

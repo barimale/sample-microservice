@@ -1,7 +1,7 @@
 ﻿using Carter;
 using Mapster;
 using MediatR;
-using Ordering.Application.Commands;
+using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
@@ -11,7 +11,6 @@ namespace Ordering.API.Endpoints;
 //- Uses MediatR to send the command to the corresponding handler.
 //- Returns a response with the created order's ID.
 
-// double check OrderDto - do it as is in Gifter
 public record CreateOrderRequest(Order Order);
 public record CreateOrderResponse(Guid Id);
 

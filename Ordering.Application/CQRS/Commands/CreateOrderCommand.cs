@@ -2,7 +2,7 @@
 using FluentValidation;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace Ordering.Application.Commands;
+namespace Ordering.Application.CQRS.Commands;
 
 public record CreateOrderCommand(Order Order)
     : ICommand<CreateOrderResult>;

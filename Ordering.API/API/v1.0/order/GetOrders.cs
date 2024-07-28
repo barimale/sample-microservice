@@ -21,7 +21,6 @@ public class GetOrders : ICarterModule
             //var result = await sender.Send(new GetOrdersQuery(request));
 
             //var response = result.Adapt<GetOrdersResponse>();
-
             return Results.Ok(null);
         })
         .WithName("GetOrders")
