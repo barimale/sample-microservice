@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.FunctionalTests", "Or
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common [nuget]", "common [nuget]", "{7CEF9039-AEB7-4EC9-921C-35A45E21E3B5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ordering", "ordering", "{D7E5B9A8-3F23-44A3-85E2-B91653E4758A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ordering-microservice", "ordering-microservice", "{D7E5B9A8-3F23-44A3-85E2-B91653E4758A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{9B899856-1D36-41D2-8C1F-64D8A971D911}"
 EndProject
