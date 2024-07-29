@@ -1,10 +1,5 @@
-﻿using FluentValidation;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.Extensions.Logging;
-using Ordering.API.API.Model;
+﻿using Ordering.API.API.Model;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
-using Ordering.Application.CQRS.Commands;
 
 namespace Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter
 {

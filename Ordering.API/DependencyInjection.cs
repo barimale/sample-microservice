@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
+using Ordering.API.Integration;
 
 namespace Ordering.API;
 
@@ -25,6 +26,11 @@ public static class DependencyInjection
 
         services.AddScoped<CreateOrderRequestIsValidFilter>();
         services.AddScoped<CreateOrderRequestValidator>();
+
+        services.AddHttpClient<IStarWarsService, StarWarsHttpClient>((client, sp) =>
+        {
+            return new StarWarsHttpClient("https://swapi.dev/api/", client);
+        });
         return services;
     }
 

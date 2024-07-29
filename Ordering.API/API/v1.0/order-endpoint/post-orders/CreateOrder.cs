@@ -3,6 +3,7 @@ using Mapster;
 using MediatR;
 using Ordering.API.API.Model;
 using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
+using Ordering.API.Integration;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
@@ -17,9 +18,11 @@ public class CreateOrder : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender) =>
+        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service) =>
         {
             var command = request.Adapt<CreateOrderCommand>();
+
+            var res = await service.GetPeople("123332");
 
             var result = await sender.Send(command);
 
