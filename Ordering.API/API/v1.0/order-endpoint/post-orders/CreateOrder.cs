@@ -1,8 +1,8 @@
 ﻿using Carter;
 using Mapster;
 using MediatR;
+using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Commands;
-using Ordering.Application.Model;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;

@@ -23,9 +23,12 @@
 
   <ItemGroup>
     <Folder Include="API\v1.0\buyer-endpoint\" />
+    <Folder Include="API\v1.0\order-endpoint\delete-orders\Model\" />
+    <Folder Include="API\v1.0\order-endpoint\delete-orders\Validators\" />
     <Folder Include="Infrastructure\Seeder-DB\" />
     <Folder Include="Application\" />
     <Folder Include="Application\Services\IAM\" />
+    <Folder Include="API\v1.0\order-endpoint\post-orders\Validators\" />
   </ItemGroup>
 
 </Project>

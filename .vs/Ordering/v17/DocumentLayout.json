@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8FB6069D-0FD2-4068-87AC-8AE476E6164B}|Ordering.FunctionalTests\\Order.FunctionalTests.csproj|g:\\sample-microservice\\ordering.functionaltests\\orderingapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB6069D-0FD2-4068-87AC-8AE476E6164B}|Ordering.FunctionalTests\\Order.FunctionalTests.csproj|solutionrelative:ordering.functionaltests\\orderingapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B13F0F-EC0B-4A77-B0D5-DDF93AE01CC6}|Ordering.UnitTests\\Ordering.UnitTests.csproj|g:\\sample-microservice\\ordering.unittests\\builders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B13F0F-EC0B-4A77-B0D5-DDF93AE01CC6}|Ordering.UnitTests\\Ordering.UnitTests.csproj|solutionrelative:ordering.unittests\\builders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|g:\\sample-microservice\\ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|solutionrelative:ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,19 +43,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrderingApiTests.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.FunctionalTests\\OrderingApiTests.cs",
+              "RelativeDocumentMoniker": "Ordering.FunctionalTests\\OrderingApiTests.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.FunctionalTests\\OrderingApiTests.cs",
+              "RelativeToolTip": "Ordering.FunctionalTests\\OrderingApiTests.cs",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAkwIgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:37:25.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Builders.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.UnitTests\\Builders.cs",
+              "RelativeDocumentMoniker": "Ordering.UnitTests\\Builders.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.UnitTests\\Builders.cs",
+              "RelativeToolTip": "Ordering.UnitTests\\Builders.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAjwBkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:35:16.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "RelativeDocumentMoniker": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "ToolTip": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "RelativeToolTip": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAUwD8AAAAsAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAUwDwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T11:31:14.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoggingBehavior.cs",
               "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Behaviors\\LoggingBehavior.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\Behaviors\\LoggingBehavior.cs",
@@ -60,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ValidationBehavior.cs",
               "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Behaviors\\ValidationBehavior.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\Behaviors\\ValidationBehavior.cs",
@@ -73,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DBloggingBehaviour.cs",
               "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Behaviors\\DBloggingBehaviour.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\Behaviors\\DBloggingBehaviour.cs",
@@ -86,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CreateOrder.cs",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\CreateOrder.cs",
               "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order-endpoint\\CreateOrder.cs",
