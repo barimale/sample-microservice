@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order-endpoint\\post-orders\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order-endpoint\\post-orders\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\integration\\istarwarsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\integration\\istarwarsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order\\post-orders\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order\\post-orders\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\integration\\starwarshttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\integration\\starwarshttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order\\post-orders\\filter\\createorderrequestisvalidfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order\\post-orders\\filter\\createorderrequestisvalidfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|G:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -27,12 +27,8 @@
       "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order-endpoint\\post-orders\\filter\\createorderrequestisvalidfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order-endpoint\\post-orders\\filter\\createorderrequestisvalidfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order-endpoint\\delete-orders\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order-endpoint\\delete-orders\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order\\delete-orders\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\api\\v1.0\\order\\delete-orders\\deleteorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,56 +38,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
-              "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwB0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T21:03:41.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CreateOrder.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\CreateOrder.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\CreateOrder.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\CreateOrder.cs",
-              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\CreateOrder.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBgAAAAWAAAA",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\post-orders\\CreateOrder.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order\\post-orders\\CreateOrder.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\post-orders\\CreateOrder.cs",
+              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order\\post-orders\\CreateOrder.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T19:04:23.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CreateOrderRequestIsValidFilter.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
+              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAASwBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T19:12:36.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "IStarWarsService.cs",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Integration\\IStarWarsService.cs",
               "RelativeDocumentMoniker": "Ordering.API\\Integration\\IStarWarsService.cs",
               "ToolTip": "G:\\sample-microservice\\Ordering.API\\Integration\\IStarWarsService.cs",
               "RelativeToolTip": "Ordering.API\\Integration\\IStarWarsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T21:05:23.07Z"
+              "WhenOpened": "2024-07-29T21:05:23.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StarWarsHttpClient.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Integration\\StarWarsHttpClient.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\Integration\\StarWarsHttpClient.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Integration\\StarWarsHttpClient.cs",
-              "RelativeToolTip": "Ordering.API\\Integration\\StarWarsHttpClient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAA+AAAA",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
+              "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAASwCAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T21:05:09.778Z"
+              "WhenOpened": "2024-07-29T21:03:41.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,26 +119,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CreateOrderRequestIsValidFilter.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
-              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order-endpoint\\post-orders\\Filter\\CreateOrderRequestIsValidFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T19:12:36.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "DeleteOrder.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\delete-orders\\DeleteOrder.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order-endpoint\\delete-orders\\DeleteOrder.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order-endpoint\\delete-orders\\DeleteOrder.cs",
-              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order-endpoint\\delete-orders\\DeleteOrder.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\delete-orders\\DeleteOrder.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order\\delete-orders\\DeleteOrder.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\delete-orders\\DeleteOrder.cs",
+              "RelativeToolTip": "Ordering.API\\API\\v1.0\\order\\delete-orders\\DeleteOrder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T19:06:34.995Z"
+              "WhenOpened": "2024-07-29T19:06:34.995Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -23,10 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\v1.0\buyer-endpoint\" />
-    <Folder Include="API\v1.0\order-endpoint\delete-orders\Filter\" />
-    <Folder Include="API\v1.0\order-endpoint\delete-orders\Model\" />
-    <Folder Include="API\v1.0\order-endpoint\delete-orders\Validators\" />
+    <Folder Include="API\v1.0\buyer\" />
+    <Folder Include="API\v1.0\order\delete-orders\Filter\" />
+    <Folder Include="API\v1.0\order\delete-orders\Model\" />
+    <Folder Include="API\v1.0\order\delete-orders\Validators\" />
     <Folder Include="Infrastructure\Seeder-DB\" />
     <Folder Include="Application\" />
     <Folder Include="Application\Services\IAM\" />
