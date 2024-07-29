@@ -21,3 +21,5 @@ https://dev.to/kaz_254/fluent-validation-in-aspnet-web-api-5d0o
 https://timdeschryver.dev/blog/refactor-your-net-http-clients-to-typed-http-clients#refactor-to-named-http-clients
 
 https://stackoverflow.com/questions/34834295/dependency-injection-inject-with-parameters
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/min-api-filters?view=aspnetcore-8.0
