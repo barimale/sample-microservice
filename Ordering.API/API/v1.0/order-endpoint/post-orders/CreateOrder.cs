@@ -30,7 +30,7 @@ public class CreateOrder : ICarterModule
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)
         .ProducesProblem(StatusCodes.Status400BadRequest)
-        .AddEndpointFilter<AEndpointFilter>()
+        .AddEndpointFilter<CreateOrderRequestIsValidFilter>()
         .WithSummary("Create Order")
         .WithDescription("Create Order");
     }

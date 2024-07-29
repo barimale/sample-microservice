@@ -11,6 +11,7 @@
           "AspNetCore.HealthChecks.UI.Client": "8.0.1",
           "BuildingBlocks": "1.0.0",
           "Carter": "8.2.1",
+          "FluentValidation.AspNetCore": "11.3.0",
           "Ordering.Application": "1.0.0",
           "Ordering.Domain": "1.0.0",
           "Ordering.Infrastructure": "1.0.0",

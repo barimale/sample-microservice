@@ -1,11 +1,12 @@
 ﻿using FluentValidation;
+using Ordering.API.API.Model;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.API.v1._0.order_endpoint.post_orders.Validators
 {
-    public class CreateOrderCommandValidator : AbstractValidator<Order>
+    public class CreateOrderRequestValidator : AbstractValidator<CreateOrderRequest>
     {
-        public CreateOrderCommandValidator()
+        public CreateOrderRequestValidator()
         {
             RuleFor(exp => exp.Description)
                 .NotEmpty()

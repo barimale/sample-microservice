@@ -1,7 +1,10 @@
-﻿using BuildingBlocks.Exceptions.Handler;
+﻿using BuildingBlocks.Behaviors;
+using BuildingBlocks.Exceptions.Handler;
 using Carter;
 using HealthChecks.UI.Client;
+using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
 
 namespace Ordering.API;
@@ -12,12 +15,15 @@ public static class DependencyInjection
     {
         services.AddCarter();
 
+        services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+
+
         services.AddExceptionHandler<CustomExceptionHandler>();
         services.AddHealthChecks();
         //.AddSqlServer(configuration.GetConnectionString("Database")!);
 
-        services.AddScoped<CreateOrderCommandValidator>();
-
+        services.AddScoped<CreateOrderRequestIsValidFilter>();
+        services.AddScoped<CreateOrderRequestValidator>();
         return services;
     }
 

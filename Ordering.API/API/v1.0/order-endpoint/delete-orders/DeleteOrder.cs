@@ -1,6 +1,7 @@
 ﻿using Carter;
 using Mapster;
 using MediatR;
+using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 
 namespace Ordering.API.Endpoints;
 
@@ -28,6 +29,7 @@ public class DeleteOrder : ICarterModule
         .Produces<DeleteOrderResponse>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
+        .AddEndpointFilter<CreateOrderRequestIsValidFilter>()
         .WithSummary("Delete Order")
         .WithDescription("Delete Order");
     }
