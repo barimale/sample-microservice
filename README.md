@@ -15,3 +15,5 @@ https://medium.com/@seldah/managing-multiple-versions-of-your-api-with-net-and-s
 https://www.roundthecode.com/dotnet-tutorials/create-custom-database-logging-provider-asp-net-core-ilogger
 
 https://code-maze.com/cqrs-mediatr-fluentvalidation/
+
+https://dev.to/kaz_254/fluent-validation-in-aspnet-web-api-5d0o
