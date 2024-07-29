@@ -1,4 +1,5 @@
 ﻿using BuildingBlocks.Behaviors;
+using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
@@ -10,11 +11,12 @@ public static class DependencyInjection
     public static IServiceCollection AddApplicationServices
         (this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+
         services.AddMediatR(config =>
         {
             config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             config.AddOpenBehavior(typeof(ValidationBehavior<,>));
-            config.AddOpenBehavior(typeof(DBloggingBehaviour<,>));
             config.AddOpenBehavior(typeof(LoggingBehavior<,>));
         });
 

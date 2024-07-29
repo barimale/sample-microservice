@@ -16,6 +16,10 @@ namespace Ordering.API
             // AddSecondWebApiClient
             // AddRabbitMqClient for choreography
 
+            // add logging middleware here
+            // add dblogging middleware here
+
+            // validation layer as a filter defined in each minimal api
             // WIP
             var assembly = typeof(Program).Assembly;
 

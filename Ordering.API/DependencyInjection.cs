@@ -2,6 +2,7 @@
 using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
 
 namespace Ordering.API;
 
@@ -13,7 +14,9 @@ public static class DependencyInjection
 
         services.AddExceptionHandler<CustomExceptionHandler>();
         services.AddHealthChecks();
-            //.AddSqlServer(configuration.GetConnectionString("Database")!);
+        //.AddSqlServer(configuration.GetConnectionString("Database")!);
+
+        services.AddScoped<CreateOrderCommandValidator>();
 
         return services;
     }

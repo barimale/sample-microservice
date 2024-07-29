@@ -1,0 +1,12 @@
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.csproj.AssemblyReference.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\MvcTestingAppManifest.json
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.AssemblyInfoInputs.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.AssemblyInfo.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.csproj.CoreCompileInputs.cache
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\Ordering_API.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\Ordering_Application.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\Ordering_Domain.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\Ordering_Infrastructure.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+G:\sample-microservice\Ordering.FunctionalTests\obj\Debug\net8.0\Order.FunctionalTests.sourcelink.json

@@ -2,6 +2,7 @@
 using Mapster;
 using MediatR;
 using Ordering.API.API.Model;
+using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
@@ -29,6 +30,7 @@ public class CreateOrder : ICarterModule
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)
         .ProducesProblem(StatusCodes.Status400BadRequest)
+        .AddEndpointFilter<AEndpointFilter>()
         .WithSummary("Create Order")
         .WithDescription("Create Order");
     }
