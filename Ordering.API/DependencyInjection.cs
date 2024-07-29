@@ -4,6 +4,7 @@ using Carter;
 using HealthChecks.UI.Client;
 using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.DependencyInjection;
 using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
 
@@ -15,7 +16,7 @@ public static class DependencyInjection
     {
         services.AddCarter();
 
-        services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+        //services.AddHttpLogging();
 
 
         services.AddExceptionHandler<CustomExceptionHandler>();
