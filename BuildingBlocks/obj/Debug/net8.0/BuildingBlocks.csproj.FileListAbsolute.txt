@@ -1,0 +1,13 @@
+G:\sample-microservice\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.deps.json
+G:\sample-microservice\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.dll
+G:\sample-microservice\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.pdb
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.csproj.AssemblyReference.cache
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.AssemblyInfoInputs.cache
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.AssemblyInfo.cs
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.csproj.CoreCompileInputs.cache
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.sourcelink.json
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.dll
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\refint\BuildingBlocks.dll
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.pdb
+G:\sample-microservice\BuildingBlocks\obj\Debug\net8.0\ref\BuildingBlocks.dll

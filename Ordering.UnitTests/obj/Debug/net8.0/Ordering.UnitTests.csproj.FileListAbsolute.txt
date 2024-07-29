@@ -251,3 +251,10 @@ E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.
 E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\refint\Ordering.UnitTests.dll
 E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.genruntimeconfig.cache
 E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\ref\Ordering.UnitTests.dll
+G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Ordering.UnitTests
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.AssemblyReference.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfoInputs.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfo.cs
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.CoreCompileInputs.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.sourcelink.json
