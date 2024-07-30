@@ -22,7 +22,7 @@ public class CreateOrder : ICarterModule
         {
             var command = request.Adapt<CreateOrderCommand>();
 
-            var res = await service.GetPeople("123332");
+            var res = await service.GetPeople("1");
 
             var result = await sender.Send(command);
 

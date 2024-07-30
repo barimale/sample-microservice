@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="API\v2.0\" />
     <Folder Include="API\v1.0\buyer\" />
     <Folder Include="API\v1.0\order\delete-orders\Filter\" />
     <Folder Include="API\v1.0\order\delete-orders\Model\" />
