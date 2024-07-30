@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
+using Ordering.API.Integration;
 using System.Reflection;
 
 namespace Ordering.Application;
@@ -21,6 +22,13 @@ public static class DependencyInjection
         });
 
         services.AddFeatureManagement();
+
+        var connectionString = configuration.GetConnectionString("StarWars");
+        // "https://swapi.dev/api/"
+        services.AddHttpClient<IStarWarsService, StarWarsHttpClient>((client, sp) =>
+        {
+            return new StarWarsHttpClient(connectionString, client);
+        });
         // WIP
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
 

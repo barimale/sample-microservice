@@ -11,8 +11,8 @@ class PaymentMethodEntityTypeConfiguration
 
         paymentConfiguration.Ignore(b => b.DomainEvents);
 
-        paymentConfiguration.Property(b => b.Id)
-            .UseHiLo("paymentseq");
+        paymentConfiguration.Property(b => b.Id);
+            //.UseHiLo("paymentseq");
 
         paymentConfiguration.Property<int>("BuyerId");
 

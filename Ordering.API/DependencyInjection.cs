@@ -27,10 +27,6 @@ public static class DependencyInjection
         services.AddScoped<CreateOrderRequestIsValidFilter>();
         services.AddScoped<CreateOrderRequestValidator>();
 
-        services.AddHttpClient<IStarWarsService, StarWarsHttpClient>((client, sp) =>
-        {
-            return new StarWarsHttpClient("https://swapi.dev/api/", client);
-        });
         return services;
     }
 

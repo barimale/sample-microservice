@@ -11,8 +11,8 @@ class OrderItemEntityTypeConfiguration
 
         orderItemConfiguration.Ignore(b => b.DomainEvents);
 
-        orderItemConfiguration.Property(o => o.Id)
-            .UseHiLo("orderitemseq");
+        orderItemConfiguration.Property(o => o.Id);
+            //.UseHiLo("orderitemseq");
 
         orderItemConfiguration.Property<int>("OrderId");
     }
