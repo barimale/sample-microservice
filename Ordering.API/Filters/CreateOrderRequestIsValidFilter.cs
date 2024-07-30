@@ -1,7 +1,7 @@
 ﻿using Ordering.API.API.Model;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
 
-namespace Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter
+namespace Ordering.API.Filters
 {
     public class CreateOrderRequestIsValidFilter : IEndpointFilter
     {

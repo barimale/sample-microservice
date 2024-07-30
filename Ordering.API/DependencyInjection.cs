@@ -5,8 +5,8 @@ using HealthChecks.UI.Client;
 using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
-using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
 using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
+using Ordering.API.Filters;
 using Ordering.API.Integration;
 
 namespace Ordering.API;

@@ -2,7 +2,7 @@
 using Mapster;
 using MediatR;
 using Ordering.API.API.Model;
-using Ordering.API.API.v1._0.order_endpoint.delete_orders.Filter;
+using Ordering.API.Filters;
 using Ordering.API.Integration;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
