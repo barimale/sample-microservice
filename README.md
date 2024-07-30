@@ -23,3 +23,5 @@ https://timdeschryver.dev/blog/refactor-your-net-http-clients-to-typed-http-clie
 https://stackoverflow.com/questions/34834295/dependency-injection-inject-with-parameters
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/min-api-filters?view=aspnetcore-8.0
+
+https://github.com/oskardudycz/EventSourcing.NetCore
