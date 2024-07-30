@@ -3,8 +3,8 @@ using Mapster;
 using MediatR;
 using Ordering.API.API.Model;
 using Ordering.API.Filters;
-using Ordering.API.Integration;
 using Ordering.Application.CQRS.Commands;
+using Ordering.Application.Integration;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
@@ -20,7 +20,7 @@ public class CreateOrder : ICarterModule
     {
         app.MapPost("/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service) =>
         {
-            var command = request.Adapt<CreateOrderCommand>();
+            CreateOrderCommand command = request.Adapt<CreateOrderCommand>();
 
             var res = await service.GetPeople("1");
 
@@ -33,7 +33,7 @@ public class CreateOrder : ICarterModule
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)
         .ProducesProblem(StatusCodes.Status400BadRequest)
-        .AddEndpointFilter<CreateOrderRequestIsValidFilter>()
+        .AddEndpointFilter<CreateOrderRequestValidationFilter>()
         .WithSummary("Create Order")
         .WithDescription("Create Order");
     }

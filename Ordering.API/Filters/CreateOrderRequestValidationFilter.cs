@@ -1,18 +1,18 @@
 ﻿using Ordering.API.API.Model;
-using Ordering.API.API.v1._0.order_endpoint.post_orders.Validators;
+using Ordering.API.Validators;
 
 namespace Ordering.API.Filters
 {
-    public class CreateOrderRequestIsValidFilter : IEndpointFilter
+    public class CreateOrderRequestValidationFilter : IEndpointFilter
     {
         private readonly ILogger _logger;
         private readonly CreateOrderRequestValidator _createOrderRequestValidator;
 
-        public CreateOrderRequestIsValidFilter(
+        public CreateOrderRequestValidationFilter(
             ILoggerFactory loggerFactory,
             CreateOrderRequestValidator createOrderRequestValidator)
         {
-            _logger = loggerFactory.CreateLogger<CreateOrderRequestIsValidFilter>();
+            _logger = loggerFactory.CreateLogger<CreateOrderRequestValidationFilter>();
             _createOrderRequestValidator = createOrderRequestValidator;
         }
 

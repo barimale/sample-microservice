@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
-using Ordering.API.Integration;
+using Ordering.Application.Integration;
 using System.Reflection;
 
 namespace Ordering.Application;

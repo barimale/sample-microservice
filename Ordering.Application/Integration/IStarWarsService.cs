@@ -1,4 +1,4 @@
-﻿namespace Ordering.API.Integration
+﻿namespace Ordering.Application.Integration
 {
     public interface IStarWarsService
     {

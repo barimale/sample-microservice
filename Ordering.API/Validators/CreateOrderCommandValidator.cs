@@ -2,7 +2,7 @@
 using Ordering.API.API.Model;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace Ordering.API.API.v1._0.order_endpoint.post_orders.Validators
+namespace Ordering.API.Validators
 {
     public class CreateOrderRequestValidator : AbstractValidator<CreateOrderRequest>
     {

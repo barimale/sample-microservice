@@ -225,6 +225,9 @@
               },
               "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj": {
                 "projectPath": "G:\\sample-microservice\\Ordering.Domain\\Ordering.Domain.csproj"
+              },
+              "G:\\sample-microservice\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "G:\\sample-microservice\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
               }
             }
           }
