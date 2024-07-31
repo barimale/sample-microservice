@@ -19,7 +19,7 @@ public class CreateOrder : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service, ILogger<CreateOrder> logger) =>
+        app.MapPost("api/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service, ILogger<CreateOrder> logger) =>
         {
             CreateOrderCommand command = request.Adapt<CreateOrderCommand>();
 

@@ -23,10 +23,13 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Ordering.API\Ordering.API.csproj" />
+    <ProjectReference Include="..\Ordering.API\Ordering.API.csproj" IsAspireProjectResource="false"/>
     <ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
     <ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<Using Include="Aspire.Hosting.Testing" />
+		<Using Include="Xunit" />
+	</ItemGroup>
 </Project>

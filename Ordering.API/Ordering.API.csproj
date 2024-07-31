@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+	  <RootNamespace>Ordering.API</RootNamespace>
+	  <UserSecretsId>5010529d-3715-4edb-9982-7efdf1b190cc</UserSecretsId>
+	  <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\Ordering.Domain</DockerfileContext>
@@ -11,6 +13,10 @@
   <ItemGroup>
     <None Remove="C:\Users\mateu\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
   </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Order.FunctionalTests" />
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />

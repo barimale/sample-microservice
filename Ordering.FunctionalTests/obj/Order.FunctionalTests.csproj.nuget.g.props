@@ -16,6 +16,8 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\2.8.2\build\net6.0\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\2.8.2\build\net6.0\xunit.runner.visualstudio.props')" />
     <Import Project="$(NuGetPackageRoot)xunit.core\2.9.0\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.9.0\build\xunit.core.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.10.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.10.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.10.0\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.10.0\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.10.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.10.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props')" />
@@ -24,6 +26,9 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\mateu\.nuget\packages\xunit.analyzers\1.15.0</Pkgxunit_analyzers>
+    <PkgTypeGen Condition=" '$(PkgTypeGen)' == '' ">C:\Users\mateu\.nuget\packages\typegen\2.5.0</PkgTypeGen>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\mateu\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\mateu\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\mateu\.nuget\packages\grpc.tools\2.63.0</PkgGrpc_Tools>
   </PropertyGroup>
 </Project>
