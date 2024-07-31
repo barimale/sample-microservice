@@ -25,3 +25,5 @@ https://stackoverflow.com/questions/34834295/dependency-injection-inject-with-pa
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/min-api-filters?view=aspnetcore-8.0
 
 https://github.com/oskardudycz/EventSourcing.NetCore
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-logging/?view=aspnetcore-8.0
