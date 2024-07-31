@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="tgconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="C:\Users\mateu\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
   </ItemGroup>
 
@@ -42,5 +46,17 @@
     <Folder Include="Application\" />
     <Folder Include="Application\Services\IAM\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="tgconfig.json" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="TypeGen" Version="2.5.0" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
+		<Exec Command="dotnet-typegen --project-folder  . generate&#xD;&#xA;" />
+	</Target>
 
 </Project>

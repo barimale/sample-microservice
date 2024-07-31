@@ -3,8 +3,10 @@ G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Applicatio
 G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Application.pdb
 G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\BuildingBlocks.dll
 G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.dll
+G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Infrastructure.dll
 G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\BuildingBlocks.pdb
 G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.pdb
+G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Infrastructure.pdb
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.AssemblyReference.cache
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfoInputs.cache
@@ -16,5 +18,3 @@ G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Applicatio
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\refint\Ordering.Application.dll
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\Ordering.Application.pdb
 G:\sample-microservice\Ordering.Application\obj\Debug\net8.0\ref\Ordering.Application.dll
-G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Infrastructure.dll
-G:\sample-microservice\Ordering.Application\bin\Debug\net8.0\Ordering.Infrastructure.pdb

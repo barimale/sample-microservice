@@ -3643,7 +3643,8 @@
           "Ordering.Application": "1.0.0",
           "Ordering.Domain": "1.0.0",
           "Ordering.Infrastructure": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "TypeGen": "2.5.0"
         },
         "compile": {
           "bin/placeholder/Ordering.API.dll": {}

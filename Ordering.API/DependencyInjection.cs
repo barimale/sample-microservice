@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Ordering.API.Filters;
 using Ordering.API.Validators;
 
-namespace Ordering.Application;
+namespace Ordering.API;
 
 public static class DependencyInjection
 {

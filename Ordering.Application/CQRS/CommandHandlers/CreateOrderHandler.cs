@@ -3,7 +3,7 @@ using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Infrastructure;
 
-namespace Ordering.Application.Orders.Commands.CreateOrder;
+namespace Ordering.Application.CQRS.CommandHandlers;
 public class CreateOrderHandler(OrderingContext dbContext)
     : ICommandHandler<CreateOrderCommand, CreateOrderResult>
 {

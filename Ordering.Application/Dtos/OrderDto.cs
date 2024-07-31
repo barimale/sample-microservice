@@ -1,5 +1,8 @@
-﻿namespace Ordering.Application.Dtos;
+﻿using TypeGen.Core.TypeAnnotations;
 
+namespace Ordering.Application.Dtos;
+
+[ExportTsInterface]
 public record OrderDto(
     Guid Id,
     Guid CustomerId,
@@ -11,6 +14,7 @@ public record OrderDto(
     List<OrderItemDto> OrderItems);
 
 
+[ExportTsEnumAttribute]
 public enum OrderStatus
 {
     Draft = 1,

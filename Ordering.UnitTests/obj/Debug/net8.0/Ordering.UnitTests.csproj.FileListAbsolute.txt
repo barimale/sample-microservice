@@ -252,12 +252,6 @@ E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\refint\Ordering.Uni
 E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.genruntimeconfig.cache
 E:\eShop — order\tests\Ordering.UnitTests\obj\Debug\net8.0\ref\Ordering.UnitTests.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Ordering.UnitTests
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.AssemblyReference.cache
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfoInputs.cache
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfo.cs
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.CoreCompileInputs.cache
-G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.sourcelink.json
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\testhost.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\testhost.exe
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
@@ -425,6 +419,12 @@ G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudi
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.Domain.dll
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Ordering.Domain.pdb
 G:\sample-microservice\Ordering.UnitTests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.AssemblyReference.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfoInputs.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.AssemblyInfo.cs
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.csproj.CoreCompileInputs.cache
+G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.sourcelink.json
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.3F6D2F5F.Up2Date
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\Ordering.UnitTests.dll
 G:\sample-microservice\Ordering.UnitTests\obj\Debug\net8.0\refint\Ordering.UnitTests.dll

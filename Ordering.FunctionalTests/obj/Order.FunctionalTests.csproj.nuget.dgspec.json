@@ -175,6 +175,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "TypeGen": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [

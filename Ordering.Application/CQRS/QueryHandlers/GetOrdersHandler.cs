@@ -5,7 +5,7 @@ using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 using Ordering.Infrastructure;
 
-namespace Ordering.Application.Orders.Queries.GetOrders;
+namespace Ordering.Application.CQRS.QueryHandlers;
 public class GetOrdersHandler(OrderingContext dbContext)
     : IQueryHandler<GetOrdersQuery, GetOrdersResult>
 {
@@ -31,6 +31,6 @@ public class GetOrdersHandler(OrderingContext dbContext)
                 pageIndex,
                 pageSize,
                 orders.Count,
-                null));        
+                null));
     }
 }
