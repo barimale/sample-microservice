@@ -4,8 +4,8 @@ namespace Ordering.Application.Dtos;
 
 [ExportTsInterface]
 public record OrderDto(
-    Guid Id,
-    Guid CustomerId,
+    int Id,
+    int CustomerId,
     string OrderName,
     AddressDto ShippingAddress,
     AddressDto BillingAddress,

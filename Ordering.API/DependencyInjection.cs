@@ -13,12 +13,8 @@ public static class DependencyInjection
     {
         services.AddCarter();
 
-        //services.AddHttpLogging();
-
-
         services.AddExceptionHandler<CustomExceptionHandler>();
         services.AddHealthChecks();
-        //.AddSqlServer(configuration.GetConnectionString("Database")!);
 
         services.AddScoped<CreateOrderRequestValidationFilter>();
         services.AddScoped<CreateOrderRequestValidator>();

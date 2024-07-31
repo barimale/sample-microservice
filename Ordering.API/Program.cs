@@ -6,6 +6,7 @@ using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
+using eShop.Ordering.API.Infrastructure;
 
 namespace Ordering.API
 {
@@ -23,24 +24,15 @@ namespace Ordering.API
                 builder.Services.AddHttpLogging(logging =>
                 {
                     logging.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
-                    //logging.RequestHeaders.Add("sec-ch-ua");
-                    //logging.ResponseHeaders.Add("MyResponseHeader");
-                    //logging.MediaTypeOptions.AddText("application/javascript");
                     logging.RequestBodyLogLimit = 4096;
                     logging.ResponseBodyLogLimit = 4096;
                 });
 
-                // Add services to the container.
-                // AddSecondWebApiClient
-                // AddRabbitMqClient for choreography
-                // NLog: Setup NLog for Dependency injection
                 builder.Logging.ClearProviders();
                 builder.Logging.SetMinimumLevel(LogLevel.Trace);
                 builder.Host.UseNLog();
                 // add dblogging middleware here
 
-                // validation layer as a filter defined in each minimal api
-                // WIP
                 var assembly = typeof(Program).Assembly;
 
                 builder.Services
@@ -52,7 +44,10 @@ namespace Ordering.API
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen();
 
+                builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
+
                 var app = builder.Build();
+
 
                 app.UseHttpLogging();
                 app.UseApiServices();
@@ -82,7 +77,6 @@ namespace Ordering.API
             }
             finally
             {
-                // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
                 NLog.LogManager.Shutdown();
             }
         }

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 using Ordering.Infrastructure;
+using System.Linq;
 
 namespace Ordering.Application.CQRS.QueryHandlers;
 public class GetOrdersHandler(OrderingContext dbContext)
@@ -31,6 +32,7 @@ public class GetOrdersHandler(OrderingContext dbContext)
                 pageIndex,
                 pageSize,
                 orders.Count,
-                null));
+                orders.ToList()
+                .Select(p => new OrderDto(p.Id, p.BuyerId.Value, "asdasd", null, null, null, OrderStatus.Completed, null)))); // WIP oder to orderdto
     }
 }
