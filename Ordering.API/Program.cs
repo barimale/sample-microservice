@@ -1,12 +1,16 @@
 
 using BuildingBlocks.Behaviors;
 using Carter;
+using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using NLog.Extensions.Logging;
+using NLog;
 using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
 using System;
+using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace Ordering.API
 {
@@ -18,6 +22,19 @@ namespace Ordering.API
             {
                 var builder = WebApplication.CreateBuilder(args);
 
+                LogManager.Configuration = new NLogLoggingConfiguration(
+                    builder.Configuration.GetSection("NLog"));
+
+                builder.Services.AddHttpLogging(logging =>
+                {
+                    logging.LoggingFields = HttpLoggingFields.All;
+                    //logging.RequestHeaders.Add("sec-ch-ua");
+                    //logging.ResponseHeaders.Add("MyResponseHeader");
+                    //logging.MediaTypeOptions.AddText("application/javascript");
+                    logging.RequestBodyLogLimit = 4096;
+                    logging.ResponseBodyLogLimit = 4096;
+                });
+
                 // Add services to the container.
                 // AddSecondWebApiClient
                 // AddRabbitMqClient for choreography
@@ -25,7 +42,6 @@ namespace Ordering.API
                 builder.Logging.ClearProviders();
                 builder.Logging.SetMinimumLevel(LogLevel.Trace);
                 builder.Host.UseNLog();
-                // add logging middleware here
                 // add dblogging middleware here
 
                 // validation layer as a filter defined in each minimal api
@@ -43,6 +59,7 @@ namespace Ordering.API
 
                 var app = builder.Build();
 
+                app.UseHttpLogging();
                 app.UseApiServices();
 
                 // TO Seed method as is in eShop .AddMigration

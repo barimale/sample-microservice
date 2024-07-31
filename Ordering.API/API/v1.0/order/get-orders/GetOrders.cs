@@ -2,6 +2,7 @@
 using Carter;
 using Mapster;
 using MediatR;
+using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
@@ -33,6 +34,7 @@ public class GetOrders : ICarterModule
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
         .AddEndpointFilter<GetOrdersFilter>()
+        .WithHttpLogging(HttpLoggingFields.All)
         .WithSummary("Get Orders")
         .WithDescription("Get Orders");
     }

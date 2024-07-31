@@ -12,6 +12,7 @@
           "BuildingBlocks": "1.0.0",
           "Carter": "8.2.1",
           "FluentValidation.AspNetCore": "11.3.0",
+          "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
           "Ordering.Application": "1.0.0",
           "Ordering.Domain": "1.0.0",

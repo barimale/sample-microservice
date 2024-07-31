@@ -1,6 +1,7 @@
 ﻿using Carter;
 using Mapster;
 using MediatR;
+using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.API.Model;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Commands;
@@ -39,6 +40,8 @@ public class CreateOrder : ICarterModule
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .AddEndpointFilter<CreateOrderRequestValidationFilter>()
+        .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
+        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders)
         .WithSummary("Create Order")
         .WithDescription("Create Order");
     }
