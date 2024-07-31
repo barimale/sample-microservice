@@ -39,9 +39,9 @@ public class CreateOrder : ICarterModule
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)
         .ProducesProblem(StatusCodes.Status400BadRequest)
+        .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.RequestBody)
         .AddEndpointFilter<CreateOrderRequestValidationFilter>()
-        .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
-        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders)
+        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders | HttpLoggingFields.ResponseBody)
         .WithSummary("Create Order")
         .WithDescription("Create Order");
     }

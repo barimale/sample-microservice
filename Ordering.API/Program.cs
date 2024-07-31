@@ -1,15 +1,10 @@
-
-using BuildingBlocks.Behaviors;
-using Carter;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using NLog.Extensions.Logging;
 using NLog;
 using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
-using System;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace Ordering.API
@@ -27,7 +22,7 @@ namespace Ordering.API
 
                 builder.Services.AddHttpLogging(logging =>
                 {
-                    logging.LoggingFields = HttpLoggingFields.All;
+                    logging.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
                     //logging.RequestHeaders.Add("sec-ch-ua");
                     //logging.ResponseHeaders.Add("MyResponseHeader");
                     //logging.MediaTypeOptions.AddText("application/javascript");

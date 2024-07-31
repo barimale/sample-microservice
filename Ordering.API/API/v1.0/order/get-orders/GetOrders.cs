@@ -33,9 +33,9 @@ public class GetOrders : ICarterModule
         .Produces<GetOrdersResponse>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
+        .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
         .AddEndpointFilter<GetOrdersFilter>()
-        .WithHttpLogging(HttpLoggingFields.All)
-        .WithSummary("Get Orders")
+        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders).WithSummary("Get Orders")
         .WithDescription("Get Orders");
     }
 }
