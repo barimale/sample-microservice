@@ -45,7 +45,7 @@ namespace Ordering.API
 
                 app.UseApiServices();
 
-                // TO Seed method
+                // TO Seed method as is in eShop .AddMigration
                 try
                 {
                     using var scope = app.Services.CreateScope();
