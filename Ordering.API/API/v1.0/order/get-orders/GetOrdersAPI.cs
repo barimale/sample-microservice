@@ -5,6 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
+using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
@@ -15,19 +16,28 @@ namespace Ordering.API.Endpoints;
 
 //public record GetOrdersRequest(PaginationRequest PaginationRequest);
 public record GetOrdersResponse(
-    PaginatedResult<Order> Orders);
+    PaginatedResult<OrderDto> Orders);
 
 public class GetOrders : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
         app.MapGet("api/orders",async ([AsParameters] PaginationRequest request,
-                ISender sender) =>
+                ISender sender, ILogger<GetOrders> logger) =>
                 {
-                    var result = await sender.Send(new GetOrdersQuery(request));
+                    try
+                    {
+                        var result = await sender.Send(new GetOrdersQuery(request));
 
-                    var response = result.Adapt<GetOrdersResponse>();
-                    return Results.Ok(response);
+                        var response = result.Adapt<GetOrdersResponse>();
+                        return Results.Ok(response);
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.LogError(ex.Message);
+                    }
+
+                    return Results.BadRequest();
                 })
         .WithName("GetOrders")
         .Produces<GetOrdersResponse>(StatusCodes.Status200OK)

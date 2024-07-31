@@ -3,5 +3,5 @@
 namespace Ordering.API.API.Model
 {
     [ExportTsInterface]
-    public record class CreateOrderResponse(Guid Id);
+    public record class CreateOrderResponse(int Id);
 }

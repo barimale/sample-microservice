@@ -21,10 +21,11 @@ public class CreateOrderHandler(OrderingContext dbContext)
         var cardHolderName = "FakeName";
         var cardExpiration = DateTime.UtcNow.AddYears(1);
         var expectedResult = 1;
+        var description = "notnulldescription";
 
         //Act 
         var fakeOrder = new Order("1", "fakeName", new Address(street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration);
-
+        fakeOrder.Description = description;
 
         var result = dbContext.Orders.Add(fakeOrder);
         await dbContext.SaveChangesAsync(cancellationToken);

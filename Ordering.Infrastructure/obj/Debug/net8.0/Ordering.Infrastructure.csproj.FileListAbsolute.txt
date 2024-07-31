@@ -29,3 +29,5 @@ G:\sample-microservice\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrast
 G:\sample-microservice\Ordering.Infrastructure\obj\Debug\net8.0\refint\Ordering.Infrastructure.dll
 G:\sample-microservice\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.pdb
 G:\sample-microservice\Ordering.Infrastructure\obj\Debug\net8.0\ref\Ordering.Infrastructure.dll
+G:\sample-microservice\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.runtimeconfig.json
+G:\sample-microservice\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.genruntimeconfig.cache

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Ordering.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,33 +14,15 @@ namespace Ordering.Infrastructure.Migrations
             migrationBuilder.EnsureSchema(
                 name: "ordering");
 
-            migrationBuilder.CreateSequence(
-                name: "buyerseq",
-                schema: "ordering",
-                incrementBy: 10);
-
-            migrationBuilder.CreateSequence(
-                name: "orderitemseq",
-                incrementBy: 10);
-
-            migrationBuilder.CreateSequence(
-                name: "orderseq",
-                schema: "ordering",
-                incrementBy: 10);
-
-            migrationBuilder.CreateSequence(
-                name: "paymentseq",
-                schema: "ordering",
-                incrementBy: 10);
-
             migrationBuilder.CreateTable(
                 name: "buyers",
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false),
-                    IdentityGuid = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: true)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdentityGuid = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,8 +34,8 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false, defaultValue: 1),
-                    Name = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -61,26 +43,13 @@ namespace Ordering.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "orderstatus",
-                schema: "ordering",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false, defaultValue: 1),
-                    Name = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_orderstatus", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "requests",
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Time = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Time = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -92,13 +61,14 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false),
-                    CardTypeId = table.Column<int>(type: "integer", nullable: false),
-                    BuyerId = table.Column<int>(type: "integer", nullable: false),
-                    Alias = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
-                    CardHolderName = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
-                    CardNumber = table.Column<string>(type: "character varying(25)", maxLength: 25, nullable: false),
-                    Expiration = table.Column<DateTime>(type: "timestamp with time zone", maxLength: 25, nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CardTypeId = table.Column<int>(type: "int", nullable: false),
+                    BuyerId = table.Column<int>(type: "int", nullable: false),
+                    Alias = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    CardHolderName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    CardNumber = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
+                    Expiration = table.Column<DateTime>(type: "datetime2", maxLength: 25, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -124,17 +94,18 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false),
-                    Address_Street = table.Column<string>(type: "text", nullable: true),
-                    Address_City = table.Column<string>(type: "text", nullable: true),
-                    Address_State = table.Column<string>(type: "text", nullable: true),
-                    Address_Country = table.Column<string>(type: "text", nullable: true),
-                    Address_ZipCode = table.Column<string>(type: "text", nullable: true),
-                    OrderStatusId = table.Column<int>(type: "integer", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    BuyerId = table.Column<int>(type: "integer", nullable: true),
-                    OrderDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    PaymentMethodId = table.Column<int>(type: "integer", nullable: true)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Address_Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address_City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address_State = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address_Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address_ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BuyerId = table.Column<int>(type: "int", nullable: true),
+                    OrderStatus = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PaymentMethodId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -145,13 +116,6 @@ namespace Ordering.Infrastructure.Migrations
                         principalSchema: "ordering",
                         principalTable: "buyers",
                         principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_orders_orderstatus_OrderStatusId",
-                        column: x => x.OrderStatusId,
-                        principalSchema: "ordering",
-                        principalTable: "orderstatus",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_orders_paymentmethods_PaymentMethodId",
                         column: x => x.PaymentMethodId,
@@ -166,14 +130,15 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false),
-                    ProductId = table.Column<int>(type: "integer", nullable: false),
-                    OrderId = table.Column<int>(type: "integer", nullable: false),
-                    Discount = table.Column<decimal>(type: "numeric", nullable: false),
-                    PictureUrl = table.Column<string>(type: "text", nullable: true),
-                    ProductName = table.Column<string>(type: "text", nullable: false),
-                    UnitPrice = table.Column<decimal>(type: "numeric", nullable: false),
-                    Units = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Units = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -205,12 +170,6 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 table: "orders",
                 column: "BuyerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_orders_OrderStatusId",
-                schema: "ordering",
-                table: "orders",
-                column: "OrderStatusId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_orders_PaymentMethodId",
@@ -247,10 +206,6 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering");
 
             migrationBuilder.DropTable(
-                name: "orderstatus",
-                schema: "ordering");
-
-            migrationBuilder.DropTable(
                 name: "paymentmethods",
                 schema: "ordering");
 
@@ -260,21 +215,6 @@ namespace Ordering.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "cardtypes",
-                schema: "ordering");
-
-            migrationBuilder.DropSequence(
-                name: "buyerseq",
-                schema: "ordering");
-
-            migrationBuilder.DropSequence(
-                name: "orderitemseq");
-
-            migrationBuilder.DropSequence(
-                name: "orderseq",
-                schema: "ordering");
-
-            migrationBuilder.DropSequence(
-                name: "paymentseq",
                 schema: "ordering");
         }
     }
