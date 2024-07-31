@@ -4,5 +4,5 @@ using TypeGen.Core.TypeAnnotations;
 namespace Ordering.API.API.Model
 {
     [ExportTsInterface]
-    public record class GetOrderResponse(List<OrderDto> Orders);
+    public record class GetOrdersResponse(List<OrderDto> Orders);
 }
