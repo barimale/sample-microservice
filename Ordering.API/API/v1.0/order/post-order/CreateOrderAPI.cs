@@ -18,12 +18,17 @@ public class CreateOrder : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service) =>
+        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender, IStarWarsService service, ILogger<CreateOrder> logger) =>
         {
             CreateOrderCommand command = request.Adapt<CreateOrderCommand>();
 
             var res = await service.GetPeople("1");
-
+            logger.LogTrace("This is a Trace log, the most detailed information.");
+            logger.LogDebug("This is a Debug log, useful for debugging.");
+            logger.LogInformation("This is an Information log, general info about app flow.");
+            logger.LogWarning("This is a Warning log, indicating a potential issue.");
+            logger.LogError("This is an Error log, indicating a failure in the current operation.");
+            logger.LogCritical("This is a Critical log, indicating a serious failure in the application.");
             var result = await sender.Send(command);
 
             var response = result.Adapt<CreateOrderResponse>();

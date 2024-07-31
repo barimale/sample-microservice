@@ -1,8 +1,12 @@
 
 using BuildingBlocks.Behaviors;
 using Carter;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
+using System;
 
 namespace Ordering.API
 {
@@ -10,42 +14,65 @@ namespace Ordering.API
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            // AddSecondWebApiClient
-            // AddRabbitMqClient for choreography
-
-            // add logging middleware here
-            // add dblogging middleware here
-
-            // validation layer as a filter defined in each minimal api
-            // WIP
-            var assembly = typeof(Program).Assembly;
-
-            builder.Services
-                .AddApplicationServices(builder.Configuration)
-                .AddInfrastructureServices(builder.Configuration)
-                .AddApiServices(builder.Configuration);
-
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-
-            app.UseApiServices();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            try
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                var builder = WebApplication.CreateBuilder(args);
+
+                // Add services to the container.
+                // AddSecondWebApiClient
+                // AddRabbitMqClient for choreography
+                // NLog: Setup NLog for Dependency injection
+                builder.Logging.ClearProviders();
+                builder.Logging.SetMinimumLevel(LogLevel.Trace);
+                builder.Host.UseNLog();
+                // add logging middleware here
+                // add dblogging middleware here
+
+                // validation layer as a filter defined in each minimal api
+                // WIP
+                var assembly = typeof(Program).Assembly;
+
+                builder.Services
+                    .AddApplicationServices(builder.Configuration)
+                    .AddInfrastructureServices(builder.Configuration)
+                    .AddApiServices(builder.Configuration);
+
+                // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+                builder.Services.AddEndpointsApiExplorer();
+                builder.Services.AddSwaggerGen();
+
+                var app = builder.Build();
+
+                app.UseApiServices();
+
+                // TO Seed method
+                try
+                {
+                    using var scope = app.Services.CreateScope();
+                    OrderingContext context = scope.ServiceProvider.GetRequiredService<OrderingContext>();
+                    context.Database.Migrate();
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("On Migrate error");
+                }
+
+                // Configure the HTTP request pipeline.
+                if (app.Environment.IsDevelopment())
+                {
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+                }
+
+                app.UseHttpsRedirection();
+
+                app.Run();
             }
-
-            app.UseHttpsRedirection();
-
-            app.Run();
+            finally
+            {
+                // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
+                NLog.LogManager.Shutdown();
+            }
         }
     }
 }

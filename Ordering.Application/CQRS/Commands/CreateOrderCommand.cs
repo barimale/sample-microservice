@@ -7,7 +7,7 @@ namespace Ordering.Application.CQRS.Commands;
 public record CreateOrderCommand(Order Order)
     : ICommand<CreateOrderResult>;
 
-public record CreateOrderResult(Guid Id);
+public record CreateOrderResult(int Id);
 
 //public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 //{
