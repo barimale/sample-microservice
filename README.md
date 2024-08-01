@@ -1,4 +1,6 @@
 # Step by step
+## It is a POC
+Some things are not implemented yet, project contains just sample solutions. Some parts of code is not ready(for example sagas).
 ## Database:
 navigate to the database project directory first.
 Then execute as follows:
@@ -10,7 +12,7 @@ dotnet ef database update
 
 dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=DataBaseName;TrustServerCertificate=True;Integrated Security=True;"```
 ```
-# sample-microservice
+# sample-microservice - links
 
 https://medium.com/@avinash.dhumal/exploring-microservices-saga-and-compensation-patterns-with-c-example-0da3dfe87bb6
 

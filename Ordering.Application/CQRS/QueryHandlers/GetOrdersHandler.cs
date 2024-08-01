@@ -12,13 +12,8 @@ public class GetOrdersHandler(OrderingContext dbContext)
 {
     public async Task<GetOrdersResult> Handle(GetOrdersQuery query, CancellationToken cancellationToken)
     {
-        // get orders with pagination
-        // return result
-
         var pageIndex = query.PaginationRequest.PageIndex;
         var pageSize = query.PaginationRequest.PageSize;
-
-        //var totalCount = await dbContext.Orders.LongCountAsync(cancellationToken);
 
         var orders = await dbContext.Orders
                        .Include(o => o.OrderItems)
@@ -27,6 +22,7 @@ public class GetOrdersHandler(OrderingContext dbContext)
                        .Take(pageSize)
                        .ToListAsync(cancellationToken);
 
+        // WIP automapper here order to orderdto
         return new GetOrdersResult(
             new PaginatedResult<OrderDto>(
                 pageIndex,
