@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Ordering.Application.Dtos;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.Profiles
@@ -11,6 +12,7 @@ namespace Ordering.Application.Profiles
             CreateMap<Order, OrderDto>().ReverseMap();
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<OrderItem, OrderItemDto>().ReverseMap();
+            CreateMap<PaymentMethod, PaymentDto>().ReverseMap();
         }
     }
 }

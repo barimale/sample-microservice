@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
 using Ordering.Application.Integration;
+using Ordering.Application.Profiles;
 using System.Reflection;
 
 namespace Ordering.Application;
@@ -24,7 +25,7 @@ public static class DependencyInjection
 
         services.AddFeatureManagement();
 
-        services.AddAutoMapper(typeof(Profile));
+        services.AddAutoMapper(typeof(AutomapperOrderProfile));
 
         var connectionString = configuration.GetConnectionString("StarWars");
         // "https://swapi.dev/api/"

@@ -2,14 +2,12 @@
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
+using Ordering.API.API.Model;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
-
-public record CreateOrderRequest(OrderDto Order);
-public record CreateOrderResponse(Guid Id);
 
 public class CreateOrderAPI : ICarterModule
 {
