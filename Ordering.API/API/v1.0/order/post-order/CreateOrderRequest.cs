@@ -8,6 +8,6 @@ namespace Ordering.API.API.Model
         DateTime OrderDate,
         int BuyerId,
         string Description
-        ); // not order, field by field here
+        );
 
 }

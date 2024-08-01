@@ -5,9 +5,9 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.Profiles
 {
-    public class AutomapperOrderProfile : Profile
+    public class OrderProfile : Profile
     {
-        public AutomapperOrderProfile()
+        public OrderProfile()
         {
             CreateMap<List<Order>, List<OrderDto>>().ReverseMap();
             CreateMap<Order, OrderDto>().ReverseMap();

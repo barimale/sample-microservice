@@ -3,8 +3,6 @@
 Design as a monorepo
 ## It is a POC
 Some things are not implemented yet, project contains just sample solutions. Some parts of code not ready(for example sagas).
-## ToDos
-Avoid records, as automapper is not easily compatible.
 ## Database:
 navigate to the database project directory first.
 Then execute as follows:

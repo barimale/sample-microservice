@@ -25,7 +25,7 @@ public static class DependencyInjection
 
         services.AddFeatureManagement();
 
-        services.AddAutoMapper(typeof(AutomapperOrderProfile));
+        services.AddAutoMapper(typeof(OrderProfile));
 
         var connectionString = configuration.GetConnectionString("StarWars");
         // "https://swapi.dev/api/"
