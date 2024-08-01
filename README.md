@@ -43,3 +43,5 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/min-api-
 https://github.com/oskardudycz/EventSourcing.NetCore
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-logging/?view=aspnetcore-8.0
+
+https://github.com/geeksarray/how-to-use-automapper-in-aspnet-core-web-api/blob/main/GeekStore.API.Core/Configurations/MapperConfig.cs
