@@ -43,40 +43,6 @@ namespace Ordering.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "HttpRequest",
-                schema: "ordering",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IdentityGuid = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Body = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Header = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    executionTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HttpRequest", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "HttpResponse",
-                schema: "ordering",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IdentityGuid = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Body = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Header = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    executionTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HttpResponse", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "requests",
                 schema: "ordering",
                 columns: table => new
@@ -194,20 +160,6 @@ namespace Ordering.Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_HttpRequest_IdentityGuid",
-                schema: "ordering",
-                table: "HttpRequest",
-                column: "IdentityGuid",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_HttpResponse_IdentityGuid",
-                schema: "ordering",
-                table: "HttpResponse",
-                column: "IdentityGuid",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_orderItems_OrderId",
                 schema: "ordering",
                 table: "orderItems",
@@ -241,14 +193,6 @@ namespace Ordering.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "HttpRequest",
-                schema: "ordering");
-
-            migrationBuilder.DropTable(
-                name: "HttpResponse",
-                schema: "ordering");
-
             migrationBuilder.DropTable(
                 name: "orderItems",
                 schema: "ordering");
