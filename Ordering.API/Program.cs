@@ -46,7 +46,6 @@ namespace Ordering.API
 
                 var app = builder.Build();
 
-
                 app.UseHttpLogging();
                 app.UseApiServices();
 
