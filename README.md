@@ -1,4 +1,6 @@
 # Step by step
+## Concept
+Design as a monorepo
 ## It is a POC
 Some things are not implemented yet, project contains just sample solutions. Some parts of code is not ready(for example sagas).
 ## Database:
