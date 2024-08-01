@@ -1,6 +1,7 @@
-﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
+﻿using BuildingBlocks.Infrastructure;
+using BuildingBlocks.SeedWork;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
-using Ordering.Domain.SeedWork;
 using Ordering.Infrastructure.EntityConfigurations;
 using System;
 using System.Threading;
@@ -26,6 +27,9 @@ public class OrderingContext : DbContext, IUnitOfWork
     public DbSet<PaymentMethod> Payments { get; set; }
     public DbSet<Buyer> Buyers { get; set; }
     public DbSet<CardType> CardTypes { get; set; }
+    public DbSet<HttpRequest> HttpRequest { get; set; }
+    public DbSet<HttpResponse> HttpResponse { get; set; }
+
 
     private readonly IMediator _mediator;
     private IDbContextTransaction _currentTransaction;
@@ -53,6 +57,9 @@ public class OrderingContext : DbContext, IUnitOfWork
         modelBuilder.ApplyConfiguration(new OrderItemEntityTypeConfiguration());
         modelBuilder.ApplyConfiguration(new CardTypeEntityTypeConfiguration());
         modelBuilder.ApplyConfiguration(new BuyerEntityTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new HttpRequestEntityTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new HttpResponseEntityTypeConfiguration());
+
         //modelBuilder.UseIntegrationEventLogs(); // WIP
     }
 

@@ -9,7 +9,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
     {
         orderConfiguration.ToTable("orders");
 
-        orderConfiguration.Ignore(b => b.DomainEvents);
+        //orderConfiguration.Ignore(b => b.DomainEvents);
 
         orderConfiguration.Property(o => o.Id);
             //.UseHiLo("orderseq");

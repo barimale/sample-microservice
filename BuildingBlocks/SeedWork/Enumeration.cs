@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
-namespace Ordering.Domain.SeedWork;
+namespace BuildingBlocks.SeedWork;
 
 public abstract class Enumeration : IComparable
 {

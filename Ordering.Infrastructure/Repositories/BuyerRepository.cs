@@ -1,5 +1,5 @@
-﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
-using Ordering.Domain.SeedWork;
+﻿using BuildingBlocks.SeedWork;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using System;
 using System.Linq;
 using System.Threading.Tasks;

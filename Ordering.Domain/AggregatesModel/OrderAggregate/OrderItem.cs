@@ -1,5 +1,5 @@
-﻿using Ordering.Domain.Exceptions;
-using Ordering.Domain.SeedWork;
+﻿using BuildingBlocks.SeedWork;
+using Ordering.Domain.Exceptions;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ordering.Domain.AggregatesModel.OrderAggregate;

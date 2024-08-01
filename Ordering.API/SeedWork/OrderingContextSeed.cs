@@ -1,10 +1,11 @@
-﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
-using Ordering.Domain.SeedWork;
+﻿using BuildingBlocks.SeedWork;
+using Ordering.API.Extensions;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Infrastructure;
 
-namespace eShop.Ordering.API.Infrastructure;
+namespace Ordering.API.SeedWork;
 
-public class OrderingContextSeed: IDbSeeder<OrderingContext>
+public class OrderingContextSeed : IDbSeeder<OrderingContext>
 {
     public async Task SeedAsync(OrderingContext context)
     {

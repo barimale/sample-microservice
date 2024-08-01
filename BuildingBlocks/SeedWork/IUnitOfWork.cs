@@ -1,4 +1,4 @@
-﻿namespace Ordering.Domain.SeedWork;
+﻿namespace BuildingBlocks.SeedWork;
 
 public interface IUnitOfWork : IDisposable
 {

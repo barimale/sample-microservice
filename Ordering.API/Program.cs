@@ -6,7 +6,8 @@ using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
-using eShop.Ordering.API.Infrastructure;
+using Ordering.API.Extensions;
+using Ordering.API.SeedWork;
 
 namespace Ordering.API
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
-namespace Microsoft.AspNetCore.Hosting;
+namespace Ordering.API.Extensions;
 
 internal static class MigrateDbContextExtensions
 {

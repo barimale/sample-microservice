@@ -9,4 +9,7 @@
 		<PackageReference Include="MediatR" Version="12.4.0" />
 		<PackageReference Include="System.Reflection.TypeExtensions" Version="4.7.0" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
+	</ItemGroup>
 </Project>

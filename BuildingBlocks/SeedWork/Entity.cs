@@ -1,4 +1,6 @@
-﻿namespace Ordering.Domain.SeedWork;
+﻿using MediatR;
+
+namespace BuildingBlocks.SeedWork;
 
 public abstract class Entity
 {

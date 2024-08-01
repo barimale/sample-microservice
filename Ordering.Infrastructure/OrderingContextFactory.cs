@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using Ordering.Infrastructure;
 
-namespace Christmas.Secret.Gifter.Infrastructure
+namespace Ordering.Infrastructure
 {
     /* For migrations generation only */
 

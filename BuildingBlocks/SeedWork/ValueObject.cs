@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Ordering.Domain.SeedWork;
+namespace BuildingBlocks.SeedWork;
 
 public abstract class ValueObject
 {

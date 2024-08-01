@@ -1,5 +1,5 @@
-﻿using Ordering.Domain.Events.BuyerEvents;
-using Ordering.Domain.SeedWork;
+﻿using BuildingBlocks.SeedWork;
+using Ordering.Domain.Events.BuyerEvents;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ordering.Domain.AggregatesModel.BuyerAggregate;

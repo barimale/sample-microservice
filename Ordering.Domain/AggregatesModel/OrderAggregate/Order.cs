@@ -1,7 +1,7 @@
-﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
+﻿using BuildingBlocks.SeedWork;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Domain.Events.OrderEvents;
 using Ordering.Domain.Exceptions;
-using Ordering.Domain.SeedWork;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ordering.Domain.AggregatesModel.OrderAggregate;
