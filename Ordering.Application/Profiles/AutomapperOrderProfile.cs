@@ -9,6 +9,7 @@ namespace Ordering.Application.Profiles
     {
         public AutomapperOrderProfile()
         {
+            CreateMap<List<Order>, List<OrderDto>>().ReverseMap();
             CreateMap<Order, OrderDto>().ReverseMap();
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<OrderItem, OrderItemDto>().ReverseMap();

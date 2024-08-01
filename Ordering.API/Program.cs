@@ -32,10 +32,7 @@ namespace Ordering.API
                 builder.Logging.ClearProviders();
                 builder.Logging.SetMinimumLevel(LogLevel.Trace);
                 builder.Host.UseNLog();
-                // add dblogging middleware here
-
-                var assembly = typeof(Program).Assembly;
-
+                
                 builder.Services
                     .AddApplicationServices(builder.Configuration)
                     .AddInfrastructureServices(builder.Configuration)
