@@ -7,3 +7,17 @@
 /Ordering.API/Ordering.API/obj
 /.vs/Ordering.Domain/FileContentIndex
 /.vs/Ordering/FileContentIndex
+/Ordering.UnitTests/bin
+/Ordering.UnitTests/obj
+/Ordering.Infrastructure/bin
+/Ordering.Infrastructure/obj
+/Ordering.FunctionalTests/bin
+/Ordering.FunctionalTests/obj
+/Ordering.Domain/bin
+/Ordering.Domain/obj
+/Ordering.Application/bin
+/Ordering.Application/obj
+/Ordering.API/obj
+/Ordering.API/bin
+/BuildingBlocks/obj
+/BuildingBlocks/bin
