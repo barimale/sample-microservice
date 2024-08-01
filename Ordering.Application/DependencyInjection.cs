@@ -1,4 +1,5 @@
-﻿using BuildingBlocks.Behaviors;
+﻿using AutoMapper;
+using BuildingBlocks.Behaviors;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +23,8 @@ public static class DependencyInjection
         });
 
         services.AddFeatureManagement();
+
+        services.AddAutoMapper(typeof(Profile));
 
         var connectionString = configuration.GetConnectionString("StarWars");
         // "https://swapi.dev/api/"

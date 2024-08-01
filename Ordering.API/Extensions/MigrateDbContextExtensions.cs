@@ -63,7 +63,7 @@ internal static class MigrateDbContextExtensions
         }
         catch (Exception ex)
         {
-            throw;
+            
         }
     }
 

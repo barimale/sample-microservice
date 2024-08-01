@@ -1,4 +1,5 @@
-﻿using BuildingBlocks.CQRS;
+﻿using AutoMapper;
+using BuildingBlocks.CQRS;
 using BuildingBlocks.Pagination;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Application.CQRS.Queries;
@@ -7,7 +8,7 @@ using Ordering.Infrastructure;
 using System.Linq;
 
 namespace Ordering.Application.CQRS.QueryHandlers;
-public class GetOrdersHandler(OrderingContext dbContext)
+public class GetOrdersHandler(OrderingContext dbContext, IMapper mapper)
     : IQueryHandler<GetOrdersQuery, GetOrdersResult>
 {
     public async Task<GetOrdersResult> Handle(GetOrdersQuery query, CancellationToken cancellationToken)
@@ -22,13 +23,13 @@ public class GetOrdersHandler(OrderingContext dbContext)
                        .Take(pageSize)
                        .ToListAsync(cancellationToken);
 
-        // WIP automapper here order to orderdto
+        var mapped = mapper.Map<List<OrderDto>>(orders);
+
         return new GetOrdersResult(
             new PaginatedResult<OrderDto>(
                 pageIndex,
                 pageSize,
                 orders.Count,
-                orders.ToList()
-                .Select(p => new OrderDto(p.Id, p.BuyerId.Value, "asdasd", null, null, null, OrderStatus.Completed, null)))); // WIP oder to orderdto
+                mapped));
     }
 }
