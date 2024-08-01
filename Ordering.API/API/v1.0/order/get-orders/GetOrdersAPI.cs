@@ -3,10 +3,8 @@ using Carter;
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
-using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
-using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Endpoints;
 
