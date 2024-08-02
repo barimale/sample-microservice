@@ -47,3 +47,5 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-logging/?view=as
 https://github.com/geeksarray/how-to-use-automapper-in-aspnet-core-web-api/blob/main/GeekStore.API.Core/Configurations/MapperConfig.cs
 
 https://github.com/madslundt/NetCoreMicroservicesSample
+
+https://github.com/ruhollahjafari1994/.NET-Microservices-CQRS-Event-Sourcing-with-Kafka/tree/main
