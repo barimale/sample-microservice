@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using Ordering.API.API.Model;
-using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.API.Validators
 {

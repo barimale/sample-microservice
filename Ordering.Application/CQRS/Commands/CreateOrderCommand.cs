@@ -4,10 +4,36 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.CQRS.Commands;
 
-public record CreateOrderCommand(Order Order)
-    : ICommand<CreateOrderResult>;
+public class CreateOrderCommand : ICommand<CreateOrderResult>
+{
+    public CreateOrderCommand()
+    {
+        // intentionally left blank
+    }
 
-public record CreateOrderResult(int Id);
+    public CreateOrderCommand(Order order)
+    {
+        Order = order;
+    }
+
+    public Order Order { get; set; }
+}
+
+
+public class CreateOrderResult
+{
+    public CreateOrderResult()
+    {
+        // intentionally left blank
+    }
+
+    public CreateOrderResult(int id)
+    {
+        this.Id = id;
+    }
+
+    public int Id { get; set; }
+}
 
 public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 {

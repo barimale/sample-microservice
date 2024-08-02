@@ -3,4 +3,11 @@
 namespace Ordering.Application.Dtos;
 
 [ExportTsInterface]
-public record PaymentDto(string CardName, string CardNumber, string Expiration, string Cvv, int PaymentMethod);
+public class PaymentDto
+{
+    public string CardName { get; set; }
+    public string CardNumber { get; set; }
+    public string Expiration { get; set; }
+    public string Cvv { get; set; }
+    public int PaymentMethod { get; set; }
+}

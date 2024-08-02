@@ -1,4 +1,5 @@
-﻿using Carter;
+﻿using AutoMapper;
+using Carter;
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
@@ -12,9 +13,9 @@ public class CreateOrderAPI : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender) =>
+        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender, IMapper mapper) =>
         {
-            var command = request.Adapt<CreateOrderCommand>();
+            var command = mapper.Map<CreateOrderCommand>(request);
 
             var result = await sender.Send(command);
 

@@ -1,10 +1,11 @@
-﻿using BuildingBlocks.CQRS;
+﻿using AutoMapper;
+using BuildingBlocks.CQRS;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Infrastructure;
 
 namespace Ordering.Application.CQRS.CommandHandlers;
-public class CreateOrderHandler(OrderingContext dbContext)
+public class CreateOrderHandler(OrderingContext dbContext, IMapper mapper)
     : ICommandHandler<CreateOrderCommand, CreateOrderResult>
 {
     public async Task<CreateOrderResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
@@ -26,6 +27,8 @@ public class CreateOrderHandler(OrderingContext dbContext)
         //Act 
         var fakeOrder = new Order("1", "fakeName", new Address(street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration);
         fakeOrder.Description = description;
+
+        var mapped = mapper.Map<Order>(command);
 
         var result = dbContext.Orders.Add(fakeOrder);
         await dbContext.SaveChangesAsync(cancellationToken);

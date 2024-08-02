@@ -4,7 +4,23 @@ using Ordering.Application.Dtos;
 
 namespace Ordering.Application.CQRS.Queries;
 
-public record GetOrdersQuery(PaginationRequest PaginationRequest)
-    : IQuery<GetOrdersResult>;
+public class GetOrdersQuery
+    : IQuery<GetOrdersResult>
+{
+    public GetOrdersQuery(PaginationRequest aginationRequest)
+    {
+        PaginationRequest = aginationRequest;
+    }
 
-public record GetOrdersResult(PaginatedResult<OrderDto> Orders);
+    public PaginationRequest PaginationRequest { get; set; }
+}
+
+public class GetOrdersResult
+{
+    public GetOrdersResult(PaginatedResult<OrderDto> orders)
+    {
+        this.Orders = orders;
+    }
+    
+    public PaginatedResult<OrderDto> Orders { get; set; }
+}

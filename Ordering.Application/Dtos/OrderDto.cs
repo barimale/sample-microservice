@@ -3,15 +3,23 @@
 namespace Ordering.Application.Dtos;
 
 [ExportTsInterface]
-public record OrderDto(
-    int Id,
-    int CustomerId,
-    string OrderName,
-    AddressDto ShippingAddress,
-    AddressDto BillingAddress,
-    PaymentDto Payment,
-    OrderStatus Status,
-    List<OrderItemDto> OrderItems);
+public class OrderDto
+{
+    public OrderDto()
+    {
+        // intentionally left blank
+    }
+
+    public int Id { get; set; }
+    public int CustomerId { get; set; }
+    public string OrderName { get; set; }
+    public AddressDto ShippingAddress { get; set; }
+    public AddressDto BillingAddress { get; set; }
+    public PaymentDto Payment { get; set; }
+    public OrderStatus Status { get; set; }
+    public List<OrderItemDto> OrderItems { get; set; }
+    public string Description { get; set; }
+}
 
 
 [ExportTsEnumAttribute]
