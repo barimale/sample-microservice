@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|g:\\sample-microservice\\ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|solutionrelative:ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\cqrs\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\cqrs\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|g:\\sample-microservice\\ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA7B5FD-D02E-4DC1-A17D-F3AA804B0E2B}|Ordering.Domain\\Ordering.Domain.csproj|solutionrelative:ordering.domain\\aggregatesmodel\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\api\\v1.0\\order\\post-order\\createorderapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Order.cs",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "RelativeDocumentMoniker": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "ToolTip": "G:\\sample-microservice\\Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
               "RelativeToolTip": "Ordering.Domain\\AggregatesModel\\OrderAggregate\\Order.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAawD8AAAAiAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAnwDgAAACBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T19:24:05.793Z",
               "EditorCaption": ""
@@ -77,13 +77,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CreateOrderHandler.cs",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
               "RelativeDocumentMoniker": "Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs*",
-              "RelativeToolTip": "Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs*",
-              "ViewState": "AQIAAAwAAAAAAAAAAAASwBkAAAAdAAAA",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
+              "RelativeToolTip": "Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBoAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T19:07:42.469Z",
               "EditorCaption": ""

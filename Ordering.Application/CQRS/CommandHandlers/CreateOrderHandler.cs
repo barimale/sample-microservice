@@ -10,7 +10,6 @@ public class CreateOrderHandler(OrderingContext dbContext)
 {
     public async Task<CreateOrderResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
     {
-        //Arrange
         var street = command.BillingAddress.AddressLine;
         var city = command.BillingAddress.Country;
         var state = command.BillingAddress.State;
@@ -22,13 +21,11 @@ public class CreateOrderHandler(OrderingContext dbContext)
         var cardHolderName = command.Description;
         var cardExpiration = DateTime.UtcNow.AddYears(1);
         var description = command.Description;
-        //Act 
+        
+        //it has to be like below 
         var order = new Order("1", "fakeName", 
             new Address(
                 street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration, description: description);
-
-        //var address = new Address(message.Street, message.City, message.State, message.Country, message.ZipCode);
-        //var order = new Order(message.UserId, message.UserName, address, message.CardTypeId, message.CardNumber, message.CardSecurityNumber, message.CardHolderName, message.CardExpiration);
 
         foreach (var item in command.OrderItems)
         {
