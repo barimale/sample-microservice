@@ -5,32 +5,37 @@ using Ordering.Domain.AggregatesModel.OrderAggregate;
 using Ordering.Infrastructure;
 
 namespace Ordering.Application.CQRS.CommandHandlers;
-public class CreateOrderHandler(OrderingContext dbContext, IMapper mapper)
+public class CreateOrderHandler(OrderingContext dbContext)
     : ICommandHandler<CreateOrderCommand, CreateOrderResult>
 {
     public async Task<CreateOrderResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
     {
         //Arrange
-        var street = "fakeStreet";
-        var city = "FakeCity";
-        var state = "fakeState";
-        var country = "fakeCountry";
-        var zipcode = "FakeZipCode";
-        var cardTypeId = 5;
-        var cardNumber = "12";
-        var cardSecurityNumber = "123";
-        var cardHolderName = "FakeName";
+        var street = command.BillingAddress.AddressLine;
+        var city = command.BillingAddress.Country;
+        var state = command.BillingAddress.State;
+        var country = command.BillingAddress.Country;
+        var zipcode = command.BillingAddress.AddressLine;
+        var cardTypeId = command.Payment.PaymentMethod;
+        var cardNumber = command.Payment.CardNumber;
+        var cardSecurityNumber = command.Payment.Cvv;
+        var cardHolderName = command.Description;
         var cardExpiration = DateTime.UtcNow.AddYears(1);
-        var expectedResult = 1;
-        var description = "notnulldescription";
-
+        var description = command.Description;
         //Act 
-        var fakeOrder = new Order("1", "fakeName", new Address(street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration);
-        fakeOrder.Description = description;
+        var order = new Order("1", "fakeName", 
+            new Address(
+                street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration, description: description);
 
-        var mapped = mapper.Map<Order>(command);
+        //var address = new Address(message.Street, message.City, message.State, message.Country, message.ZipCode);
+        //var order = new Order(message.UserId, message.UserName, address, message.CardTypeId, message.CardNumber, message.CardSecurityNumber, message.CardHolderName, message.CardExpiration);
 
-        var result = dbContext.Orders.Add(fakeOrder);
+        foreach (var item in command.OrderItems)
+        {
+            order.AddOrderItem(1, "item.ProductName", 5, 0, "item.PictureUrl", 5);
+        }
+
+        var result = dbContext.Orders.Add(order);
         await dbContext.SaveChangesAsync(cancellationToken);
 
         return new CreateOrderResult(result.Entity.Id);

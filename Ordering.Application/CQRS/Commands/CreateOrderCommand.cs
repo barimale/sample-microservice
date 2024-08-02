@@ -1,5 +1,6 @@
 ﻿using BuildingBlocks.CQRS;
 using FluentValidation;
+using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.CQRS.Commands;
@@ -11,12 +12,15 @@ public class CreateOrderCommand : ICommand<CreateOrderResult>
         // intentionally left blank
     }
 
-    public CreateOrderCommand(Order order)
-    {
-        Order = order;
-    }
-
-    public Order Order { get; set; }
+    public int Id { get; set; }
+    public int CustomerId { get; set; }
+    public string OrderName { get; set; }
+    public AddressDto ShippingAddress { get; set; }
+    public AddressDto BillingAddress { get; set; }
+    public PaymentDto Payment { get; set; }
+    public Dtos.OrderStatus Status { get; set; }
+    public List<OrderItemDto> OrderItems { get; set; }
+    public string Description { get; set; }
 }
 
 

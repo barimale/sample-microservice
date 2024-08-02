@@ -15,13 +15,22 @@ public class CreateOrderAPI : ICarterModule
     {
         app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender, IMapper mapper) =>
         {
-            var command = mapper.Map<CreateOrderCommand>(request);
+            try
+            {
+                var command = mapper.Map<CreateOrderCommand>(request);
 
-            var result = await sender.Send(command);
+                var result = await sender.Send(command);
 
-            var response = result.Adapt<CreateOrderResponse>();
+                var response = result.Adapt<CreateOrderResponse>();
 
-            return Results.Created($"/orders/{response.Id}", response);
+                return Results.Created($"/orders/{response.Id}", response);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
+            return Results.BadRequest();
         })
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)

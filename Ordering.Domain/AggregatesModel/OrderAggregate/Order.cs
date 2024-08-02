@@ -54,14 +54,14 @@ public class Order
     }
 
     public Order(string userId, string userName, Address address, int cardTypeId, string cardNumber, string cardSecurityNumber,
-            string cardHolderName, DateTime cardExpiration, int? buyerId = null, int? paymentMethodId = null) : this()
+            string cardHolderName, DateTime cardExpiration, int? buyerId = null, int? paymentMethodId = null, string? description = null) : this()
     {
         BuyerId = buyerId;
         PaymentId = paymentMethodId;
         OrderStatus = OrderStatus.Submitted;
         OrderDate = DateTime.UtcNow;
         Address = address;
-
+        Description = description;
         // Add the OrderStarterDomainEvent to the domain events collection 
         // to be raised/dispatched when committing changes into the Database [ After DbContext.SaveChanges() ]
         AddOrderStartedDomainEvent(userId, userName, cardTypeId, cardNumber,
