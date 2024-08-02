@@ -3,6 +3,7 @@ using Carter;
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
+using Ordering.Application.CQRS.Commands;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 
@@ -25,7 +26,9 @@ public class GetOrders : ICarterModule
                 {
                     try
                     {
-                        var result = await sender.Send(new GetOrdersQuery(request));
+                        var query = new GetOrdersQuery(request);
+
+                        var result = await sender.Send(query);
 
                         var response = result.Adapt<GetOrdersResponse>();
                         return Results.Ok(response);
