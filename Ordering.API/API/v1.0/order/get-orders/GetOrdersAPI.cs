@@ -43,7 +43,8 @@ public class GetOrders : ICarterModule
         .ProducesProblem(StatusCodes.Status404NotFound)
         .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
         //.AddEndpointFilter<GetOrdersFilter>()
-        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders).WithSummary("Get Orders")
+        .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders)
+        .WithSummary("Get Orders")
         .WithDescription("Get Orders");
     }
 }
