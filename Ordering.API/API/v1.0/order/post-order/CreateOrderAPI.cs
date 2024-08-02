@@ -12,7 +12,7 @@ public class CreateOrderAPI : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("/orders", async (CreateOrderRequest request, ISender sender) =>
+        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender) =>
         {
             var command = request.Adapt<CreateOrderCommand>();
 

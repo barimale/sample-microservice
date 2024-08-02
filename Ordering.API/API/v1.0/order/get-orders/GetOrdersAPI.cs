@@ -20,7 +20,7 @@ public class GetOrders : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("api/orders",async ([AsParameters] PaginationRequest request,
+        app.MapGet("api/v1/orders",async ([AsParameters] PaginationRequest request,
                 ISender sender, ILogger<GetOrders> logger) =>
                 {
                     try
