@@ -49,3 +49,5 @@ https://github.com/geeksarray/how-to-use-automapper-in-aspnet-core-web-api/blob/
 https://github.com/madslundt/NetCoreMicroservicesSample
 
 https://github.com/ruhollahjafari1994/.NET-Microservices-CQRS-Event-Sourcing-with-Kafka/tree/main
+
+https://blog.stackademic.com/implementation-of-saga-orchestration-using-masstransit-dd238530f0d7
