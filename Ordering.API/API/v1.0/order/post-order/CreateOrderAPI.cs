@@ -13,7 +13,7 @@ public class CreateOrderAPI : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender, IMapper mapper) =>
+        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender, IMapper mapper, ILogger<CreateOrderAPI> logger) =>
         {
             try
             {
@@ -27,7 +27,7 @@ public class CreateOrderAPI : ICarterModule
             }
             catch (Exception ex)
             {
-
+                logger.LogError(ex.Message);
             }
             
             return Results.BadRequest();
