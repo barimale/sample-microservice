@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Carter;
-using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.API.Model;

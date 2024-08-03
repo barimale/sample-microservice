@@ -17,6 +17,10 @@ public class GetOrdersQuery
 
 public class GetOrdersResult
 {
+    public GetOrdersResult()
+    {
+        //intentionally left blank
+    }
     public GetOrdersResult(PaginatedResult<OrderDto> orders)
     {
         this.Orders = orders;

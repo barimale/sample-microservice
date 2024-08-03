@@ -1,15 +1,13 @@
-﻿using BuildingBlocks.Pagination;
+﻿using AutoMapper;
+using BuildingBlocks.Pagination;
 using Carter;
-using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
+using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
-
-public record GetOrdersResponse(
-    PaginatedResult<OrderDto> Orders);
 
 public class GetOrders : ICarterModule
 {
@@ -18,13 +16,14 @@ public class GetOrders : ICarterModule
         app.MapGet("api/v1/orders",async (
             [AsParameters] PaginationRequest request,
             ISender sender,
+            IMapper mapper,
             ILogger<GetOrders> logger) =>
         {
             try
             {
                 var result = await sender.Send(new GetOrdersQuery(request));
 
-                var response = result.Adapt<GetOrdersResponse>();
+                var response = new GetOrdersResponse(result.Orders.Data.ToList());
                 return Results.Ok(response);
             }
             catch (Exception ex)

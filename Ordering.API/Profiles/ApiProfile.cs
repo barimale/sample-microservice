@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Commands;
+using Ordering.Application.CQRS.Queries;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.Profiles
@@ -15,8 +16,10 @@ namespace Ordering.Application.Profiles
                 .ForMember(p => p.CustomerId, pp => pp.MapFrom(src => src.CustomerId));
             CreateMap<CreateOrderCommand, Order>()
                 .ReverseMap();
-            CreateMap<CreateOrderResponse, CreateOrderResult>()
-                .ReverseMap();
+
+            CreateMap<CreateOrderResult, CreateOrderResponse>();
+            CreateMap<GetOrdersResult, GetOrdersResponse>()
+                .ForMember(p => p.Orders, pp => pp.MapFrom(src => src.Orders.Data.ToList()));
         }
     }
 }

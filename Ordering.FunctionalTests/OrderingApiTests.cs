@@ -23,7 +23,7 @@ public sealed class OrderingApiTests : IClassFixture<OrderingApiFixture>
     public async Task GetAllStoredOrdersWorks()
     {
         // Act
-        var response = await _httpClient.GetAsync("api/v1/orders");
+        var response = await _httpClient.GetAsync("api/v1/orders?PageIndex=0&PageSize=5");
         var s = await response.Content.ReadAsStringAsync();
         response.EnsureSuccessStatusCode();
 
