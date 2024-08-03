@@ -13,7 +13,11 @@ public class CreateOrderAPI : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapPost("api/v1/orders", async (CreateOrderRequest request, ISender sender, IMapper mapper, ILogger<CreateOrderAPI> logger) =>
+        app.MapPost("api/v1/orders", async (
+            CreateOrderRequest request, 
+            ISender sender, 
+            IMapper mapper, 
+            ILogger<CreateOrderAPI> logger) =>
         {
             try
             {
@@ -21,7 +25,7 @@ public class CreateOrderAPI : ICarterModule
 
                 var result = await sender.Send(command);
 
-                var response = result.Adapt<CreateOrderResponse>();
+                var response = mapper.Map<CreateOrderResponse>(result);
 
                 return Results.Created($"/orders/{response.Id}", response);
             }
@@ -29,7 +33,7 @@ public class CreateOrderAPI : ICarterModule
             {
                 logger.LogError(ex.Message);
             }
-            
+
             return Results.BadRequest();
         })
         .WithName("CreateOrder")

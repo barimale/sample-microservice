@@ -15,23 +15,25 @@ public class GetOrders : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("api/v1/orders",async ([AsParameters] PaginationRequest request,
-                ISender sender, ILogger<GetOrders> logger) =>
-                {
-                    try
-                    {
-                        var result = await sender.Send(new GetOrdersQuery(request));
+        app.MapGet("api/v1/orders",async (
+            [AsParameters] PaginationRequest request,
+            ISender sender,
+            ILogger<GetOrders> logger) =>
+        {
+            try
+            {
+                var result = await sender.Send(new GetOrdersQuery(request));
 
-                        var response = result.Adapt<GetOrdersResponse>();
-                        return Results.Ok(response);
-                    }
-                    catch (Exception ex)
-                    {
-                        logger.LogError(ex.Message);
-                    }
+                var response = result.Adapt<GetOrdersResponse>();
+                return Results.Ok(response);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.Message);
+            }
 
-                    return Results.BadRequest();
-                })
+            return Results.BadRequest();
+        })
         .WithName("GetOrders")
         .Produces<GetOrdersResponse>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
