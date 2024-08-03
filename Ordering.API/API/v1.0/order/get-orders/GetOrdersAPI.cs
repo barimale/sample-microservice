@@ -3,13 +3,11 @@ using Carter;
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
-using Ordering.Application.CQRS.Commands;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
 
-//public record GetOrdersRequest(PaginationRequest PaginationRequest);
 public record GetOrdersResponse(
     PaginatedResult<OrderDto> Orders);
 
@@ -22,9 +20,7 @@ public class GetOrders : ICarterModule
                 {
                     try
                     {
-                        var query = new GetOrdersQuery(request);
-
-                        var result = await sender.Send(query);
+                        var result = await sender.Send(new GetOrdersQuery(request));
 
                         var response = result.Adapt<GetOrdersResponse>();
                         return Results.Ok(response);
