@@ -1,11 +1,8 @@
 ﻿using System.Net;
-using System.Text;
-using System.Text.Json;
 using Asp.Versioning;
 using Asp.Versioning.Http;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Ordering.API;
-using Projects;
 
 namespace Order.FunctionalTests;
 
@@ -26,7 +23,7 @@ public sealed class OrderingApiTests : IClassFixture<OrderingApiFixture>
     public async Task GetAllStoredOrdersWorks()
     {
         // Act
-        var response = await _httpClient.GetAsync("api/orders");
+        var response = await _httpClient.GetAsync("api/v1/orders");
         var s = await response.Content.ReadAsStringAsync();
         response.EnsureSuccessStatusCode();
 
