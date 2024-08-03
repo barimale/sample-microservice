@@ -5,7 +5,6 @@ using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Queries;
-using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
 
