@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\ordering.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\ordering.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\seedwork\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\seedwork\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\tgconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\tgconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\buildingblocks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\buildingblocks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\repositories\\buyerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\repositories\\buyerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ordering.Application",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
-              "RelativeDocumentMoniker": "Ordering.Application\\Ordering.Application.csproj",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Ordering.Application.csproj",
-              "RelativeToolTip": "Ordering.Application\\Ordering.Application.csproj",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-04T12:32:51.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BuildingBlocks",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\BuildingBlocks.csproj",
-              "RelativeDocumentMoniker": "BuildingBlocks\\BuildingBlocks.csproj",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\BuildingBlocks.csproj",
-              "RelativeToolTip": "BuildingBlocks\\BuildingBlocks.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-04T12:32:12.354Z",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\SeedWork\\IRepository.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\SeedWork\\IRepository.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\SeedWork\\IRepository.cs",
+              "RelativeToolTip": "BuildingBlocks\\SeedWork\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T12:39:52.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "tgconfig.json",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\tgconfig.json",
-              "RelativeDocumentMoniker": "Ordering.API\\tgconfig.json",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\tgconfig.json",
-              "RelativeToolTip": "Ordering.API\\tgconfig.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-04T12:32:01.948Z",
+              "Title": "BuyerRepository.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\Repositories\\BuyerRepository.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\Repositories\\BuyerRepository.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\Repositories\\BuyerRepository.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\Repositories\\BuyerRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAIwAwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T12:39:44.536Z",
               "EditorCaption": ""
             }
           ]

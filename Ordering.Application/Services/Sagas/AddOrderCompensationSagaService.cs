@@ -8,7 +8,8 @@ namespace Ordering.Application.Services.Sagas
     // saga for restapiclients
     public class AddOrderSagaService
     {
-        //// services
+        //// services 
+        /// buyer has to be extenral microservice
         //private readonly IBuyerService _buyerService; httpclient
         //private readonly IOrderService _orderService; httpclient
         //private readonly ILogger<AddOrderSagaService> _logger;

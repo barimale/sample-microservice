@@ -6,7 +6,7 @@ using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
-namespace Ordering.Application.Profiles
+namespace Ordering.API.Profiles
 {
     public class ApiProfile : Profile
     {

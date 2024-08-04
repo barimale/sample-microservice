@@ -3,8 +3,8 @@ using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Ordering.API.Filters;
+using Ordering.API.Profiles;
 using Ordering.API.Validators;
-using Ordering.Application.Profiles;
 
 namespace Ordering.API;
 
