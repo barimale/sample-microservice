@@ -3,9 +3,12 @@ using BuildingBlocks.Behaviors;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.FeatureManagement;
 using Ordering.Application.Integration;
 using Ordering.Application.Profiles;
+using Ordering.Application.Services.BackgroundServices;
 using System.Reflection;
 
 namespace Ordering.Application;
@@ -35,6 +38,10 @@ public static class DependencyInjection
         });
         // WIP
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
+
+        //services.AddScoped<IOptions<OrderingBackgroundSettings>>();
+        services.AddHostedService<GracePeriodManagerService>();
+
 
         return services;
     }
