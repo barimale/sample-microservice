@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 using Ordering.Infrastructure;
-using System.Linq;
 
 namespace Ordering.Application.CQRS.QueryHandlers;
 public class GetOrdersHandler(OrderingContext dbContext, IMapper mapper, ILogger<GetOrdersHandler> logger)

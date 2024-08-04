@@ -3,6 +3,7 @@ using BuildingBlocks.Pagination;
 using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Application.CQRS.Queries;
+using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 
 namespace Ordering.Application.Profiles

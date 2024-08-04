@@ -5,6 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Queries;
+using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
 
@@ -22,8 +23,7 @@ public class GetOrders : ICarterModule
             {
                 var result = await sender.Send(new GetOrdersQuery(request));
 
-                var response = new GetOrdersResponse(result.Orders.Data.ToList());
-                return Results.Ok(response);
+                return Results.Ok(result);
             }
             catch (Exception ex)
             {
@@ -33,7 +33,7 @@ public class GetOrders : ICarterModule
             return Results.BadRequest();
         })
         .WithName("GetOrders")
-        .Produces<GetOrdersResponse>(StatusCodes.Status200OK)
+        .Produces<GetOrdersResult>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
         .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
