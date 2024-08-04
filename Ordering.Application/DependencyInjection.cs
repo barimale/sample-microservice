@@ -1,10 +1,7 @@
-﻿using AutoMapper;
-using BuildingBlocks.Behaviors;
+﻿using BuildingBlocks.Behaviors;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 using Microsoft.FeatureManagement;
 using Ordering.Application.Integration;
 using Ordering.Application.Profiles;
@@ -27,11 +24,10 @@ public static class DependencyInjection
         });
 
         services.AddFeatureManagement();
-
         services.AddAutoMapper(typeof(OrderProfile));
 
         var connectionString = configuration.GetConnectionString("StarWars");
-        // "https://swapi.dev/api/"
+
         services.AddHttpClient<IStarWarsService, StarWarsHttpClient>((client, sp) =>
         {
             return new StarWarsHttpClient(connectionString, client);
@@ -40,7 +36,6 @@ public static class DependencyInjection
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
         string sAppVersion = configuration.GetValue<string>("AppSettings:AppVersion");
 
-        //services.AddScoped<IOptions<OrderingBackgroundSettings>>();
         services.AddHostedService<GracePeriodManagerService>();
         services.Configure<OrderingBackgroundSettings>(
             configuration.GetSection("AppSettings"));
