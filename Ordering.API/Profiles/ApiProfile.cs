@@ -19,6 +19,8 @@ namespace Ordering.Application.Profiles
                 .ReverseMap();
 
             CreateMap<CreateOrderResult, CreateOrderResponse>();
+            CreateMap<GetOrdersResult, GetOrdersResponse>()
+                .ForMember(p => p.Orders, pp => pp.MapFrom(src => src.Orders.Data.ToList()));
         }
     }
 }
