@@ -5,16 +5,13 @@ public class PaginationRequest
     {
         // intentionally left blank
     }
-    public int PageIndex { get; set; } = 0;
-    public int PageSize { get; set; } = 10;
-}
 
-public class PaginationResponse
-{
-    public PaginationResponse()
+    public PaginationRequest(int pageIndex, int pageSize)
     {
-        // intentionally left blank
+        PageIndex = pageIndex;
+        PageSize = pageSize;
     }
+
     public int PageIndex { get; set; } = 0;
     public int PageSize { get; set; } = 10;
 }

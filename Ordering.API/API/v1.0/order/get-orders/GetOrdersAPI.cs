@@ -3,9 +3,7 @@ using BuildingBlocks.Pagination;
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
-using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Queries;
-using Ordering.Application.Dtos;
 
 namespace Ordering.API.Endpoints;
 
@@ -21,9 +19,9 @@ public class GetOrders : ICarterModule
         {
             try
             {
-                var result = await sender.Send(new GetOrdersQuery(request));
+                var response = await sender.Send(new GetOrdersQuery(request));
 
-                return Results.Ok(result);
+                return Results.Ok(response);
             }
             catch (Exception ex)
             {
