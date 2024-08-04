@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Ordering.Domain.AggregatesModel.BuyerAggregate;
+using Ordering.Domain.AggregatesModel.OrderAggregate;
+using Ordering.Infrastructure.Repositories;
 using System;
 
 namespace Ordering.Infrastructure;
@@ -24,7 +27,8 @@ public static class DependencyInjection
         });
 
         // Add services to the container.
-        //services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
+        services.AddScoped<IBuyerRepository, BuyerRepository>();
+        services.AddScoped<IOrderRepository, OrderRepository>();
         //services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
 
         //services.AddDbContext<ApplicationDbContext>((sp, options) =>

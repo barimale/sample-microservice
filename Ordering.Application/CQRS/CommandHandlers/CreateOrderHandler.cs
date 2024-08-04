@@ -1,11 +1,9 @@
-﻿using AutoMapper;
-using BuildingBlocks.CQRS;
+﻿using BuildingBlocks.CQRS;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
-using Ordering.Infrastructure;
 
 namespace Ordering.Application.CQRS.CommandHandlers;
-public class CreateOrderHandler(OrderingContext dbContext)
+public class CreateOrderHandler(IOrderRepository orderRepository)
     : ICommandHandler<CreateOrderCommand, CreateOrderResult>
 {
     public async Task<CreateOrderResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
@@ -32,9 +30,9 @@ public class CreateOrderHandler(OrderingContext dbContext)
             order.AddOrderItem(1, "item.ProductName", 5, 0, "item.PictureUrl", 5);
         }
 
-        var result = dbContext.Orders.Add(order);
-        await dbContext.SaveChangesAsync(cancellationToken);
+        var result = orderRepository.Add(order);
+        await orderRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
 
-        return new CreateOrderResult(result.Entity.Id);
+        return new CreateOrderResult(result.Id);
     }
 }

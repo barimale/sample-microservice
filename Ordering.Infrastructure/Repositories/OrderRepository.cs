@@ -1,6 +1,10 @@
 ﻿using BuildingBlocks.SeedWork;
+using Microsoft.EntityFrameworkCore;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ordering.Infrastructure.Repositories;
@@ -35,6 +39,19 @@ public class OrderRepository
 
         return order;
     }
+
+    public async Task<List<Order>> GetAllAsync(int pageIndex, int pageSize)
+    {
+        var orders = await _context.Orders
+                       .Include(o => o.OrderItems)
+                       .OrderBy(o => o.OrderDate)
+                       .Skip(pageSize * pageIndex)
+                       .Take(pageSize)
+                       .ToListAsync();
+
+        return orders;
+    }
+
 
     public void Update(Order order)
     {
