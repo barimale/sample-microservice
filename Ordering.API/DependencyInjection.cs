@@ -16,7 +16,7 @@ public static class DependencyInjection
 
         services.AddAutoMapper(typeof(ApiProfile));
 
-        services.AddExceptionHandler<CustomExceptionHandler>();
+        services.AddExceptionHandler<GlobalExceptionHandler>();
         services.AddHealthChecks();
 
         services.AddScoped<CreateOrderRequestValidationFilter>();

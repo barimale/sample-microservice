@@ -8,6 +8,7 @@ using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 using Ordering.API.Extensions;
 using Ordering.API.SeedWork;
+using BuildingBlocks.Exceptions.Handler;
 
 namespace Ordering.API
 {
@@ -21,6 +22,8 @@ namespace Ordering.API
 
                 LogManager.Configuration = new NLogLoggingConfiguration(
                     builder.Configuration.GetSection("NLog"));
+                
+                builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
                 builder.Services.AddHttpLogging(logging =>
                 {
@@ -45,6 +48,7 @@ namespace Ordering.API
                 builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
 
                 var app = builder.Build();
+                app.UseExceptionHandler(options => { });
 
                 app.UseHttpLogging();
                 app.UseApiServices();

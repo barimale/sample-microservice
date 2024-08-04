@@ -18,7 +18,6 @@ public class GetOrders : ICarterModule
             ILogger<GetOrders> logger) =>
         {
             var response = await sender.Send(new GetOrdersQuery(request));
-
             return Results.Ok(response);
         })
         .WithName("GetOrders")
