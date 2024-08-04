@@ -1,5 +1,9 @@
 {
-  "assemblies": [ "bin/Debug/net8.0/Ordering.API.dll" ],
+  "assemblies": [
+    "bin/Debug/net8.0/Ordering.API.dll",
+    "bin/Debug/net8.0/BuildingBlocks.dll",
+    "bin/Debug/net8.0/Ordering.Application.dll"
+  ],
   "fileNameConverters": [ "PascalCaseToKebabCase" ],
   "propertyNameConverters": [ "PascalCaseToCamelCaseConverter" ],
   "enumValueNameConverters": [ "UnderscoreCaseToPascalCaseConverter" ],

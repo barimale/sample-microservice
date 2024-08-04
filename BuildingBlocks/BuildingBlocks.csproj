@@ -15,7 +15,4 @@
 	  <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="3.2.0" />
   </ItemGroup>
 	
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
-		<Exec Command="dotnet-typegen --project-folder  . generate&#xD;&#xA;" />
-	</Target>
 </Project>
