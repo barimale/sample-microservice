@@ -18,21 +18,12 @@ public class CreateOrderAPI : ICarterModule
             IMapper mapper, 
             ILogger<CreateOrderAPI> logger) =>
         {
-            try
-            {
-                var command = mapper.Map<CreateOrderCommand>(request);
-                var result = await sender.Send(command);
+            var command = mapper.Map<CreateOrderCommand>(request);
+            var result = await sender.Send(command);
 
-                var response = mapper.Map<CreateOrderResponse>(result);
+            var response = mapper.Map<CreateOrderResponse>(result);
 
-                return Results.Created($"/orders/{response.Id}", response);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex.Message);
-            }
-
-            return Results.BadRequest();
+            return Results.Created($"/orders/{response.Id}", response);
         })
         .WithName("CreateOrder")
         .Produces<CreateOrderResponse>(StatusCodes.Status201Created)

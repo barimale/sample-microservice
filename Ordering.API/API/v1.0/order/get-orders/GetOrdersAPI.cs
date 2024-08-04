@@ -17,18 +17,9 @@ public class GetOrders : ICarterModule
             IMapper mapper,
             ILogger<GetOrders> logger) =>
         {
-            try
-            {
-                var response = await sender.Send(new GetOrdersQuery(request));
+            var response = await sender.Send(new GetOrdersQuery(request));
 
-                return Results.Ok(response);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex.Message);
-            }
-
-            return Results.BadRequest();
+            return Results.Ok(response);
         })
         .WithName("GetOrders")
         .Produces<GetOrdersResult>(StatusCodes.Status200OK)
