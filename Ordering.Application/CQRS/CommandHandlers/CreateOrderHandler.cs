@@ -32,7 +32,6 @@ public class CreateOrderHandler(IOrderRepository orderRepository)
 
         var result = orderRepository.Add(order);
         await orderRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
-
         return new CreateOrderResult(result.Id);
     }
 }
