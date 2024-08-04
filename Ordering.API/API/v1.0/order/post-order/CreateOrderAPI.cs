@@ -21,7 +21,6 @@ public class CreateOrderAPI : ICarterModule
             try
             {
                 var command = mapper.Map<CreateOrderCommand>(request);
-
                 var result = await sender.Send(command);
 
                 var response = mapper.Map<CreateOrderResponse>(result);
