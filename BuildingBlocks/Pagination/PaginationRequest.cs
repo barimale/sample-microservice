@@ -1,4 +1,7 @@
-﻿namespace BuildingBlocks.Pagination;
+﻿using TypeGen.Core.TypeAnnotations;
+
+namespace BuildingBlocks.Pagination;
+[ExportTsInterface]
 public class PaginationRequest
 {
     public PaginationRequest()
