@@ -55,3 +55,5 @@ https://blog.stackademic.com/implementation-of-saga-orchestration-using-masstran
 https://medium.com/multinetinventiv/publish-and-consume-messages-with-masstransit-and-rabbitmq-on-net-6-6118377bfedb
 
 https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice
+
+https://andrewhalil.com/2022/01/03/using-the-ioptions-pattern-in-a-net-core-application/#:~:text=The%20ability%20to%20inject%20settings%20keys%20and%20their,format%20of%20this%20file%20is%20shown%20as%20follows%3A
