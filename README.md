@@ -51,3 +51,7 @@ https://github.com/madslundt/NetCoreMicroservicesSample
 https://github.com/ruhollahjafari1994/.NET-Microservices-CQRS-Event-Sourcing-with-Kafka/tree/main
 
 https://blog.stackademic.com/implementation-of-saga-orchestration-using-masstransit-dd238530f0d7
+
+https://medium.com/multinetinventiv/publish-and-consume-messages-with-masstransit-and-rabbitmq-on-net-6-6118377bfedb
+
+https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice
