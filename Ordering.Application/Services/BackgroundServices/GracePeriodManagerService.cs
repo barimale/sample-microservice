@@ -27,6 +27,11 @@ namespace Ordering.Application.Services.BackgroundServices
         {
             _logger.LogDebug($"GracePeriodManagerService is starting.");
 
+            if (_logger.IsEnabled(LogLevel.Debug))
+            {
+                _logger.LogDebug("Begin Register call from method ExecuteAsync");
+            }
+
             stoppingToken.Register(() =>
                 _logger.LogDebug($" GracePeriod background task is stopping."));
 
