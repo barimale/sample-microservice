@@ -2,6 +2,11 @@
 {
     public class OrderingBackgroundSettings
     {
-        public int CheckUpdateTime { get; internal set; } = 10;
+        public OrderingBackgroundSettings()
+        {
+            // intentionally left blank
+        }
+
+        public int CheckUpdateTime { get; set; } = 1000;
     }
 }

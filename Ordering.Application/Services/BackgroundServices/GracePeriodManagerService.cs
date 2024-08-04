@@ -13,13 +13,14 @@ namespace Ordering.Application.Services.BackgroundServices
     public class GracePeriodManagerService : BackgroundService
     {
         private readonly ILogger<GracePeriodManagerService> _logger;
-        private readonly OrderingBackgroundSettings _settings = new OrderingBackgroundSettings();
+        private readonly IOptions<OrderingBackgroundSettings >_settings; // = new OrderingBackgroundSettings();
 
         //private readonly IEventBus _eventBuskk
 
-        public GracePeriodManagerService(
+        public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,
                                          ILogger<GracePeriodManagerService> logger)
         {
+            _settings = settings;
             _logger = logger;
         }
 
@@ -45,7 +46,7 @@ namespace Ordering.Application.Services.BackgroundServices
                 // subscribe here
                 try
                 {
-                    await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
+                    await Task.Delay(_settings.Value.CheckUpdateTime, stoppingToken);
                 }
                 catch (TaskCanceledException exception)
                 {

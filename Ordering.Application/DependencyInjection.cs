@@ -38,10 +38,12 @@ public static class DependencyInjection
         });
         // WIP
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
+        string sAppVersion = configuration.GetValue<string>("AppSettings:AppVersion");
 
         //services.AddScoped<IOptions<OrderingBackgroundSettings>>();
         services.AddHostedService<GracePeriodManagerService>();
-
+        services.Configure<OrderingBackgroundSettings>(
+            configuration.GetSection("AppSettings"));
 
         return services;
     }
