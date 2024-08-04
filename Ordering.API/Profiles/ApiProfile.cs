@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BuildingBlocks.Pagination;
 using Ordering.API.API.Model;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Application.CQRS.Queries;
@@ -18,8 +19,6 @@ namespace Ordering.Application.Profiles
                 .ReverseMap();
 
             CreateMap<CreateOrderResult, CreateOrderResponse>();
-            CreateMap<GetOrdersResult, GetOrdersResponse>()
-                .ForMember(p => p.Orders, pp => pp.MapFrom(src => src.Orders.Data.ToList()));
         }
     }
 }
