@@ -5,7 +5,8 @@ using System.Diagnostics;
 
 namespace BuildingBlocks.Behaviors;
 public class LoggingBehavior<TRequest, TResponse>
-    (ILogger<LoggingBehavior<TRequest, TResponse>> logger, IConfiguration configuration)
+    (ILogger<LoggingBehavior<TRequest, TResponse>> logger, 
+        IConfiguration configuration)
     : IPipelineBehavior<TRequest, TResponse>
     where TRequest : notnull, IRequest<TResponse>
     where TResponse : notnull
@@ -15,6 +16,7 @@ public class LoggingBehavior<TRequest, TResponse>
         logger.LogInformation("[START] Handle request={Request} - Response={Response} - RequestData={RequestData}",
             typeof(TRequest).Name, typeof(TResponse).Name, request);
 
+        // WIP sample solution
         var connectionString = configuration.GetConnectionString("StarWars");
 
         var timer = new Stopwatch();

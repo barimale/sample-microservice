@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
+using Ordering.API.Application.Behaviours;
 using Ordering.Application.Integration;
 using Ordering.Application.Profiles;
 using Ordering.Application.Services.BackgroundServices;
@@ -21,6 +22,7 @@ public static class DependencyInjection
             config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             config.AddOpenBehavior(typeof(ValidationBehavior<,>));
             config.AddOpenBehavior(typeof(LoggingBehavior<,>));
+            config.AddOpenBehavior(typeof(TransactionBehavior<,>));
         });
 
         services.AddFeatureManagement();
