@@ -1,19 +1,13 @@
 ﻿using BuildingBlocks.Services;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ordering.Application.Services.BackgroundServices
 {
     public class GracePeriodManagerService : BackgroundService
     {
         private readonly ILogger<GracePeriodManagerService> _logger;
-        private readonly IOptions<OrderingBackgroundSettings >_settings; // = new OrderingBackgroundSettings();
+        private readonly IOptions<OrderingBackgroundSettings> _settings;
 
         //private readonly IEventBus _eventBuskk
 

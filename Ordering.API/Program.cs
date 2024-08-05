@@ -22,7 +22,7 @@ namespace Ordering.API
 
                 LogManager.Configuration = new NLogLoggingConfiguration(
                     builder.Configuration.GetSection("NLog"));
-                
+
                 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
                 builder.Services.AddHttpLogging(logging =>
@@ -33,9 +33,9 @@ namespace Ordering.API
                 });
 
                 builder.Logging.ClearProviders();
-                builder.Logging.SetMinimumLevel(LogLevel.Trace);
+                builder.Logging.SetMinimumLevel(builder.Environment.IsDevelopment() ? LogLevel.Debug : LogLevel.Trace);
                 builder.Host.UseNLog();
-                
+
                 builder.Services
                     .AddApplicationServices(builder.Configuration)
                     .AddInfrastructureServices(builder.Configuration)
@@ -53,16 +53,19 @@ namespace Ordering.API
                 app.UseHttpLogging();
                 app.UseApiServices();
 
-                // TO Seed method as is in eShop .AddMigration
-                try
+                // In production -> execute migrations via script
+                if (app.Environment.IsDevelopment())
                 {
-                    using var scope = app.Services.CreateScope();
-                    OrderingContext context = scope.ServiceProvider.GetRequiredService<OrderingContext>();
-                    context.Database.Migrate();
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("On Migrate error");
+                    try
+                    {
+                        using var scope = app.Services.CreateScope();
+                        OrderingContext context = scope.ServiceProvider.GetRequiredService<OrderingContext>();
+                        context.Database.Migrate();
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("On Migrate error");
+                    }
                 }
 
                 // Configure the HTTP request pipeline.
@@ -78,7 +81,7 @@ namespace Ordering.API
             }
             finally
             {
-                NLog.LogManager.Shutdown();
+                LogManager.Shutdown();
             }
         }
     }
