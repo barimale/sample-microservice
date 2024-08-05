@@ -11,8 +11,8 @@ namespace Ordering.Application.Services.BackgroundServices
     {
         private readonly ILogger<GracePeriodManagerService> _logger;
         private readonly IOptions<OrderingBackgroundSettings> _settings;
-        private readonly PublishToChannelService publishToChannelService = new PublishToChannelService("localhost");
-        private readonly SubscribeToChannelService subscribeToChannelService = new SubscribeToChannelService("localhost");
+        private readonly PublishToChannelService publishToChannelService;
+        private readonly SubscribeToChannelService subscribeToChannelService;
         //private readonly IEventBus _eventBuskk
 
         public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,
@@ -20,9 +20,10 @@ namespace Ordering.Application.Services.BackgroundServices
         {
             _settings = settings;
             _logger = logger;
-            // settings
-            subscribeToChannelService.CreateChannel("hello");
-            publishToChannelService.CreateChannel("hello");
+            publishToChannelService = new PublishToChannelService(_settings.Value.HostName);
+            subscribeToChannelService = new SubscribeToChannelService(_settings.Value.HostName);
+            subscribeToChannelService.CreateChannel(_settings.Value.ChannelName);
+            publishToChannelService.CreateChannel(_settings.Value.ChannelName);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
