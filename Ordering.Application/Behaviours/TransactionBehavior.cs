@@ -1,4 +1,4 @@
-﻿namespace Ordering.API.Application.Behaviours;
+﻿namespace Ordering.Application.Behaviours;
 
 using MediatR;
 using Microsoft.EntityFrameworkCore;

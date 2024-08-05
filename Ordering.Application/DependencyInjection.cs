@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
-using Ordering.API.Application.Behaviours;
+using Ordering.Application.Behaviours;
 using Ordering.Application.Integration;
 using Ordering.Application.Profiles;
 using Ordering.Application.Services.BackgroundServices;

@@ -1,7 +1,7 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Logic.Services
+namespace BuildingBlocks.Services.RabbitMq
 {
     public class SubscribeToChannelService : BaseChannelService
     {
@@ -11,7 +11,7 @@ namespace Logic.Services
             // intentionally left blank
         }
 
-        public IModel Channel => base._channel;
+        public IModel Channel => _channel;
 
         public bool Consume(EventingBasicConsumer consumer)
         {

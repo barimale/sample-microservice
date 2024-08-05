@@ -1,7 +1,7 @@
 ﻿using RabbitMQ.Client;
 using System.Text;
 
-namespace Logic.Services
+namespace BuildingBlocks.Services.RabbitMq
 {
     public class PublishToChannelService : BaseChannelService
     {

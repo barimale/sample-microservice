@@ -1,6 +1,6 @@
 ﻿using RabbitMQ.Client;
 
-namespace Logic.Services
+namespace BuildingBlocks.Services.RabbitMq
 {
     public abstract class BaseChannelService : IDisposable
     {
