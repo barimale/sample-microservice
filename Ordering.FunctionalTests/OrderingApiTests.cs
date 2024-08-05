@@ -23,12 +23,14 @@ public sealed class OrderingApiTests : IClassFixture<OrderingApiFixture>
     [Fact(Skip = "not compatible with github action")]
     public async Task GetAllStoredOrdersWorks()
     {
-        // Act
+        // given
+
+        // when
         var response = await _httpClient.GetAsync("api/v1/orders?PageIndex=0&PageSize=5");
         var s = await response.Content.ReadAsStringAsync();
         response.EnsureSuccessStatusCode();
 
-        // Assert
+        // then
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
 }
