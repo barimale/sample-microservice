@@ -63,3 +63,5 @@ https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-contai
 https://andrewhalil.com/2022/01/03/using-the-ioptions-pattern-in-a-net-core-application/#:~:text=The%20ability%20to%20inject%20settings%20keys%20and%20their,format%20of%20this%20file%20is%20shown%20as%20follows%3A
 
 https://medium.com/c-sharp-progarmming/handling-errors-with-iexceptionhandler-in-net-8-12c13e651639#:~:text=The%20IExceptionHandler%20is%20an%20interface%20that%20allows%20developers,and%20take%20specific%20actions%20to%20deal%20with%20them.
+
+https://developers.eventstore.com/clients/tcp/dotnet/21.2/#appending-events
