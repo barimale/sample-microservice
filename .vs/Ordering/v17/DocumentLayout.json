@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\sample-microservice\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8FB6069D-0FD2-4068-87AC-8AE476E6164B}|Ordering.FunctionalTests\\Order.FunctionalTests.csproj|g:\\sample-microservice\\ordering.functionaltests\\orderingapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FB6069D-0FD2-4068-87AC-8AE476E6164B}|Ordering.FunctionalTests\\Order.FunctionalTests.csproj|solutionrelative:ordering.functionaltests\\orderingapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,28 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderingApiTests.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.FunctionalTests\\OrderingApiTests.cs",
-              "RelativeDocumentMoniker": "Ordering.FunctionalTests\\OrderingApiTests.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.FunctionalTests\\OrderingApiTests.cs",
-              "RelativeToolTip": "Ordering.FunctionalTests\\OrderingApiTests.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T13:05:16.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             }
           ]
         }
