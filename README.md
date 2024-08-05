@@ -14,6 +14,10 @@ dotnet ef database update
 
 dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=DataBaseName;TrustServerCertificate=True;Integrated Security=True;"```
 ```
+## Docker
+```
+docker build -t foo . && docker run -it foo
+```
 ## RabbitMQ
 ```
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
