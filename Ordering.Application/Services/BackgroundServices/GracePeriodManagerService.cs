@@ -57,12 +57,12 @@ namespace Ordering.Application.Services.BackgroundServices
 
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogDebug($"GracePeriod task doing background work.");
+                //_logger.LogDebug($"GracePeriod task doing background work.");
 
 
-                const string message2 = "Hello World!";
-                publishToChannelService.Send(message2);
-                Console.WriteLine($" [x] Sent {message2}");
+                //const string message2 = "Hello World!";
+                //publishToChannelService.Send(message2);
+                //Console.WriteLine($" [x] Sent {message2}");
 
                 try
                 {
