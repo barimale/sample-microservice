@@ -1,6 +1,9 @@
 ﻿using BuildingBlocks.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RabbitMQ.Client.Events;
+using System.Text;
+using BuildingBlocks.Services.RabbitMq;
 
 namespace Ordering.Application.Services.BackgroundServices
 {
@@ -8,7 +11,8 @@ namespace Ordering.Application.Services.BackgroundServices
     {
         private readonly ILogger<GracePeriodManagerService> _logger;
         private readonly IOptions<OrderingBackgroundSettings> _settings;
-
+        private readonly PublishToChannelService publishToChannelService = new PublishToChannelService("localhost");
+        private readonly SubscribeToChannelService subscribeToChannelService = new SubscribeToChannelService("localhost");
         //private readonly IEventBus _eventBuskk
 
         public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,
@@ -16,6 +20,9 @@ namespace Ordering.Application.Services.BackgroundServices
         {
             _settings = settings;
             _logger = logger;
+            // settings
+            subscribeToChannelService.CreateChannel("hello");
+            publishToChannelService.CreateChannel("hello");
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -27,6 +34,23 @@ namespace Ordering.Application.Services.BackgroundServices
                 _logger.LogDebug("Begin Register call from method ExecuteAsync");
             }
 
+            Console.WriteLine(" [*] Waiting for messages.");
+
+            var consumer = new EventingBasicConsumer(subscribeToChannelService.Channel);
+            consumer.Received += (model, ea) =>
+            {
+                // to event
+                // mediator.Send<event>
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+                _logger.LogDebug($" [x] Received {message}");
+
+            };
+
+            subscribeToChannelService.Consume(consumer);
+
+            // --------------------- end consumer ------------------------
+
             stoppingToken.Register(() =>
                 _logger.LogDebug($" GracePeriod background task is stopping."));
 
@@ -34,10 +58,11 @@ namespace Ordering.Application.Services.BackgroundServices
             {
                 _logger.LogDebug($"GracePeriod task doing background work.");
 
-                // This eShopOnContainers method is querying a database table
-                // and publishing events into the Event Bus (RabbitMQ / ServiceBus)
-                //CheckConfirmedGracePeriodOrders();
-                // subscribe here
+
+                const string message2 = "Hello World!";
+                publishToChannelService.Send(message2);
+                Console.WriteLine($" [x] Sent {message2}");
+
                 try
                 {
                     await Task.Delay(_settings.Value.CheckUpdateTime, stoppingToken);

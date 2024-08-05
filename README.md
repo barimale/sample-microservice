@@ -14,6 +14,10 @@ dotnet ef database update
 
 dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=DataBaseName;TrustServerCertificate=True;Integrated Security=True;"```
 ```
+## RabbitMQ
+```
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
+```
 # sample-microservice - links
 
 https://medium.com/@avinash.dhumal/exploring-microservices-saga-and-compensation-patterns-with-c-example-0da3dfe87bb6
