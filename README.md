@@ -16,7 +16,7 @@ dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=Data
 ```
 ## Docker
 ```
-docker build -t foo . && docker run -it foo
+docker build -t foo . && docker run -it foo -p 5672:5672 -p 15672:15672
 ```
 ## RabbitMQ
 ```
