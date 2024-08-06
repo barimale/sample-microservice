@@ -14,12 +14,14 @@ dotnet ef database update
 
 dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=DataBaseName;TrustServerCertificate=True;Integrated Security=True;"```
 ```
-## Docker
+## Docker build
 ```
 docker build -t foo . && docker run -it -p 1433:1433 -p 15672:15672 -p 5672:5672 foo
 ```
-## RabbitMQ
+## Docker externalls
 ```
+docker run --name eventstore-node -it -p 2113:2113 -p 1113:1113 eventstore/eventstore:release-5.0.11
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong@Passw0rd>" -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
 ```
 # sample-microservice - links
