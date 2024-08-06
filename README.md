@@ -73,3 +73,5 @@ https://medium.com/c-sharp-progarmming/handling-errors-with-iexceptionhandler-in
 https://developers.eventstore.com/clients/tcp/dotnet/21.2/#appending-events
 
 https://github.com/aspnetrun/run-aspnetcore-microservices
+
+https://medium.com/@no1.melman10/getting-started-with-eventstoredb-c-13411ec08713
