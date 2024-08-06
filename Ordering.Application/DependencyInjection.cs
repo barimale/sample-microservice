@@ -38,7 +38,7 @@ public static class DependencyInjection
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
         string hostName = configuration.GetValue<string>("AppSettings:HostName");
 
-       // services.AddHostedService<GracePeriodManagerService>();
+        services.AddHostedService<GracePeriodManagerService>();
         services.Configure<OrderingBackgroundSettings>(
             configuration.GetSection("AppSettings"));
 
