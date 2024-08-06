@@ -79,3 +79,5 @@ https://medium.com/@no1.melman10/getting-started-with-eventstoredb-c-13411ec0871
 https://medium.com/@abhinandkr56/crud-operations-using-eventstoredb-in-net-b851f65bd028
 
 https://eventuous.dev/docs/persistence/event-store
+
+https://github.com/Eventuous/eventuous/tree/dev/samples
