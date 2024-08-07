@@ -4,6 +4,9 @@ using Microsoft.Extensions.Options;
 using RabbitMQ.Client.Events;
 using System.Text;
 using BuildingBlocks.Services.RabbitMq;
+using Microsoft.Extensions.DependencyInjection;
+using MediatR;
+using Ordering.Application.CQRS.Queries;
 
 namespace Ordering.Application.Services.BackgroundServices
 {
@@ -13,17 +16,20 @@ namespace Ordering.Application.Services.BackgroundServices
         private readonly IOptions<OrderingBackgroundSettings> _settings;
         private readonly PublishToChannelService publishToChannelService;
         private readonly SubscribeToChannelService subscribeToChannelService;
-        //private readonly IEventBus _eventBuskk
+        private readonly IServiceProvider _serviceProvider;
 
         public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,
-                                         ILogger<GracePeriodManagerService> logger)
+                                         ILogger<GracePeriodManagerService> logger,
+                                         IServiceProvider serviceProvider)
         {
+            _serviceProvider = serviceProvider;
             _settings = settings;
             _logger = logger;
             publishToChannelService = new PublishToChannelService(_settings.Value.HostName);
             subscribeToChannelService = new SubscribeToChannelService(_settings.Value.HostName);
             subscribeToChannelService.CreateChannel(_settings.Value.ChannelName);
             publishToChannelService.CreateChannel(_settings.Value.ChannelName);
+            _serviceProvider = serviceProvider;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -41,7 +47,11 @@ namespace Ordering.Application.Services.BackgroundServices
             consumer.Received += (model, ea) =>
             {
                 // to event
-                // mediator.Send<event>
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    var mediator = scope.ServiceProvider.GetRequiredService<ISender>();
+                    //mediator.Send(new GetOrdersQuery(new BuildingBlocks.Pagination.PaginationRequest(1, 10)));
+                }
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
                 _logger.LogDebug($" [x] Received {message}");
