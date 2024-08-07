@@ -81,3 +81,5 @@ https://medium.com/@abhinandkr56/crud-operations-using-eventstoredb-in-net-b851f
 https://eventuous.dev/docs/persistence/event-store
 
 https://github.com/Eventuous/eventuous/tree/dev/samples
+
+https://medium.com/@farkhondepeyali/implementing-saga-pattern-in-net-core-with-rebus-and-rabbitmq-04f8f17f2b2b
