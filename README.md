@@ -83,3 +83,6 @@ https://eventuous.dev/docs/persistence/event-store
 https://github.com/Eventuous/eventuous/tree/dev/samples
 
 https://medium.com/@farkhondepeyali/implementing-saga-pattern-in-net-core-with-rebus-and-rabbitmq-04f8f17f2b2b
+
+https://github.com/mookid8000/Cirqus
+
