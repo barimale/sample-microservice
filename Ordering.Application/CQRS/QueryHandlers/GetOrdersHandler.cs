@@ -1,16 +1,15 @@
 ﻿using AutoMapper;
 using BuildingBlocks.CQRS;
 using BuildingBlocks.Pagination;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
-using Ordering.Infrastructure;
 
 namespace Ordering.Application.CQRS.QueryHandlers;
 public class GetOrdersHandler(IOrderRepository orderRepository, IMapper mapper, ILogger<GetOrdersHandler> logger)
     : IQueryHandler<GetOrdersQuery, GetOrdersResult>
+     
 {
     public async Task<GetOrdersResult> Handle(GetOrdersQuery query, CancellationToken cancellationToken)
     {

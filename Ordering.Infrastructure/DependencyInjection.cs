@@ -27,8 +27,8 @@ public static class DependencyInjection
         });
 
         // Add services to the container.
-        services.AddScoped<IBuyerRepository, BuyerRepository>();
-        services.AddScoped<IOrderRepository, OrderRepository>();
+        services.AddTransient<IBuyerRepository, BuyerRepository>();
+        services.AddTransient<IOrderRepository, OrderRepository>();
         //services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
 
         //services.AddDbContext<ApplicationDbContext>((sp, options) =>
