@@ -15,7 +15,7 @@ public class DummyBuyerExampleHandler(IBuyerRepository repo, ILogger<DummyBuyerE
         var pageIndex = query.PaginationRequest.PageIndex;
         var pageSize = query.PaginationRequest.PageSize;
 
-        var result = await repo.FindAsync("asdadsads");
+        //var result = await repo.FindAsync("asdadsads");
 
         return new DummyBuyersExampleResult(
             new PaginatedResult<OrderDto>(
