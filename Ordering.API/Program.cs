@@ -9,6 +9,7 @@ using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 using Ordering.API.Extensions;
 using Ordering.API.SeedWork;
 using BuildingBlocks.Exceptions.Handler;
+using Ordering.API.Utilities.Healthcheck;
 
 namespace Ordering.API
 {
@@ -43,7 +44,10 @@ namespace Ordering.API
 
                 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
                 builder.Services.AddEndpointsApiExplorer();
-                builder.Services.AddSwaggerGen();
+                builder.Services.AddSwaggerGen(options =>
+                {
+                    options.DocumentFilter<HealthChecksDocumentFilter>();
+                });
 
                 builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
 
@@ -52,7 +56,7 @@ namespace Ordering.API
 
                 app.UseHttpLogging();
                 app.UseApiServices();
-
+                app.UseRouting();
                 // In production -> execute migrations via script
                 if (app.Environment.IsDevelopment())
                 {
@@ -76,7 +80,13 @@ namespace Ordering.API
                 }
 
                 app.UseHttpsRedirection();
-
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions()
+                    {
+                        ResponseWriter = HeartbeatUtility.WriteResponse
+                    });
+                });
                 app.Run();
             }
             finally
