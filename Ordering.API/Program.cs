@@ -10,6 +10,7 @@ using Ordering.API.Extensions;
 using Ordering.API.SeedWork;
 using BuildingBlocks.API.Exceptions.Handler;
 using BuildingBlocks.API.Utilities.Healthcheck;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 namespace Ordering.API
 {
@@ -57,7 +58,7 @@ namespace Ordering.API
 
                 app.UseHttpLogging();
                 app.UseApiServices();
-                app.UseRouting();
+
                 // In production -> execute migrations via script
                 if (app.Environment.IsDevelopment())
                 {
@@ -81,13 +82,11 @@ namespace Ordering.API
                 }
 
                 app.UseHttpsRedirection();
-                app.UseEndpoints(endpoints =>
+                app.MapHealthChecks(HeartbeatUtility.Path, new HealthCheckOptions()
                 {
-                    endpoints.MapHealthChecks(HeartbeatUtility.Path, new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions()
-                    {
-                        ResponseWriter = HeartbeatUtility.WriteResponse
-                    });
+                    ResponseWriter = HeartbeatUtility.WriteResponse
                 });
+
                 app.Run();
             }
             finally
