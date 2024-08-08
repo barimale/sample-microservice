@@ -10,7 +10,7 @@ namespace Ordering.API.Utilities.Healthcheck
         private const string _name = "Health";
         private const string _operationId = "GetHeartbeat";
         private const string _summary = "Get System Heartbeat";
-        private const string _description = "Get the heartbeat of the system. If the system is OK, status 200 will be returned, else status 503.";
+        private const string _description = "Get the heartbeat of the system.";
 
         private const string _okCode = "200";
         private const string _okDescription = "Healthy";
