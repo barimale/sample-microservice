@@ -89,3 +89,5 @@ https://github.com/mookid8000/Cirqus
 https://github.com/m-jovanovic/newsletter-orchestrated-saga 
 
 https://github.com/rebus-org/RebusSamples/blob/master/Sagas/SagaDemo/Handlers/PayoutSaga.cs
+
+https://github.com/b-y-t-e/TheSaga
