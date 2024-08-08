@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Text.Json;
 using System.Text;
+using Microsoft.AspNetCore.Http;
 
 namespace Ordering.API.Utilities.Healthcheck
 {
