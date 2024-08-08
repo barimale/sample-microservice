@@ -66,6 +66,31 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                     }
                 },
                 {
+                    HeartbeatUtility.Data,
+                    new OpenApiSchema
+                    {
+                        Type = _typeObject,
+                        Nullable = true,
+                        AdditionalProperties = new OpenApiSchema()
+                    }
+                },
+                                {
+                    HeartbeatUtility.Description,
+                    new OpenApiSchema
+                    {
+                        Type = _typeString,
+                        Nullable = true
+                    }
+                },
+                {
+                    HeartbeatUtility.Duration,
+                    new OpenApiSchema
+                    {
+                        Type = _typeString,
+                        Nullable = true
+                    }
+                },
+                {
                     HeartbeatUtility.Status,
                     new OpenApiSchema
                     {
@@ -77,22 +102,14 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                     }
                 },
                 {
-                    HeartbeatUtility.Description,
-                    new OpenApiSchema
-                    {
-                        Type = _typeString,
-                        Nullable = true
-                    }
-                },
-                {
-                    HeartbeatUtility.Data,
+                    HeartbeatUtility.Tags,
                     new OpenApiSchema
                     {
                         Type = _typeObject,
                         Nullable = true,
                         AdditionalProperties = new OpenApiSchema()
                     }
-                }
+                },
             }
             });
         }

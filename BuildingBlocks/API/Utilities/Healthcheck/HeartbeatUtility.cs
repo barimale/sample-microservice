@@ -14,8 +14,10 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
         public const string TotalTime = "totalDuration";
         public const string Results = "entries";
         public const string Name = "Name";
-        public const string Description = "description";
+        public const string Duration = "duration";
         public const string Data = "data";
+        public const string Tags = "tags";
+        public const string Description = "description";
 
         public static Task WriteResponse(HttpContext context, HealthReport healthReport)
         {
@@ -77,7 +79,7 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                 writer.WriteString(Status, entry.Value.Status.ToString("G"));
 
                 if (entry.Value.Description != null)
-                    writer.WriteString(Description, entry.Value.Description);
+                    writer.WriteString(Duration, entry.Value.Description);
 
                 if (entry.Value.Data.Count > 0)
                     writer.WriteEntryData(entry.Value.Data);
