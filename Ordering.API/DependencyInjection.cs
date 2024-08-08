@@ -3,8 +3,10 @@ using BuildingBlocks.API.Utilities.Healthcheck;
 using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
+using Ordering.API.Utilities;
 using Ordering.API.Validators;
 
 namespace Ordering.API;
@@ -16,7 +18,20 @@ public static class DependencyInjection
         services.AddCarter();
         services.AddAutoMapper(typeof(ApiProfile));
         services.AddExceptionHandler<GlobalExceptionHandler>();
-        services.AddHealthChecks();
+        services.AddHealthChecks()
+            .AddSqlServer(
+                configuration["ConnectionStrings:Database"], 
+                healthQuery: "select 1", 
+                name: "SQL server", 
+                failureStatus: HealthStatus.Unhealthy, 
+                tags: new[] { "Feedback", "Database" })
+            .AddCheck<StarWarsRemoteHealthCheck>(
+                "Remote endpoints Health Check", 
+                failureStatus: HealthStatus.Unhealthy)
+            .AddCheck<MemoryHealthCheck>(
+            $"Feedback Service Memory Check", 
+            failureStatus: HealthStatus.Unhealthy, 
+            tags: new[] { "Feedback Service" });
 
         services.AddScoped<CreateOrderRequestValidationFilter>();
         services.AddScoped<CreateOrderRequestValidator>();
