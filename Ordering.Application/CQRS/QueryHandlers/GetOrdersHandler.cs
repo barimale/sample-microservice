@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using BuildingBlocks.API.Pagination;
 using BuildingBlocks.Application.CQRS;
-using BuildingBlocks.Pagination;
 using Microsoft.Extensions.Logging;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;

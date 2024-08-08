@@ -50,7 +50,7 @@ namespace Ordering.Application.Services.BackgroundServices
                 using (var scope = _serviceProvider.CreateScope())
                 {
                     var mediator = scope.ServiceProvider.GetRequiredService<ISender>();
-                    mediator.Send(new DummyBuyersExample(new BuildingBlocks.Pagination.PaginationRequest(1, 10)));
+                    mediator.Send(new DummyBuyersExample(new BuildingBlocks.API.Pagination.PaginationRequest(1, 10)));
                 }
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);

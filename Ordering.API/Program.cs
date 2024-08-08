@@ -82,7 +82,7 @@ namespace Ordering.API
                 app.UseHttpsRedirection();
                 app.UseEndpoints(endpoints =>
                 {
-                    endpoints.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions()
+                    endpoints.MapHealthChecks(HeartbeatUtility.Path, new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions()
                     {
                         ResponseWriter = HeartbeatUtility.WriteResponse
                     });

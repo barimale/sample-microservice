@@ -1,6 +1,5 @@
-﻿using BuildingBlocks.Application.CQRS;
-using BuildingBlocks.Pagination;
-using MediatR;
+﻿using BuildingBlocks.API.Pagination;
+using BuildingBlocks.Application.CQRS;
 using Microsoft.Extensions.Logging;
 using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;

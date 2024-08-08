@@ -1,4 +1,5 @@
 ﻿using BuildingBlocks.API.Exceptions.Handler;
+using BuildingBlocks.API.Utilities.Healthcheck;
 using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -28,7 +29,7 @@ public static class DependencyInjection
         app.MapCarter();
 
         app.UseExceptionHandler(options => { });
-        app.UseHealthChecks("/health",
+        app.UseHealthChecks(HeartbeatUtility.Path,
             new HealthCheckOptions
             {
                 ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
