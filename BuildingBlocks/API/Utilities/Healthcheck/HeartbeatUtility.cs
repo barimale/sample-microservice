@@ -11,8 +11,8 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
 
         public const string ContentType = "application/json; charset=utf-8";
         public const string Status = "status";
-        public const string TotalTime = "totalTime";
-        public const string Results = "results";
+        public const string TotalTime = "totalDuration";
+        public const string Results = "entries";
         public const string Name = "Name";
         public const string Description = "description";
         public const string Data = "data";
