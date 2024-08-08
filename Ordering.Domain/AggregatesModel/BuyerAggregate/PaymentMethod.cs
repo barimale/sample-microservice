@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.SeedWork;
+﻿using BuildingBlocks.Domain.SeedWork;
 using Ordering.Domain.Exceptions;
 using System.ComponentModel.DataAnnotations;
 

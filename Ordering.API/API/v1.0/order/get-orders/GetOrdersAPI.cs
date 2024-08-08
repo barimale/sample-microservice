@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BuildingBlocks.Pagination;
+using BuildingBlocks.API.Pagination;
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;

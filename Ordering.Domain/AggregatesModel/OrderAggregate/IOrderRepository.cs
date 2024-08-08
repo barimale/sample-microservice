@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.SeedWork;
+﻿using BuildingBlocks.Domain.SeedWork;
 
 namespace Ordering.Domain.AggregatesModel.OrderAggregate;
 

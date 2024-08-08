@@ -1,12 +1,12 @@
-﻿using BuildingBlocks.Services;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client.Events;
 using System.Text;
-using BuildingBlocks.Services.RabbitMq;
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 using Ordering.Application.CQRS.Queries;
+using BuildingBlocks.Application.Services;
+using BuildingBlocks.Application.Services.RabbitMq;
 
 namespace Ordering.Application.Services.BackgroundServices
 {

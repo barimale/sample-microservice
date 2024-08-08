@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.SeedWork;
+﻿using BuildingBlocks.Domain.SeedWork;
 using Ordering.API.Extensions;
 using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using Ordering.Infrastructure;

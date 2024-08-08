@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.SeedWork;
+﻿using BuildingBlocks.Domain.SeedWork;
 using Ordering.Domain.Events.BuyerEvents;
 using System.ComponentModel.DataAnnotations;
 

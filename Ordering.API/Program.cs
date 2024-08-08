@@ -8,8 +8,8 @@ using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 using Ordering.API.Extensions;
 using Ordering.API.SeedWork;
-using BuildingBlocks.Exceptions.Handler;
-using Ordering.API.Utilities.Healthcheck;
+using BuildingBlocks.API.Exceptions.Handler;
+using BuildingBlocks.API.Utilities.Healthcheck;
 
 namespace Ordering.API
 {

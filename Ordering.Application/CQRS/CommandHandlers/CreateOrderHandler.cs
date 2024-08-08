@@ -1,5 +1,5 @@
-﻿using BuildingBlocks.CQRS;
-using BuildingBlocks.Services.RabbitMq;
+﻿using BuildingBlocks.Application.CQRS;
+using BuildingBlocks.Application.Services.RabbitMq;
 using Microsoft.Extensions.Options;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Application.Services.BackgroundServices;

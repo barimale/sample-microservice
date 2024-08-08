@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BuildingBlocks.CQRS;
+using BuildingBlocks.Application.CQRS;
 using BuildingBlocks.Pagination;
 using Microsoft.Extensions.Logging;
 using Ordering.Application.CQRS.Queries;

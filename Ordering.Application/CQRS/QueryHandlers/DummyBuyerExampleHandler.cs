@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.CQRS;
+﻿using BuildingBlocks.Application.CQRS;
 using BuildingBlocks.Pagination;
 using MediatR;
 using Microsoft.Extensions.Logging;

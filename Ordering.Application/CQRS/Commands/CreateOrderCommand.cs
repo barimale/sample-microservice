@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.CQRS;
+﻿using BuildingBlocks.Application.CQRS;
 using FluentValidation;
 using Ordering.Application.Dtos;
 using Ordering.Domain.AggregatesModel.OrderAggregate;

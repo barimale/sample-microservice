@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\utilities\\healthcheck\\heartbeatutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\utilities\\healthcheck\\heartbeatutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\api\\utilities\\healthcheck\\heartbeatutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\api\\utilities\\healthcheck\\heartbeatutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\utilities\\healthcheck\\healthchecksdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\utilities\\healthcheck\\healthchecksdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\api\\utilities\\healthcheck\\healthchecksdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\api\\utilities\\healthcheck\\healthchecksdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,11 +60,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HeartbeatUtility.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
-              "RelativeToolTip": "BuildingBlocks\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA2wBMAAAApAAAA",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\API\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\API\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\API\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
+              "RelativeToolTip": "BuildingBlocks\\API\\Utilities\\Healthcheck\\HeartbeatUtility.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA2wBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T18:10:48.857Z",
               "EditorCaption": ""
@@ -73,10 +73,10 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "HealthChecksDocumentFilter.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
-              "RelativeToolTip": "BuildingBlocks\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\API\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\API\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\API\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
+              "RelativeToolTip": "BuildingBlocks\\API\\Utilities\\Healthcheck\\HealthChecksDocumentFilter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T18:09:58.33Z",

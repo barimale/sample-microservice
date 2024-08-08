@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.Behaviors;
+﻿using BuildingBlocks.Application.Behaviors;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.Exceptions.Handler;
+﻿using BuildingBlocks.API.Exceptions.Handler;
 using Carter;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;

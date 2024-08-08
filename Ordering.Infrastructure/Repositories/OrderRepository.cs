@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.SeedWork;
+﻿using BuildingBlocks.Domain.SeedWork;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 using System;

@@ -1,5 +1,5 @@
-﻿using BuildingBlocks.CQRS;
-using BuildingBlocks.Pagination;
+﻿using BuildingBlocks.API.Pagination;
+using BuildingBlocks.Application.CQRS;
 using Ordering.Application.Dtos;
 
 namespace Ordering.Application.CQRS.Queries;
