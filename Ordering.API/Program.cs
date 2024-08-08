@@ -47,6 +47,7 @@ namespace Ordering.API
                 builder.Services.AddSwaggerGen(options =>
                 {
                     options.DocumentFilter<HealthChecksDocumentFilter>();
+                    options.EnableAnnotations();
                 });
 
                 builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();

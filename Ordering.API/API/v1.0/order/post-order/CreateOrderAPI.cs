@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.API.Model;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Commands;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Ordering.API.Endpoints;
 
@@ -13,9 +14,9 @@ public class CreateOrderAPI : ICarterModule
     public void AddRoutes(IEndpointRouteBuilder app)
     {
         app.MapPost("api/v1/orders", async (
-            CreateOrderRequest request, 
-            ISender sender, 
-            IMapper mapper, 
+            CreateOrderRequest request,
+            ISender sender,
+            IMapper mapper,
             ILogger<CreateOrderAPI> logger) =>
         {
             var command = mapper.Map<CreateOrderCommand>(request);
@@ -31,7 +32,7 @@ public class CreateOrderAPI : ICarterModule
         .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
         .AddEndpointFilter<CreateOrderRequestValidationFilter>()
         .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders).WithSummary("Get Orders")
-        .WithSummary("Create Order")
-        .WithDescription("Create Order");
+        .WithSummary("Create Order summary")
+        .WithDescription("Create Order description");
     }
 }

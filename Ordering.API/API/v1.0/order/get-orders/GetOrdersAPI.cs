@@ -11,7 +11,7 @@ public class GetOrders : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("api/v1/orders",async (
+        app.MapGet("api/v1/orders", async (
             [AsParameters] PaginationRequest request,
             ISender sender,
             IMapper mapper,
@@ -27,7 +27,7 @@ public class GetOrders : ICarterModule
         .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
         //.AddEndpointFilter<GetOrdersFilter>()
         .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders)
-        .WithSummary("Get Orders")
-        .WithDescription("Get Orders");
+        .WithSummary("Get Orders summary")
+        .WithDescription("Get Orders description");
     }
 }

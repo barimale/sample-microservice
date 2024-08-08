@@ -7,7 +7,7 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
 {
     public static class HeartbeatUtility
     {
-        public const string Path = "/health";
+        public const string Path = "/healthcheck";
 
         public const string ContentType = "application/json; charset=utf-8";
         public const string Status = "status";
