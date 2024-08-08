@@ -5,7 +5,7 @@ using Ordering.Application.CQRS.Queries;
 using Ordering.Application.Dtos;
 
 namespace Ordering.Application.CQRS.QueryHandlers;
-public class GetOrdersHandler2(ILogger<GetOrdersHandler> logger)
+public class DummyBuyerExampleHandler(ILogger<DummyBuyerExampleHandler> logger)
     : IQueryHandler<DummyBuyersExample, DummyBuyersExampleResult>
 {
     public async Task<DummyBuyersExampleResult> Handle(DummyBuyersExample query, CancellationToken cancellationToken)
