@@ -105,9 +105,9 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                     HeartbeatUtility.Tags,
                     new OpenApiSchema
                     {
-                        Type = _typeObject,
+                        Type = _typeArray,
                         Nullable = true,
-                        AdditionalProperties = new OpenApiSchema()
+                        Items  = new OpenApiSchema()
                     }
                 },
             }

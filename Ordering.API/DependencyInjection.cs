@@ -27,11 +27,12 @@ public static class DependencyInjection
                 tags: new[] { "Feedback", "Database" })
             .AddCheck<StarWarsRemoteHealthCheck>(
                 "Remote endpoints Health Check", 
-                failureStatus: HealthStatus.Unhealthy)
+                failureStatus: HealthStatus.Unhealthy,
+                tags: new[] { "Feedback", "External" })
             .AddCheck<MemoryHealthCheck>(
             $"Feedback Service Memory Check", 
             failureStatus: HealthStatus.Unhealthy, 
-            tags: new[] { "Feedback Service" });
+            tags: new[] { "Feedback", "Service" });
 
         services.AddScoped<CreateOrderRequestValidationFilter>();
         services.AddScoped<CreateOrderRequestValidator>();
