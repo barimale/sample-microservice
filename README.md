@@ -93,3 +93,13 @@ https://github.com/rebus-org/RebusSamples/blob/master/Sagas/SagaDemo/Handlers/Pa
 https://github.com/b-y-t-e/TheSaga
 
 https://medium.com/@jeslurrahman/implementing-health-checks-in-net-8-c3ba10af83c3#:~:text=To%20check%20the%20health%20of%20your%20web%20API%2C,that%20your%20web%20API%20is%20marked%20as%20%E2%80%9CHealthy.%E2%80%9D
+
+https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e
+
+https://medium.com/@omar.nebi147/integrating-keycloak-with-net-core-web-api-6-986fa0a81063
+
+https://medium.com/@fradkilo700/dynamic-service-discovery-in-microservices-with-eureka-a-net-core-tutorial-6a666374fb6a
+
+https://medium.com/@JayArOnde/microservices-using-asp-net-core-dd14396ba9a4
+
+https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-process-running-in-docker-container?view=vs-2022
