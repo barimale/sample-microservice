@@ -97,3 +97,5 @@ https://medium.com/@jeslurrahman/implementing-health-checks-in-net-8-c3ba10af83c
 https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e
 
 https://medium.com/@omar.nebi147/integrating-keycloak-with-net-core-web-api-6-986fa0a81063
+
+https://medium.com/@fradkilo700/dynamic-service-discovery-in-microservices-with-eureka-a-net-core-tutorial-6a666374fb6a
