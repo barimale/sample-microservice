@@ -62,9 +62,10 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                     HeartbeatUtility.Name,
                     new OpenApiSchema
                     {
-                        Type = _typeString
-                    }
-                },
+                        Type = _typeObject,
+                                        Properties = new Dictionary<string, OpenApiSchema>
+                                        {
+
                 {
                     HeartbeatUtility.Data,
                     new OpenApiSchema
@@ -110,7 +111,7 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                         Items  = new OpenApiSchema()
                     }
                 },
-            }
+                }}}},
             });
         }
 
