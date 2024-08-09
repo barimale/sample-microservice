@@ -101,3 +101,5 @@ https://medium.com/@omar.nebi147/integrating-keycloak-with-net-core-web-api-6-98
 https://medium.com/@fradkilo700/dynamic-service-discovery-in-microservices-with-eureka-a-net-core-tutorial-6a666374fb6a
 
 https://medium.com/@JayArOnde/microservices-using-asp-net-core-dd14396ba9a4
+
+https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-process-running-in-docker-container?view=vs-2022
