@@ -93,3 +93,5 @@ https://github.com/rebus-org/RebusSamples/blob/master/Sagas/SagaDemo/Handlers/Pa
 https://github.com/b-y-t-e/TheSaga
 
 https://medium.com/@jeslurrahman/implementing-health-checks-in-net-8-c3ba10af83c3#:~:text=To%20check%20the%20health%20of%20your%20web%20API%2C,that%20your%20web%20API%20is%20marked%20as%20%E2%80%9CHealthy.%E2%80%9D
+
+https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e
