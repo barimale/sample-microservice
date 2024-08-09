@@ -63,9 +63,8 @@ namespace BuildingBlocks.API.Utilities.Healthcheck
                     new OpenApiSchema
                     {
                         Type = _typeObject,
-                                        Properties = new Dictionary<string, OpenApiSchema>
-                                        {
-
+                        Properties = new Dictionary<string, OpenApiSchema>
+                {
                 {
                     HeartbeatUtility.Data,
                     new OpenApiSchema
