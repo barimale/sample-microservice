@@ -99,3 +99,5 @@ https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oa
 https://medium.com/@omar.nebi147/integrating-keycloak-with-net-core-web-api-6-986fa0a81063
 
 https://medium.com/@fradkilo700/dynamic-service-discovery-in-microservices-with-eureka-a-net-core-tutorial-6a666374fb6a
+
+https://medium.com/@JayArOnde/microservices-using-asp-net-core-dd14396ba9a4
