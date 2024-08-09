@@ -1,4 +1,4 @@
-﻿using Ordering.API.API.Model;
+﻿using Ordering.API.Model.order;
 using Ordering.API.Validators;
 
 namespace Ordering.API.Filters

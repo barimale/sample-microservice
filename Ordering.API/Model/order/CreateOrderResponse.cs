@@ -1,6 +1,6 @@
 ﻿using TypeGen.Core.TypeAnnotations;
 
-namespace Ordering.API.API.Model
+namespace Ordering.API.Model.order
 {
     [ExportTsInterface]
     public class CreateOrderResponse
@@ -12,7 +12,7 @@ namespace Ordering.API.API.Model
 
         public CreateOrderResponse(int id)
         {
-            this.Id = id;
+            Id = id;
         }
 
         public int Id { get; set; }

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Ordering.API.API.Model;
+using Ordering.API.Model.order;
 using Ordering.Application.CQRS.Commands;
 using Ordering.Domain.AggregatesModel.OrderAggregate;
 

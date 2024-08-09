@@ -1,7 +1,7 @@
 ﻿using Ordering.Application.Dtos;
 using TypeGen.Core.TypeAnnotations;
 
-namespace Ordering.API.API.Model
+namespace Ordering.API.Model.order
 {
     [ExportTsInterface]
     public class CreateOrderRequest

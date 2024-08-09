@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using Ordering.API.API.Model;
+using Ordering.API.Model.order;
 
 namespace Ordering.API.Validators
 {
