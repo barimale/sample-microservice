@@ -3,6 +3,7 @@ using BuildingBlocks.API.Pagination;
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.HttpLogging;
+using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
 
 namespace Ordering.API.Endpoints;
@@ -25,7 +26,7 @@ public class GetOrders : ICarterModule
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
         .WithHttpLogging(HttpLoggingFields.RequestPropertiesAndHeaders)
-        //.AddEndpointFilter<GetOrdersFilter>()
+        .AddEndpointFilter<GetOrdersRequestValidationFilter>()
         .WithHttpLogging(HttpLoggingFields.ResponsePropertiesAndHeaders)
         .WithSummary("Get Orders summary")
         .WithDescription("Get Orders description");
