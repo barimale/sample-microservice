@@ -15,5 +15,5 @@ RUN dotnet publish "./Ordering.API/Ordering.API.csproj" -c Release -o /app/publi
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-#ENTRYPOINT ["dotnet", "Ordering.API.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet Ordering.API.dll
+ENTRYPOINT ["dotnet", "Ordering.API.dll"]
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet Ordering.API.dll
