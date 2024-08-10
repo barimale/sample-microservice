@@ -103,3 +103,5 @@ https://medium.com/@fradkilo700/dynamic-service-discovery-in-microservices-with-
 https://medium.com/@JayArOnde/microservices-using-asp-net-core-dd14396ba9a4
 
 https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-process-running-in-docker-container?view=vs-2022
+
+https://github.com/rafpadilla/ApiGatewayWithServiceDiscovery
