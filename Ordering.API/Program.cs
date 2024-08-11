@@ -11,7 +11,6 @@ using Ordering.API.SeedWork;
 using BuildingBlocks.API.Exceptions.Handler;
 using BuildingBlocks.API.Utilities.Healthcheck;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using BuildingBlocks.Application;
 
 namespace Ordering.API
 {
@@ -53,7 +52,6 @@ namespace Ordering.API
                 });
 
                 builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
-                builder.Services.AddConsulConfig(builder.Configuration);
 
                 var app = builder.Build();
                 app.UseExceptionHandler(options => { });
@@ -88,8 +86,6 @@ namespace Ordering.API
                 {
                     ResponseWriter = HeartbeatUtility.WriteResponse
                 });
-
-                app.UseConsul(builder.Configuration);
 
                 app.Run();
             }
