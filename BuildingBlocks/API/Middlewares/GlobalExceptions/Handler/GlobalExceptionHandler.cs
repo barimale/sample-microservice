@@ -1,11 +1,11 @@
-﻿using BuildingBlocks.API.Exceptions;
+﻿using BuildingBlocks.API.Middlewares.GlobalExceptions;
 using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace BuildingBlocks.API.Exceptions.Handler;
+namespace BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
 public class GlobalExceptionHandler
     (ILogger<GlobalExceptionHandler> logger)
     : IExceptionHandler

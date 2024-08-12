@@ -1,4 +1,4 @@
-﻿namespace BuildingBlocks.API.Exceptions;
+﻿namespace BuildingBlocks.API.Middlewares.GlobalExceptions;
 public class NotFoundException : Exception
 {
     public NotFoundException(string message) : base(message)

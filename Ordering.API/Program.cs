@@ -8,9 +8,10 @@ using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 using Ordering.API.Extensions;
 using Ordering.API.SeedWork;
-using BuildingBlocks.API.Exceptions.Handler;
 using BuildingBlocks.API.Utilities.Healthcheck;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
+using Ordering.API.Middlewares;
 
 namespace Ordering.API
 {
@@ -54,6 +55,7 @@ namespace Ordering.API
                 builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
 
                 var app = builder.Build();
+                app.UseMiddleware<RequestResponseLoggerMiddleware>();
                 app.UseExceptionHandler(options => { });
 
                 app.UseHttpLogging();

@@ -1,4 +1,5 @@
-﻿using BuildingBlocks.API.Exceptions.Handler;
+﻿using BuildingBlocks.API.Middlewares;
+using BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
 using BuildingBlocks.API.Utilities.Healthcheck;
 using Carter;
 using HealthChecks.UI.Client;

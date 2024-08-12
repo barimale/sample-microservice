@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\application\\dependencyinjectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\application\\dependencyinjectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\middlewares\\requestresponseloggermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\middlewares\\requestresponseloggermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|G:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\api\\middlewares\\globalexceptions\\handler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\api\\middlewares\\globalexceptions\\handler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\Program.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeToolTip": "Ordering.API\\Program.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAQwFsAAAAdAAAA",
+              "DocumentIndex": 0,
+              "Title": "RequestResponseLoggerMiddleware.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
+              "RelativeToolTip": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T20:35:57.604Z",
+              "WhenOpened": "2024-08-12T10:48:32.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjectionExtensions.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Application\\DependencyInjectionExtensions.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\Application\\DependencyInjectionExtensions.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Application\\DependencyInjectionExtensions.cs",
-              "RelativeToolTip": "BuildingBlocks\\Application\\DependencyInjectionExtensions.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwDAAAAAMAAAA",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
+              "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T20:34:13.38Z",
+              "WhenOpened": "2024-08-12T10:42:19.762Z",
               "EditorCaption": ""
             },
             {
@@ -65,6 +73,32 @@
               "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-08-10T20:33:10.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:43:21.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Program.cs",
+              "RelativeDocumentMoniker": "Ordering.API\\Program.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Program.cs",
+              "RelativeToolTip": "Ordering.API\\Program.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAQwDkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T20:35:57.604Z",
               "EditorCaption": ""
             }
           ]
