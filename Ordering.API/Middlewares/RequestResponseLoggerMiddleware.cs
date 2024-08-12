@@ -25,7 +25,7 @@ namespace Ordering.API.Middlewares
             {
                 // wip body to middle class 
                 // https://learn.microsoft.com/en-us/answers/questions/1109851/asp-net-core-web-api-how-to-log-requests-and-respo
-                var request = JsonSerializer.Serialize(httpContext.Request.ToString());
+                var request = JsonSerializer.Serialize(HttpContextUtility.ToJsonData(httpContext.Request, httpContext));
                 var correlationId = Guid.NewGuid();
                 var saveTime = DateTimeOffset.UtcNow;
 
@@ -45,7 +45,7 @@ namespace Ordering.API.Middlewares
                 await _next(httpContext);
 
                 // wip body to middle class 
-                var response = JsonSerializer.Serialize(httpContext.Response.ToString());
+                var response = JsonSerializer.Serialize(HttpContextUtility.ToJsonData(httpContext.Response, httpContext));
                 var saveTime2 = DateTimeOffset.UtcNow;
 
                 using (var scope = _serviceProvider.CreateScope())
