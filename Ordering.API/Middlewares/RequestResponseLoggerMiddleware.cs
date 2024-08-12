@@ -29,6 +29,7 @@ namespace Ordering.API.Middlewares
             if (_isRequestResponseLoggingEnabled)
             {
                 // wip body to middle class 
+                // https://learn.microsoft.com/en-us/answers/questions/1109851/asp-net-core-web-api-how-to-log-requests-and-respo
                 var request = JsonSerializer.Serialize(httpContext.Request.ToString());
                 var correlationId = Guid.NewGuid();
                 var saveTime = DateTimeOffset.UtcNow;
