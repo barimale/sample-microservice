@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Ordering.Domain.AggregatesModel.BuyerAggregate;
-using Ordering.Infrastructure.Repositories;
-using System;
+﻿using Ordering.Domain.AggregatesModel.BuyerAggregate;
 using System.Text.Json;
 
 namespace Ordering.API.Middlewares
