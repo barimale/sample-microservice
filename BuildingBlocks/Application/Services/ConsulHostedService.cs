@@ -31,7 +31,7 @@ namespace BuildingBlocks.Application.Services
                     Address = _serviceConfig.Value.ServiceHost,
                     Port = _serviceConfig.Value.ServicePort
                 };
-
+                // wip
                 var check = new AgentServiceCheck
                 {
                     HTTP = _serviceConfig.Value.HealthCheckUrl,
