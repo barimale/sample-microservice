@@ -5,7 +5,6 @@ using Carter;
 using Consul;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.Extensions.DependencyInjection;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
 using Ordering.API.Utilities;
@@ -25,11 +24,11 @@ public static class DependencyInjection
             .AddSqlServer(
                 configuration["ConnectionStrings:Database"], 
                 healthQuery: "select 1", 
-                name: "SQL server", 
+                name: "SQL server health check", 
                 failureStatus: HealthStatus.Unhealthy, 
                 tags: new[] { "Feedback", "Database" })
             .AddCheck<StarWarsRemoteHealthCheck>(
-                "Remote endpoints Health Check", 
+                "Star wars remote endpoint health Check", 
                 failureStatus: HealthStatus.Unhealthy,
                 tags: new[] { "Feedback", "External" })
             .AddCheck<MemoryHealthCheck>(

@@ -20,7 +20,7 @@ namespace Ordering.API.Utilities
                 var response = await httpClient.GetAsync(connectionString);
                 if (response.IsSuccessStatusCode)
                 {
-                    return HealthCheckResult.Healthy($"Remote endpoints is healthy.");
+                    return HealthCheckResult.Healthy($"Remote endpoint is healthy.");
                 }
 
                 return HealthCheckResult.Unhealthy("Remote endpoint is unhealthy");
