@@ -5,6 +5,7 @@ using Carter;
 using Consul;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.DependencyInjection;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
 using Ordering.API.Utilities;
@@ -41,7 +42,7 @@ public static class DependencyInjection
 
         services.AddSingleton<IConsulClient, ConsulClient>(p => new ConsulClient(consulConfig =>
         {
-            consulConfig.Address = new Uri("http://localhost:8500");
+            consulConfig.Address = new Uri(configuration.GetSection("consul").Get<string>());
         }));
 
         services.AddSingleton<IHostedService, ConsulHostedService>();
