@@ -11,7 +11,7 @@
         public string ServiceName { get; set; } = "Order service";
         public string ServiceHost { get; set; } = "localhost";
         public int ServicePort { get; set; } = 7229;
-        public string HealthCheckUrl { get; set; } = "http://localhost:7229/api/healthcheck";
+        public string HealthCheckUrl { get; set; } = "api/healthcheck";
         public int HealthCheckIntervalSeconds { get; set; } = 10;
         public int HealthCheckTimeoutSeconds { get; set; } = 1;
     }

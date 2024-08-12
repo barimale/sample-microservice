@@ -7,36 +7,12 @@
       "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\application\\services\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\application\\services\\consulhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\application\\services\\consulhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\services\\backgroundservices\\graceperiodmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\services\\backgroundservices\\graceperiodmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|g:\\sample-microservice\\ordering.application\\cqrs\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\cqrs\\commandhandlers\\createorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|G:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,113 +36,35 @@
               "RelativeDocumentMoniker": "BuildingBlocks\\Application\\Services\\ConsulConfig.cs",
               "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Application\\Services\\ConsulConfig.cs",
               "RelativeToolTip": "BuildingBlocks\\Application\\Services\\ConsulConfig.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwA0AAABLAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:32:38.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\Program.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeToolTip": "Ordering.API\\Program.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAUwDgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:20:04.194Z",
+              "WhenOpened": "2024-08-12T16:53:56.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConsulHostedService.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "RelativeToolTip": "BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAkwDkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:14:38.829Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Ordering.API\\appsettings.json",
+              "ToolTip": "G:\\sample-microservice\\Ordering.API\\appsettings.json",
+              "RelativeToolTip": "Ordering.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T16:52:55.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
-              "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAQwC4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:25:07.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Ordering.API\\appsettings.Development.json",
               "ToolTip": "G:\\sample-microservice\\Ordering.API\\appsettings.Development.json",
               "RelativeToolTip": "Ordering.API\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-12T16:33:20.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Ordering.Application\\DependencyInjection.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "Ordering.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAMwCkAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:21:53.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GracePeriodManagerService.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\Services\\BackgroundServices\\GracePeriodManagerService.cs",
-              "RelativeDocumentMoniker": "Ordering.Application\\Services\\BackgroundServices\\GracePeriodManagerService.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\Services\\BackgroundServices\\GracePeriodManagerService.cs",
-              "RelativeToolTip": "Ordering.Application\\Services\\BackgroundServices\\GracePeriodManagerService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAIA2wA8AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:27:22.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateOrderHandler.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
-              "RelativeDocumentMoniker": "Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
-              "RelativeToolTip": "Ordering.Application\\CQRS\\CommandHandlers\\CreateOrderHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:22:05.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "README.md",
-              "DocumentMoniker": "G:\\sample-microservice\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "G:\\sample-microservice\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-08-12T16:10:58.726Z",
+              "WhenOpened": "2024-08-12T16:52:46.619Z",
               "EditorCaption": ""
             }
           ]
