@@ -1,14 +1,15 @@
-﻿using BuildingBlocks.API.Middlewares;
-using BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
+﻿using BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
 using BuildingBlocks.API.Utilities.Healthcheck;
+using BuildingBlocks.Application.Services;
 using Carter;
+using Consul;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
 using Ordering.API.Utilities;
 using Ordering.API.Validators;
+using HealthStatus = Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus;
 
 namespace Ordering.API;
 
@@ -37,6 +38,14 @@ public static class DependencyInjection
 
         services.AddScoped<CreateOrderRequestValidationFilter>();
         services.AddScoped<CreateOrderRequestValidator>();
+
+        services.AddSingleton<IConsulClient, ConsulClient>(p => new ConsulClient(consulConfig =>
+        {
+            consulConfig.Address = new Uri("http://localhost:8500");
+        }));
+
+        services.AddSingleton<IHostedService, ConsulHostedService>();
+        services.Configure<ConsulConfig>(configuration.GetSection("registration"));
 
         return services;
     }
