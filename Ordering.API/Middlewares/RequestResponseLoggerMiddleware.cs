@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Ordering.Domain.AggregatesModel.BuyerAggregate;
+using Ordering.Infrastructure.Repositories;
+using System;
+using System.Text.Json;
 
 namespace Ordering.API.Middlewares
 {
@@ -8,47 +12,58 @@ namespace Ordering.API.Middlewares
     {
         private readonly RequestDelegate _next;
         private readonly bool _isRequestResponseLoggingEnabled;
+        private readonly IServiceProvider _serviceProvider;
 
-        public RequestResponseLoggerMiddleware(RequestDelegate next, IConfiguration config)
+        public RequestResponseLoggerMiddleware(
+            RequestDelegate next, 
+            IConfiguration config,
+            IServiceProvider serviceProvider)
         {
             _next = next;
             _isRequestResponseLoggingEnabled = config.GetValue("EnableRequestResponseLogging", false);
+            _serviceProvider = serviceProvider;
         }
 
-        // WIP to db, IRequestResponseRepository here instead of IBuyer
         public async Task InvokeAsync(HttpContext httpContext, IBuyerRepository dbContext)
         {
-            // Middleware is enabled only when the EnableRequestResponseLogging config value is set.  
             if (_isRequestResponseLoggingEnabled)
             {
-                Console.WriteLine($"HTTP request information:\n" +
-                    $"\tMethod: {httpContext.Request.Method}\n" +
-                    $"\tPath: {httpContext.Request.Path}\n" +
-                    $"\tQueryString: {httpContext.Request.QueryString}\n" +
-                    $"\tHeaders: {FormatHeaders(httpContext.Request.Headers)}\n" +
-                    $"\tSchema: {httpContext.Request.Scheme}\n" +
-                    $"\tHost: {httpContext.Request.Host}\n" +
-                    $"\tBody: {await ReadBodyFromRequest(httpContext.Request)}");
+                // wip body to middle class 
+                var request = JsonSerializer.Serialize(httpContext.Request.ToString());
+                var correlationId = Guid.NewGuid();
+                var saveTime = DateTimeOffset.UtcNow;
 
-                // Temporarily replace the HttpResponseStream, which is a write-only stream, with a MemoryStream to capture it's value in-flight.  
-                var originalResponseBody = httpContext.Response.Body;
-                using var newResponseBody = new MemoryStream();
-                httpContext.Response.Body = newResponseBody;
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    var requestRepository = scope.ServiceProvider.GetRequiredService<IRequestRepository>();
+                    requestRepository.Add(new BuildingBlocks.Domain.Request.Request()
+                    {
+                        Content = request,
+                        CorrelationId = correlationId,
+                        ExecutionTime = saveTime
+                    });
 
-                // Call the next middleware in the pipeline  
-                await _next.Invoke(httpContext);
+                    await requestRepository.UnitOfWork.SaveChangesAsync();
+                }
 
-                newResponseBody.Seek(0, SeekOrigin.Begin);
-                var responseBodyText = await new StreamReader(httpContext.Response.Body).ReadToEndAsync();
+                await _next(httpContext);
 
-                Console.WriteLine($"HTTP request information:\n" +
-                    $"\tStatusCode: {httpContext.Response.StatusCode}\n" +
-                    $"\tContentType: {httpContext.Response.ContentType}\n" +
-                    $"\tHeaders: {FormatHeaders(httpContext.Response.Headers)}\n" +
-                    $"\tBody: {responseBodyText}");
+                // wip body to middle class 
+                var response = JsonSerializer.Serialize(httpContext.Response.ToString());
+                var saveTime2 = DateTimeOffset.UtcNow;
 
-                newResponseBody.Seek(0, SeekOrigin.Begin);
-                await newResponseBody.CopyToAsync(originalResponseBody);
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    var responseRepository = scope.ServiceProvider.GetRequiredService<IResponseRepository>();
+                    responseRepository.Add(new BuildingBlocks.Domain.Response.Response()
+                    {
+                        Content = response,
+                        CorrelationId = correlationId,
+                        ExecutionTime = saveTime2
+                    });
+
+                    await responseRepository.UnitOfWork.SaveChangesAsync();
+                }
             }
             else
             {

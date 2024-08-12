@@ -7,20 +7,32 @@
       "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\middlewares\\requestresponseloggermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|G:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\api\\middlewares\\globalexceptions\\handler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\api\\middlewares\\globalexceptions\\handler\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\orderingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\orderingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\infrastructure\\entityconfigurations\\requestentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\infrastructure\\entityconfigurations\\requestentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\infrastructure\\entityconfigurations\\responseentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\infrastructure\\entityconfigurations\\responseentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|g:\\sample-microservice\\ordering.infrastructure\\entityconfigurations\\buyerentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30816F6D-7687-434C-A114-739386BE10CA}|Ordering.Infrastructure\\Ordering.Infrastructure.csproj|solutionrelative:ordering.infrastructure\\entityconfigurations\\buyerentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\domain\\request\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\domain\\request\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,8 +45,17 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderingContext.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\OrderingContext.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\OrderingContext.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\OrderingContext.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\OrderingContext.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwDcAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:59:53.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,9 +65,22 @@
               "RelativeDocumentMoniker": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
               "ToolTip": "G:\\sample-microservice\\Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
               "RelativeToolTip": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCUAAAAiAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAIwB4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:48:32.325Z",
+              "WhenOpened": "2024-08-12T12:55:06.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:04:58.366Z",
               "EditorCaption": ""
             },
             {
@@ -57,48 +91,61 @@
               "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
               "ToolTip": "G:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
               "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwBQAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:42:19.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "G:\\sample-microservice\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "G:\\sample-microservice\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-08-10T20:33:10.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GlobalExceptionHandler.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
-              "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:43:21.983Z",
+              "WhenOpened": "2024-08-12T13:04:41.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\Program.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Program.cs",
-              "RelativeToolTip": "Ordering.API\\Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAQwDkAAABBAAAA",
+              "Title": "RequestEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Infrastructure\\EntityConfigurations\\RequestEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\Infrastructure\\EntityConfigurations\\RequestEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Infrastructure\\EntityConfigurations\\RequestEntityTypeConfiguration.cs",
+              "RelativeToolTip": "BuildingBlocks\\Infrastructure\\EntityConfigurations\\RequestEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T20:35:57.604Z",
+              "WhenOpened": "2024-08-12T12:59:09.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResponseEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Infrastructure\\EntityConfigurations\\ResponseEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\Infrastructure\\EntityConfigurations\\ResponseEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Infrastructure\\EntityConfigurations\\ResponseEntityTypeConfiguration.cs",
+              "RelativeToolTip": "BuildingBlocks\\Infrastructure\\EntityConfigurations\\ResponseEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:59:12.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BuyerEntityTypeConfiguration.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "ToolTip": "G:\\sample-microservice\\Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "RelativeToolTip": "Ordering.Infrastructure\\EntityConfigurations\\BuyerEntityTypeConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:59:49.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Domain\\Request\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "BuildingBlocks\\Domain\\Request\\IRequestRepository.cs",
+              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Domain\\Request\\IRequestRepository.cs",
+              "RelativeToolTip": "BuildingBlocks\\Domain\\Request\\IRequestRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:54:59.715Z",
               "EditorCaption": ""
             }
           ]

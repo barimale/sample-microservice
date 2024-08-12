@@ -47,13 +47,31 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Time = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CorrelationId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 200, nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", maxLength: 2147483647, nullable: false),
+                    ExecutionTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_requests", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "responses",
+                schema: "ordering",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CorrelationId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 200, nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", maxLength: 2147483647, nullable: false),
+                    ExecutionTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_responses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -188,6 +206,20 @@ namespace Ordering.Infrastructure.Migrations
                 schema: "ordering",
                 table: "paymentmethods",
                 column: "CardTypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_requests_CorrelationId",
+                schema: "ordering",
+                table: "requests",
+                column: "CorrelationId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_responses_CorrelationId",
+                schema: "ordering",
+                table: "responses",
+                column: "CorrelationId",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -199,6 +231,10 @@ namespace Ordering.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "requests",
+                schema: "ordering");
+
+            migrationBuilder.DropTable(
+                name: "responses",
                 schema: "ordering");
 
             migrationBuilder.DropTable(

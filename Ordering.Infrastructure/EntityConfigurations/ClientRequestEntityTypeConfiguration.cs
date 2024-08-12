@@ -7,6 +7,6 @@ class ClientRequestEntityTypeConfiguration
 {
     public void Configure(EntityTypeBuilder<ClientRequest> requestConfiguration)
     {
-        requestConfiguration.ToTable("requests");
+        requestConfiguration.ToTable("clientrequests");
     }
 }
