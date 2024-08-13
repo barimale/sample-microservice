@@ -18,7 +18,8 @@ public class GetOrders : ICarterModule
             IMapper mapper,
             ILogger<GetOrders> logger) =>
         {
-            var response = await sender.Send(new GetOrdersQuery(request));
+            var mapped = mapper.Map<GetOrdersQuery>(request);
+            var response = await sender.Send(mapped);
             return Results.Ok(response);
         })
         .WithName("GetOrders")

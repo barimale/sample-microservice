@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "G:\\sample-microservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|g:\\sample-microservice\\buildingblocks\\application\\services\\consulhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B899856-1D36-41D2-8C1F-64D8A971D911}|BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:buildingblocks\\application\\services\\consulhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|g:\\sample-microservice\\ordering.api\\middlewares\\requestresponseloggermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F7AC1F-B60D-44C9-92E3-A2F1835FF4BC}|Ordering.API\\Ordering.API.csproj|solutionrelative:ordering.api\\middlewares\\requestresponseloggermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|G:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -31,40 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConsulHostedService.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "RelativeDocumentMoniker": "BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "ToolTip": "G:\\sample-microservice\\BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "RelativeToolTip": "BuildingBlocks\\Application\\Services\\ConsulHostedService.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwCEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:31:13.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestResponseLoggerMiddleware.cs",
-              "DocumentMoniker": "G:\\sample-microservice\\Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
-              "RelativeDocumentMoniker": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
-              "ToolTip": "G:\\sample-microservice\\Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
-              "RelativeToolTip": "Ordering.API\\Middlewares\\RequestResponseLoggerMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:31:04.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "G:\\sample-microservice\\README.md",
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "G:\\sample-microservice\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-08-12T19:30:41.981Z",
+              "WhenOpened": "2024-08-13T10:59:50.758Z",
               "EditorCaption": ""
             }
           ]

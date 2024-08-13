@@ -7,9 +7,14 @@ namespace Ordering.Application.CQRS.Queries;
 public class GetOrdersQuery
     : IQuery<GetOrdersResult>
 {
-    public GetOrdersQuery(PaginationRequest aginationRequest)
+    public GetOrdersQuery()
     {
-        PaginationRequest = aginationRequest;
+        PaginationRequest = new PaginationRequest();
+    }
+
+    public GetOrdersQuery(PaginationRequest paginationRequest)
+    {
+        PaginationRequest = paginationRequest;
     }
 
     public PaginationRequest PaginationRequest { get; set; }
