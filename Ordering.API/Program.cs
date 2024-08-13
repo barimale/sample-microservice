@@ -23,36 +23,14 @@ namespace Ordering.API
             {
                 var builder = WebApplication.CreateBuilder(args);
 
-                LogManager.Configuration = new NLogLoggingConfiguration(
-                    builder.Configuration.GetSection("NLog"));
-
-                builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
-
-                builder.Services.AddHttpLogging(logging =>
-                {
-                    logging.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
-                    logging.RequestBodyLogLimit = 4096;
-                    logging.ResponseBodyLogLimit = 4096;
-                });
-
-                builder.Logging.ClearProviders();
-                builder.Logging.SetMinimumLevel(builder.Environment.IsDevelopment() ? LogLevel.Debug : LogLevel.Trace);
-                builder.Host.UseNLog();
-
                 builder.Services
                     .AddApplicationServices(builder.Configuration)
                     .AddInfrastructureServices(builder.Configuration)
                     .AddApiServices(builder.Configuration);
 
-                // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-                builder.Services.AddEndpointsApiExplorer();
-                builder.Services.AddSwaggerGen(options =>
-                {
-                    options.DocumentFilter<HealthChecksDocumentFilter>();
-                    options.EnableAnnotations();
-                });
-
-                builder.Services.AddMigration<OrderingContext, OrderingContextSeed>();
+                builder.Logging.ClearProviders();
+                builder.Logging.SetMinimumLevel(builder.Environment.IsDevelopment() ? LogLevel.Debug : LogLevel.Trace);
+                builder.Host.UseNLog();
 
                 var app = builder.Build();
                 app.UseMiddleware<RequestResponseLoggerMiddleware>();

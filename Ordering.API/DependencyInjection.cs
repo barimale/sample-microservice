@@ -5,10 +5,16 @@ using Carter;
 using Consul;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.HttpLogging;
+using NLog;
+using NLog.Extensions.Logging;
+using Ordering.API.Extensions;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
+using Ordering.API.SeedWork;
 using Ordering.API.Utilities;
 using Ordering.API.Validators;
+using Ordering.Infrastructure;
 using HealthStatus = Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus;
 
 namespace Ordering.API;
@@ -46,6 +52,27 @@ public static class DependencyInjection
 
         services.AddSingleton<IHostedService, ConsulHostedService>();
         services.Configure<ConsulConfig>(configuration.GetSection("registration"));
+
+        LogManager.Configuration = new NLogLoggingConfiguration(
+                    configuration.GetSection("NLog"));
+
+        services.AddExceptionHandler<GlobalExceptionHandler>();
+
+        services.AddHttpLogging(logging =>
+        {
+            logging.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
+            logging.RequestBodyLogLimit = 4096;
+            logging.ResponseBodyLogLimit = 4096;
+        });
+
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen(options =>
+        {
+            options.DocumentFilter<HealthChecksDocumentFilter>();
+            options.EnableAnnotations();
+        });
+
+        services.AddMigration<OrderingContext, OrderingContextSeed>();
 
         return services;
     }
