@@ -1,55 +1,56 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-	  <RootNamespace>Ordering.API</RootNamespace>
-	  <UserSecretsId>5010529d-3715-4edb-9982-7efdf1b190cc</UserSecretsId>
-	  <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..\Ordering.Domain</DockerfileContext>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Ordering.API</RootNamespace>
+		<UserSecretsId>5010529d-3715-4edb-9982-7efdf1b190cc</UserSecretsId>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\Ordering.Domain</DockerfileContext>
+		<ServerGarbageCollection>true</ServerGarbageCollection>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="tgconfig.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Remove="tgconfig.json" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Remove="C:\Users\mateu\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="C:\Users\mateu\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<InternalsVisibleTo Include="Order.FunctionalTests" />
 	</ItemGroup>
 
-  <ItemGroup>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
-	  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.2" />
-    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
-    <PackageReference Include="Carter" Version="8.2.1" />
-	<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
-    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.7.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.2" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+		<PackageReference Include="Carter" Version="8.2.1" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.7.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
-    <ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
-    <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
-    <ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
+		<ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
+		<ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
+		<ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="API\v2.0\" />
-    <Folder Include="API\v1.0\buyer\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="API\v2.0\" />
+		<Folder Include="API\v1.0\buyer\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="tgconfig.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="tgconfig.json" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="TypeGen" Version="2.5.0" />
