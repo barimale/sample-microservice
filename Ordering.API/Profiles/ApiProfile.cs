@@ -17,8 +17,8 @@ namespace Ordering.API.Profiles
                 .ForMember(p => p.CustomerId, pp => pp.MapFrom(src => src.CustomerId));
 
             CreateMap<PaginationRequest, GetOrdersQuery>()
-                .ForMember(p => p.PaginationRequest.PageIndex, pp => pp.MapFrom(src => src.PageIndex))
-                .ForMember(p => p.PaginationRequest.PageSize, pp => pp.MapFrom(src => src.PageSize))
+                .ForPath(p => p.PaginationRequest.PageIndex, pp => pp.MapFrom(src => src.PageIndex))
+                .ForPath(p => p.PaginationRequest.PageSize, pp => pp.MapFrom(src => src.PageSize))
                 .ReverseMap();
 
             CreateMap<CreateOrderCommand, Order>()
