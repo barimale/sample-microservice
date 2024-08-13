@@ -20,6 +20,7 @@ public class GetOrders : ICarterModule
         {
             var mapped = mapper.Map<GetOrdersQuery>(request);
             var response = await sender.Send(mapped);
+
             return Results.Ok(response);
         })
         .WithName("GetOrders")
