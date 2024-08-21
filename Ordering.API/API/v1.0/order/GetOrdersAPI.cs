@@ -2,6 +2,7 @@
 using BuildingBlocks.API.Pagination;
 using Carter;
 using MediatR;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
@@ -20,6 +21,8 @@ public class GetOrders : ICarterModule
         {
             var mapped = mapper.Map<GetOrdersQuery>(request);
             var response = await sender.Send(mapped);
+            if (response is null)
+                return Results.NotFound();
 
             return Results.Ok(response);
         })
