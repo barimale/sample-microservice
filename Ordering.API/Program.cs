@@ -39,21 +39,6 @@ namespace Ordering.API
                 app.UseHttpLogging();
                 app.UseApiServices();
 
-                // In production -> execute migrations via script
-                if (app.Environment.IsDevelopment())
-                {
-                    try
-                    {
-                        using var scope = app.Services.CreateScope();
-                        OrderingContext context = scope.ServiceProvider.GetRequiredService<OrderingContext>();
-                        context.Database.Migrate();
-                    }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("On Migrate error");
-                    }
-                }
-
                 // Configure the HTTP request pipeline.
                 if (app.Environment.IsDevelopment())
                 {

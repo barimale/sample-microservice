@@ -113,3 +113,5 @@ https://medium.com/@KeivanDamirchi/consul-in-net-a-service-mesh-solution-and-ser
 https://stackoverflow.com/questions/39467200/how-to-self-register-a-service-with-consul
 
 https://medium.com/@KeivanDamirchi/consul-in-net-a-service-mesh-solution-and-service-discovery-tool-eff18292c771
+
+https://stackoverflow.com/questions/68853897/how-to-create-a-reusable-mapping-profile-with-mapster
