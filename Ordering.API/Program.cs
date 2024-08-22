@@ -23,6 +23,10 @@ namespace Ordering.API
             {
                 var builder = WebApplication.CreateBuilder(args);
 
+                builder.Services.AddProblemDetails(options =>
+                    options.CustomizeProblemDetails = ctx =>
+                        ctx.ProblemDetails.Extensions.Add("nodeId", Environment.MachineName));
+
                 builder.Services
                     .AddApplicationServices(builder.Configuration)
                     .AddInfrastructureServices(builder.Configuration)

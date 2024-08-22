@@ -21,6 +21,7 @@ public class GetOrders : ICarterModule
         {
             var mapped = mapper.Map<GetOrdersQuery>(request);
             var response = await sender.Send(mapped);
+
             if (response is null)
                 return Results.NotFound();
 
