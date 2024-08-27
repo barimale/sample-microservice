@@ -12,6 +12,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="API\v1.0\buyer\**" />
+	  <Compile Remove="API\v2.0\**" />
+	  <Content Remove="API\v1.0\buyer\**" />
+	  <Content Remove="API\v2.0\**" />
+	  <EmbeddedResource Remove="API\v1.0\buyer\**" />
+	  <EmbeddedResource Remove="API\v2.0\**" />
+	  <None Remove="API\v1.0\buyer\**" />
+	  <None Remove="API\v2.0\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Content Remove="tgconfig.json" />
 	</ItemGroup>
 
@@ -41,11 +52,6 @@
 		<ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
 		<ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
 		<ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="API\v2.0\" />
-		<Folder Include="API\v1.0\buyer\" />
 	</ItemGroup>
 
 	<ItemGroup>
