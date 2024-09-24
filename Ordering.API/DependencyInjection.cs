@@ -12,6 +12,7 @@ using Ordering.API.Extensions;
 using Ordering.API.Filters;
 using Ordering.API.Profiles;
 using Ordering.API.SeedWork;
+using Ordering.API.SwaggerFilters;
 using Ordering.API.Utilities;
 using Ordering.API.Validators;
 using Ordering.Infrastructure;
@@ -70,6 +71,7 @@ public static class DependencyInjection
         {
             options.DocumentFilter<HealthChecksDocumentFilter>();
             options.EnableAnnotations();
+            options.OperationFilter<AddCustomHeaderParameter>();
         });
 
         services.AddMigration<OrderingContext, OrderingContextSeed>();
