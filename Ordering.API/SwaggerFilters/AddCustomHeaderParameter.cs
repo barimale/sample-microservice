@@ -17,9 +17,9 @@ namespace Ordering.API.SwaggerFilters
 
             operation.Parameters.Add(new OpenApiParameter
             {
-                Name = "X-Identity",
+                Name = "X-SessionId",
                 In = ParameterLocation.Header,
-                Description = "X-Identity here",
+                Description = "X-SessionId here",
                 Required = true,
             });
         }
