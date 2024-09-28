@@ -1,9 +1,10 @@
-# Description 
-## Concept
+# sample-microservice
+## Description 
+### Concept
 Design as a monorepo.
-## It is a POC
+### It is a POC
 Some things are not implemented yet, project contains just sample solutions. Some parts of code not ready(for example sagas).
-## Database:
+### Database:
 navigate to the database project directory first.
 Then execute as follows:
 ```
@@ -14,17 +15,17 @@ dotnet ef database update
 
 dotnet ef database update --connection "Data Source=MATEUSZ;Initial Catalog=DataBaseName;TrustServerCertificate=True;Integrated Security=True;"```
 ```
-## Docker build
+### Docker build
 ```
 docker build -t foo . && docker run -it -p 1433:1433 -p 15672:15672 -p 5672:5672 foo
 ```
-## Docker externalls [docker compose later]
+### Docker externalls [docker compose later]
 ```
 docker run -it --rm --name eventstore-node -p 2113:2113 -p 1113:1113 eventstore/eventstore:release-5.0.11
 docker run -it --rm -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong@Passw0rd>" -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
 ```
-# sample-microservice - links
+## Links
 
 https://medium.com/@avinash.dhumal/exploring-microservices-saga-and-compensation-patterns-with-c-example-0da3dfe87bb6
 
