@@ -1,7 +1,7 @@
 # sample-microservice
 ## Description 
 GIT_HTTP_LOW_SPEED_LIMIT and GIT_HTTP_LOW_SPEED_TIME
-
+printenv set a=b
 ### Concept
 Design as a monorepo.
 ### It is a POC
