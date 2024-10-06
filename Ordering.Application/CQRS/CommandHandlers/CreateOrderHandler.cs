@@ -28,7 +28,6 @@ public class CreateOrderHandler(IOrderRepository orderRepository, IOptions<Order
         var cardExpiration = DateTime.UtcNow.AddYears(1);
         var description = command.Description;
         
-        //it has to be like below 
         var order = new Order("1", "fakeName", 
             new Address(
                 street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration, description: description);
