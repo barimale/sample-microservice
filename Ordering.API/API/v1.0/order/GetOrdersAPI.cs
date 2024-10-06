@@ -2,7 +2,6 @@
 using BuildingBlocks.API.Pagination;
 using Carter;
 using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.HttpLogging;
 using Ordering.API.Filters;
 using Ordering.Application.CQRS.Queries;
