@@ -1,16 +1,10 @@
-using Microsoft.AspNetCore.HttpLogging;
-using Microsoft.EntityFrameworkCore;
-using NLog.Extensions.Logging;
 using NLog;
 using NLog.Web;
 using Ordering.Application;
 using Ordering.Infrastructure;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
-using Ordering.API.Extensions;
-using Ordering.API.SeedWork;
 using BuildingBlocks.API.Utilities.Healthcheck;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using BuildingBlocks.API.Middlewares.GlobalExceptions.Handler;
 using Ordering.API.Middlewares;
 
 namespace Ordering.API
