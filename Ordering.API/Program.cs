@@ -43,7 +43,6 @@ namespace Ordering.API
                 app.UseHttpLogging();
                 app.UseApiServices();
 
-                // Configure the HTTP request pipeline.
                 if (app.Environment.IsDevelopment())
                 {
                     app.UseSwagger();
