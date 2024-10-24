@@ -1,4 +1,4 @@
-# sample-microservice 
+# sample-microservice
 ## Description 
 To start run rabbitmq:
 ```
