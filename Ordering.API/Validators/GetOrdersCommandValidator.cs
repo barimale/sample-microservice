@@ -1,6 +1,5 @@
 ﻿using BuildingBlocks.API.Pagination;
 using FluentValidation;
-using Ordering.API.Model.order;
 
 namespace Ordering.API.Validators
 {
