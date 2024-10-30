@@ -34,7 +34,7 @@ public class CreateOrderHandler(IOrderRepository orderRepository, IOptions<Order
 
         foreach (var item in command.OrderItems)
         {
-            order.AddOrderItem(1, "item.ProductName", 5, 0, "item.PictureUrl", 5);
+            order.AddOrderItem(item.ProductId, item.ProductName, item.Price, 0, "item.PictureUrl", item.Quantity);
         }
 
         var result = orderRepository.Add(order);
