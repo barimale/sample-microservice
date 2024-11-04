@@ -31,19 +31,20 @@ public class CreateOrderHandler(IOrderRepository orderRepository, IOptions<Order
         
         var order = new Order(
             command.CustomerId.ToString(),
-            command.CustomerName, 
+            command.CustomerName,
             new Address(
-                street, 
-                city, 
-                state, 
-                country, 
-                zipcode), 
-            cardTypeId, 
-            cardNumber, 
-            cardSecurityNumber, 
-            cardHolderName, 
+                street,
+                city,
+                state,
+                country,
+                zipcode),
+            cardTypeId,
+            cardNumber,
+            cardSecurityNumber,
+            cardHolderName,
             cardExpiration, 
-            description: description);
+            description: description, 
+            paymentMethodId: command.Payment.PaymentMethod);
 
         foreach (var item in command.OrderItems)
         {
