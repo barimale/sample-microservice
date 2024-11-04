@@ -51,7 +51,8 @@ public class CreateOrderHandler(IOrderRepository orderRepository, IOptions<Order
             order.AddOrderItem(
                 item.ProductId, 
                 item.ProductName, 
-                item.Price, 0, 
+                item.Price, 
+                0,
                 item.PictureUrl, 
                 item.Quantity);
         }

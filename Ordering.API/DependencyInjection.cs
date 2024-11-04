@@ -57,8 +57,6 @@ public static class DependencyInjection
         LogManager.Configuration = new NLogLoggingConfiguration(
                     configuration.GetSection("NLog"));
 
-        services.AddExceptionHandler<GlobalExceptionHandler>();
-
         services.AddHttpLogging(logging =>
         {
             logging.LoggingFields = HttpLoggingFields.RequestPropertiesAndHeaders | HttpLoggingFields.ResponsePropertiesAndHeaders;
