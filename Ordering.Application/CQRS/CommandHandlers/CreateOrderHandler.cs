@@ -24,24 +24,44 @@ public class CreateOrderHandler(IOrderRepository orderRepository, IOptions<Order
         var cardTypeId = command.Payment.PaymentMethod;
         var cardNumber = command.Payment.CardNumber;
         var cardSecurityNumber = command.Payment.Cvv;
-        var cardHolderName = command.Description;
-        var cardExpiration = DateTime.UtcNow.AddYears(1);
+        var cardHolderName = command.Payment.CardName;
+        DateTime cardExpiration;
+        DateTime.TryParse(command.Payment.Expiration,out cardExpiration);
         var description = command.Description;
         
-        var order = new Order("1", "fakeName", 
+        var order = new Order(
+            command.CustomerId.ToString(),
+            command.CustomerName, 
             new Address(
-                street, city, state, country, zipcode), cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration, description: description);
+                street, 
+                city, 
+                state, 
+                country, 
+                zipcode), 
+            cardTypeId, 
+            cardNumber, 
+            cardSecurityNumber, 
+            cardHolderName, 
+            cardExpiration, 
+            description: description);
 
         foreach (var item in command.OrderItems)
         {
-            order.AddOrderItem(item.ProductId, item.ProductName, item.Price, 0, "item.PictureUrl", item.Quantity);
+            order.AddOrderItem(
+                item.ProductId, 
+                item.ProductName, 
+                item.Price, 0, 
+                item.PictureUrl, 
+                item.Quantity);
         }
 
         var result = orderRepository.Add(order);
         await orderRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
+        // POC
         const string message2 = "From Command Handler Hello World!";
         publishToChannelService.Send(message2);
         Console.WriteLine($" [x] Sent {message2}");
+        // end POC
         return new CreateOrderResult(result.Id);
     }
 }

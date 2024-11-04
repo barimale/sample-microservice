@@ -14,7 +14,7 @@ public class CreateOrderCommand : ICommand<CreateOrderResult>
 
     public int Id { get; set; }
     public int CustomerId { get; set; }
-    public string OrderName { get; set; }
+    public string CustomerName { get; set; }
     public AddressDto ShippingAddress { get; set; }
     public AddressDto BillingAddress { get; set; }
     public PaymentDto Payment { get; set; }
