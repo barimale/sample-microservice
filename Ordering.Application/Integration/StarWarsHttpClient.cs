@@ -7,9 +7,9 @@ namespace Ordering.Application.Integration
     {
         private readonly HttpClient _httpClient;
 
-        public StarWarsHttpClient(string api, IHttpClientFactory httpClientFactory)
+        public StarWarsHttpClient(string api, HttpClient httpClientFactory)
         {
-            _httpClient = httpClientFactory.CreateClient();
+            _httpClient = httpClientFactory;
             _httpClient.BaseAddress = new Uri(api);
             _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
             _httpClient.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");

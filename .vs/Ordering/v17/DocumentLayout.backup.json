@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "R:\\sample-microservice\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|r:\\sample-microservice\\ordering.application\\integration\\starwarshttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\integration\\starwarshttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|r:\\sample-microservice\\ordering.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23FFFA03-384C-4955-AB91-53D31410D6E2}|Ordering.Application\\Ordering.Application.csproj|solutionrelative:ordering.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|R:\\sample-microservice\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{D2127F4E-548B-4E65-A396-04D66B2074B6}|Solution Items{D2127F4E-548B-4E65-A396-04D66B2074B6}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +62,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "R:\\sample-microservice\\Ordering.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Ordering.Application\\DependencyInjection.cs",
+              "ToolTip": "R:\\sample-microservice\\Ordering.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "Ordering.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAEwCIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:01:07.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "StarWarsHttpClient.cs",
+              "DocumentMoniker": "R:\\sample-microservice\\Ordering.Application\\Integration\\StarWarsHttpClient.cs",
+              "RelativeDocumentMoniker": "Ordering.Application\\Integration\\StarWarsHttpClient.cs",
+              "ToolTip": "R:\\sample-microservice\\Ordering.Application\\Integration\\StarWarsHttpClient.cs",
+              "RelativeToolTip": "Ordering.Application\\Integration\\StarWarsHttpClient.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:57:20.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "R:\\sample-microservice\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -67,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "R:\\sample-microservice\\Ordering.API\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Ordering.API\\DependencyInjection.cs",
@@ -79,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GlobalExceptionHandler.cs",
               "DocumentMoniker": "R:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
@@ -91,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "R:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\NotFoundException.cs",
@@ -103,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "InternalServerException.cs",
               "DocumentMoniker": "R:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\InternalServerException.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\InternalServerException.cs",
@@ -115,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "R:\\sample-microservice\\BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\BadRequestException.cs",
@@ -127,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CreateOrderAPI.cs",
               "DocumentMoniker": "R:\\sample-microservice\\Ordering.API\\API\\v1.0\\order\\CreateOrderAPI.cs",
               "RelativeDocumentMoniker": "Ordering.API\\API\\v1.0\\order\\CreateOrderAPI.cs",
@@ -139,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AddOrderException.cs",
               "DocumentMoniker": "R:\\sample-microservice\\Ordering.Application\\Exceptions\\AddOrderException.cs",
               "RelativeDocumentMoniker": "Ordering.Application\\Exceptions\\AddOrderException.cs",
@@ -151,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AddBuyerException.cs",
               "DocumentMoniker": "R:\\sample-microservice\\Ordering.Application\\Exceptions\\AddBuyerException.cs",
               "RelativeDocumentMoniker": "Ordering.Application\\Exceptions\\AddBuyerException.cs",
