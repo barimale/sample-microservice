@@ -33,7 +33,7 @@ public static class DependencyInjection
         services.AddHttpClient<IStarWarsService, StarWarsHttpClient>((client, sp) =>
         {
             return new StarWarsHttpClient(connectionString, client);
-        });
+        }).SetHandlerLifetime(TimeSpan.FromMinutes(2)); ;
         // WIP
         //services.AddMessageBroker(configuration, Assembly.GetExecutingAssembly());
         string hostName = configuration.GetValue<string>("AppSettings:HostName");
