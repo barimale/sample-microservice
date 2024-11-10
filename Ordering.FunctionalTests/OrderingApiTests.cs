@@ -20,7 +20,7 @@ public sealed class OrderingApiTests : IClassFixture<OrderingApiFixture>
         _httpClient = _webApplicationFactory.CreateDefaultClient(handler);
     }
 
-    [Fact(Skip = "not compatible with github action")]
+    [Fact(Skip = "Skipped, as it is not compatible with github action.")]
     public async Task GetAllStoredOrdersWorks()
     {
         // given

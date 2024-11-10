@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "R:\\sample-microservice\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-11-04T18:14:20.55Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Ordering.API\\DependencyInjection.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAawBwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:14:00.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:14:00.527Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\Handler\\GlobalExceptionHandler.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAvwCYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:13:35.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:13:35.706Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\NotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:13:27.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:13:27.589Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\InternalServerException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:13:17.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:13:17.618Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "BuildingBlocks\\API\\Middlewares\\GlobalExceptions\\BadRequestException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:13:14.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:13:14.702Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "Ordering.API\\API\\v1.0\\order\\CreateOrderAPI.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:11:49.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:11:49.115Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Ordering.Application\\Exceptions\\AddOrderException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:11:35.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:11:35.449Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "Ordering.Application\\Exceptions\\AddBuyerException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:11:25.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:11:25.562Z"
             }
           ]
         }
