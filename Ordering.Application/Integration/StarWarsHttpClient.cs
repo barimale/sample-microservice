@@ -5,13 +5,11 @@ namespace Ordering.Application.Integration
 {
     public class StarWarsHttpClient : IStarWarsService
     {
-        //private readonly IHttpClientFactory _httpClientFactory;
         private readonly HttpClient _httpClient;
 
-        public StarWarsHttpClient(string api, HttpClient httpClientFactory)
+        public StarWarsHttpClient(string api, IHttpClientFactory httpClientFactory)
         {
-            //_httpClientFactory = httpClientFactory;
-            _httpClient = httpClientFactory;
+            _httpClient = httpClientFactory.CreateClient();
             _httpClient.BaseAddress = new Uri(api);
             _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
             _httpClient.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
