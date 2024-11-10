@@ -31,15 +31,6 @@ public static class DependencyInjection
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddScoped<IRequestRepository, RequestRepository>();
         services.AddScoped<IResponseRepository, ResponseRepository>();
-        //services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
-
-        //services.AddDbContext<ApplicationDbContext>((sp, options) =>
-        //{
-        //    options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
-        //    options.UseSqlServer(connectionString);
-        //});
-
-        //services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
         return services;
     }
