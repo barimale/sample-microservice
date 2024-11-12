@@ -10,11 +10,6 @@ using System.Threading.Tasks;
 
 namespace Ordering.Infrastructure;
 
-/// <remarks>
-/// Add migrations using the following command inside the 'Ordering.Infrastructure' project directory:
-///
-/// dotnet ef migrations add --startup-project Ordering.Infrastructure --context OrderingContext initialcommit
-/// </remarks>
 public class OrderingContext : DbContext, IUnitOfWork
 {
     public OrderingContext(DbContextOptions<OrderingContext> options)
@@ -35,8 +30,6 @@ public class OrderingContext : DbContext, IUnitOfWork
 
     private readonly IMediator _mediator;
     private IDbContextTransaction _currentTransaction;
-
-    //public OrderingContext(DbContextOptions<OrderingContext> options) : base(options) { }
 
     public IDbContextTransaction GetCurrentTransaction() => _currentTransaction;
 
