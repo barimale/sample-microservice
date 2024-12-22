@@ -1,7 +1,6 @@
 ﻿using System.Net;
 using Asp.Versioning;
 using Asp.Versioning.Http;
-using AutoMapper.Configuration.Annotations;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Ordering.API;
 
